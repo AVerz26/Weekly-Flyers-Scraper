@@ -1,0 +1,39 @@
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# Arquivos de Configuração e Segredos
+.env
+.env.local
+data/config.json
+data/secrets.json
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Dados de Saída e Planilhas
+output/
+*.xlsx
+*.xls
+*.csv
+data/downloads/
+data/cache/
+
+# Logs e arquivos temporários
+*.log
+logs/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
