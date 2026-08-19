@@ -30,6 +30,8 @@ O **FlyerScout AI** transforma o processo manual de conferência de folhetos e e
 
 ## Estrutura do Projeto
 
+[architeture_flowchart.png]
+
 ```
 instagram_flyers_scraper/
 ├── app.py                     # Servidor FastAPI com rotas REST e streaming SSE
