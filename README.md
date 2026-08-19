@@ -30,7 +30,10 @@ O **FlyerScout AI** transforma o processo manual de conferência de folhetos e e
 
 ## Estrutura do Projeto
 
-![Fluxograma da Arquitetura](architeture_flowchart.png)
+<figure>
+  <img src="architeture_flowchart.png" alt="Fluxograma da Arquitetura" width="100%">
+  <figcaption align="center"><em>Fluxograma detalhado da arquitetura do projeto.</em></figcaption>
+</figure>
 
 ```
 instagram_flyers_scraper/
