@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Coleta de Encartes • Supermercados</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="light-theme">
+    <div class="app-layout">
+        <!-- CABEÇALHO CORPORATIVO -->
+        <header class="navbar">
+            <div class="navbar-left">
+                <div class="brand">
+                    <div class="brand-badge"></div>
+                    <div>
+                        <h1 class="brand-title">Coleta de Encartes</h1>
+                        <span class="brand-subtitle">Monitoramento de preços e ofertas do varejo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-right">
+                <div id="status-badge" class="badge badge-idle">
+                    <span class="badge-dot"></span>
+                    <span id="status-text">Ocioso</span>
+                </div>
+                
+                <div class="nav-divider"></div>
+
+                <button class="btn btn-outline" id="btn-open-profiles">
+                    Perfis Monitorados (<span id="profiles-count">11</span>)
+                </button>
+                <button class="btn btn-outline" id="btn-open-config">
+                    Configurações
+                </button>
+            </div>
+        </header>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+            <!-- BARRA DE CONTROLE E EXECUÇÃO -->
+            <section class="panel control-panel">
+                <div class="control-form">
+                    <div class="control-field">
+                        <label for="select-date-mode">Período de postagem</label>
+                        <select id="select-date-mode" class="form-control">
+                            <option value="yesterday_today" selected>Ontem e Hoje (Padrão)</option>
+                            <option value="today">Apenas Hoje</option>
+                            <option value="last_3_days">Últimos 3 dias</option>
+                            <option value="last_7_days">Últimos 7 dias</option>
+                            <option value="custom">Data personalizada...</option>
+                        </select>
+                    </div>
+
+                    <div id="custom-date-inputs" class="custom-dates" style="display: none;">
+                        <div class="control-field">
+                            <label for="input-date-start">Início</label>
+                            <input type="date" id="input-date-start" class="form-control">
+                        </div>
+                        <div class="control-field">
+                            <label for="input-date-end">Fim</label>
+                            <input type="date" id="input-date-end" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="control-field" style="max-width: 130px;">
+                        <label for="input-post-limit">Posts por perfil</label>
+                        <input type="number" id="input-post-limit" class="form-control" min="1" max="20" value="3">
+                    </div>
+
+                    <div class="control-field" style="min-width: 185px;">
+                        <label for="select-ai-model">Modelo de IA (Visão)</label>
+                        <select id="select-ai-model" class="form-control">
+                            <optgroup label="Google Gemini">
+                                <option value="gemini:gemini-flash-lite-latest" selected>Gemini Flash (Mais Rápido e Estável)</option>
+                                <option value="gemini:gemini-3.5-flash-lite">Gemini 3.5 Flash Lite</option>
+                                <option value="gemini:gemini-3.1-flash-lite">Gemini 3.1 Flash Lite</option>
+                                <option value="gemini:gemini-3-flash-preview">Gemini 3 Flash Preview</option>
+                            </optgroup>
+                            <optgroup label="OpenAI">
+                                <option value="openai:gpt-4o-mini">GPT-4o-mini</option>
+                                <option value="openai:gpt-4o">GPT-4o</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="control-actions">
+                        <button id="btn-start-scrape-only" class="btn btn-secondary" title="Apenas raspa as publicações do Instagram e salva as imagens no disco">
+                            📥 1. Coletar Encartes
+                        </button>
+                        <button id="btn-start-vision-only" class="btn btn-primary" title="Executa a extração por IA nas imagens já salvas sem precisar raspar novamente">
+                            🧠 2. Extrair c/ IA
+                        </button>
+                        <button id="btn-start-full" class="btn btn-accent" title="Executa o pipeline completo: coleta no Instagram + análise de IA + exportação">
+                            ⚡ Pipeline Completo
+                        </button>
+                        <button id="btn-stop-scrape" class="btn btn-danger" style="display: none;">
+                            Interromper
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PROGRESSO -->
+                <div id="progress-wrapper" class="progress-container" style="display: none;">
+                    <div class="progress-meta">
+                        <span id="progress-step-title" class="progress-step">Processando...</span>
+                        <span id="progress-percentage" class="progress-percent">0%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div id="progress-bar-fill" class="progress-fill" style="width: 0%;"></div>
+                    </div>
+                    <div id="progress-step-detail" class="progress-detail">Iniciando tarefas em segundo plano...</div>
+                </div>
+            </section>
+
+            <!-- PAINEL DE DADOS E NAVEGAÇÃO POR ABAS -->
+            <section class="panel data-panel">
+                <div class="panel-header">
+                    <div class="tabs-nav">
+                        <button class="tab-button active" data-tab="tab-results">
+                            Ofertas Extraídas (<span id="tab-count-items">0</span>)
+                        </button>
+                        <button class="tab-button" data-tab="tab-comparator">
+                            📊 Comparador de Preços (<span id="tab-count-comparator">0</span>)
+                        </button>
+                        <button class="tab-button" data-tab="tab-images">
+                            🖼️ Encartes Coletados (<span id="tab-count-images">0</span>)
+                        </button>
+                        <button class="tab-button" data-tab="tab-logs">
+                            Registro de Execução
+                        </button>
+                        <button class="tab-button" data-tab="tab-history">
+                            Arquivos Gerados
+                        </button>
+                    </div>
+
+                    <div class="tab-actions" id="results-actions">
+                        <input type="text" id="input-search-items" placeholder="Filtrar por produto ou mercado..." class="form-control input-sm search-input">
+                        <select id="filter-category" class="form-control input-sm filter-select">
+                            <option value="">Todas as categorias</option>
+                        </select>
+                        <select id="filter-market" class="form-control input-sm filter-select">
+                            <option value="">Todos os supermercados</option>
+                        </select>
+                        <button id="btn-download-excel" class="btn btn-success btn-sm">
+                            Exportar Excel (.xlsx)
+                        </button>
+                        <button id="btn-download-csv" class="btn btn-outline btn-sm">
+                            CSV
+                        </button>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <!-- ABA 1: TABELA DE OFERTAS -->
+                    <div id="tab-results" class="tab-content active">
+                        <div class="table-responsive">
+                            <table class="table" id="table-offers">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 140px;">Supermercado</th>
+                                        <th style="width: 140px;">Categoria</th>
+                                        <th style="min-width: 180px;">Produto Padronizado</th>
+                                        <th style="min-width: 200px;">Texto no Encarte</th>
+                                        <th style="width: 110px; text-align: right;">Preço (R$)</th>
+                                        <th style="width: 110px; text-align: center;">Data</th>
+                                        <th style="width: 80px; text-align: center;">Encarte</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-offers">
+                                    <tr>
+                                        <td colspan="7" class="empty-state">
+                                            Nenhum dado processado ainda. Clique em <strong>"1. Coletar Encartes"</strong> ou <strong>"⚡ Pipeline Completo"</strong> para iniciar.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- ABA 2: COMPARADOR DE PREÇOS -->
+                    <div id="tab-comparator" class="tab-content">
+                        <!-- BANNER DE ESTATÍSTICAS DO BANCO -->
+                        <div class="stats-grid" id="db-stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon">📦</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="stat-total-products">0</span>
+                                    <span class="stat-label">Produtos Padronizados</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">🏷️</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="stat-total-offers">0</span>
+                                    <span class="stat-label">Ofertas no Banco</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">🏪</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="stat-total-markets">0</span>
+                                    <span class="stat-label">Supermercados Monitorados</span>
+                                </div>
+                            </div>
+                            <div class="stat-card stat-card-highlight">
+                                <div class="stat-icon">💰</div>
+                                <div class="stat-info">
+                                    <span class="stat-value" id="stat-max-savings">0%</span>
+                                    <span class="stat-label">Maior Economia Comparada</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FILTROS DO COMPARADOR -->
+                        <div class="comparator-toolbar">
+                            <div class="comparator-filters">
+                                <input type="text" id="input-search-comparator" placeholder="Buscar produto padronizado ou marca..." class="form-control search-input">
+                                <select id="filter-comparator-category" class="form-control filter-select">
+                                    <option value="">Todas as categorias</option>
+                                </select>
+                                <label class="checkbox-container comparator-checkbox">
+                                    <input type="checkbox" id="chk-multiple-markets-only"> Apenas produtos em 2+ supermercados
+                                </label>
+                            </div>
+                            <div class="comparator-actions">
+                                <button id="btn-export-comparison" class="btn btn-success">
+                                    📊 Exportar Comparativo Excel (.xlsx)
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- TABELA COMPARATIVA -->
+                        <div class="table-responsive" style="margin-top: 1rem;">
+                            <table class="table table-hover" id="table-comparator">
+                                <thead>
+                                    <tr>
+                                        <th style="min-width: 220px;">Produto Padronizado</th>
+                                        <th style="width: 140px;">Categoria</th>
+                                        <th style="width: 130px; text-align: right;">Menor Preço</th>
+                                        <th style="width: 160px;">Mercado + Barato</th>
+                                        <th style="width: 110px; text-align: right;">Maior Preço</th>
+                                        <th style="width: 110px; text-align: center;">Economia</th>
+                                        <th style="min-width: 240px;">Comparação entre Supermercados</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-comparator">
+                                    <tr>
+                                        <td colspan="7" class="empty-state">
+                                            Carregando comparativo de preços do banco de dados...
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- ABA 3: GALERIA DE ENCARTES COLETADOS -->
+                    <div id="tab-images" class="tab-content">
+                        <div class="gallery-toolbar">
+                            <div class="gallery-toolbar-left">
+                                <span class="gallery-title">Encartes salvos no repositório</span>
+                                <span id="gallery-count-badge" class="badge badge-subtle">0 imagens</span>
+                            </div>
+                            <div class="gallery-toolbar-right">
+                                <select id="gallery-filter-market" class="form-control input-sm filter-select">
+                                    <option value="">Todos os supermercados</option>
+                                </select>
+                                <button id="btn-refresh-images" class="btn btn-outline btn-sm">🔄 Atualizar</button>
+                                <button id="btn-extract-all-from-gallery" class="btn btn-primary btn-sm">🧠 Extrair Todas c/ IA</button>
+                            </div>
+                        </div>
+                        <div id="gallery-grid" class="flyer-grid">
+                            <div class="empty-state-card">
+                                <div class="empty-state-icon">🖼️</div>
+                                <h3>Nenhum encarte salvo no momento</h3>
+                                <p>Clique em <strong>"1. Coletar Encartes"</strong> para buscar e salvar as imagens do Instagram sem precisar chamar a IA imediatamente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ABA 3: LOGS DO SISTEMA -->
+                    <div id="tab-logs" class="tab-content">
+                        <div class="logs-toolbar">
+                            <span class="logs-title">Console de execução em tempo real</span>
+                            <div class="logs-options">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="chk-autoscroll" checked> Auto-rolar
+                                </label>
+                                <button id="btn-clear-logs" class="btn-text">Limpar console</button>
+                            </div>
+                        </div>
+                        <div id="terminal-screen" class="terminal-container">
+                            <div class="log-row log-sys">[SISTEMA] Sistema pronto para iniciar.</div>
+                        </div>
+                    </div>
+
+                    <!-- ABA 4: HISTÓRICO DE ARQUIVOS -->
+                    <div id="tab-history" class="tab-content">
+                        <div class="history-list" id="history-container">
+                            <p class="empty-state">Nenhum arquivo histórico registrado.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <!-- MODAL DE CONFIGURAÇÕES (CREDENCIAS PROTEGIDAS) -->
+    <div id="modal-config" class="modal-backdrop" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3>Configurações de Acesso e Integração</h3>
+                <button class="modal-close" data-close="modal-config">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="form-config">
+                    <div class="form-group">
+                        <label for="cfg-apify-token">Token da API Apify</label>
+                        <input type="password" id="cfg-apify-token" class="form-control" placeholder="••••••••••••••••••••••••••••••••">
+                        <span class="form-hint">Necessário para a coleta automatizada de postagens do Instagram.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cfg-vision-provider">Provedor de Visão Computacional Padrão</label>
+                        <select id="cfg-vision-provider" class="form-control">
+                            <option value="gemini" selected>Google Gemini (Recomendado)</option>
+                            <option value="openai">OpenAI GPT-4o-mini</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="group-gemini-key">
+                        <label for="cfg-gemini-key">Chave de API do Google Gemini</label>
+                        <input type="password" id="cfg-gemini-key" class="form-control" placeholder="••••••••••••••••••••••••••••••••">
+                    </div>
+
+                    <div class="form-group" id="group-openai-key" style="display: none;">
+                        <label for="cfg-openai-key">Chave de API da OpenAI</label>
+                        <input type="password" id="cfg-openai-key" class="form-control" placeholder="••••••••••••••••••••••••••••••••">
+                    </div>
+
+                    <div class="security-note">
+                        <strong>Segurança:</strong> As chaves são criptografadas e gravadas somente no arquivo local de ambiente e não são trafegadas para repositórios externos.
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline" data-close="modal-config">Fechar</button>
+                <button type="button" id="btn-save-config" class="btn btn-primary">Salvar Configurações</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE GERENCIAMENTO DE PERFIS -->
+    <div id="modal-profiles" class="modal-backdrop" style="display: none;">
+        <div class="modal-dialog modal-large">
+            <div class="modal-header">
+                <h3>Perfis de Supermercados</h3>
+                <button class="modal-close" data-close="modal-profiles">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="add-profile-bar">
+                    <input type="text" id="new-profile-name" placeholder="Nome do supermercado" class="form-control">
+                    <input type="url" id="new-profile-url" placeholder="URL do Instagram (ex: https://www.instagram.com/perfil/)" class="form-control">
+                    <button type="button" id="btn-add-profile" class="btn btn-outline">Adicionar</button>
+                </div>
+
+                <div class="profiles-table-container">
+                    <table class="table table-compact">
+                        <thead>
+                            <tr>
+                                <th style="width: 50px; text-align: center;">Ativo</th>
+                                <th style="width: 220px;">Supermercado</th>
+                                <th>URL</th>
+                                <th style="width: 70px; text-align: center;">Remover</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-profiles-body">
+                            <!-- Preenchido via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="profile-actions-bar">
+                    <button id="btn-select-all-profiles" class="btn-text">Marcar todos</button>
+                    <button id="btn-deselect-all-profiles" class="btn-text">Desmarcar todos</button>
+                    <button id="btn-reset-default-profiles" class="btn-text">Restaurar 11 perfis padrão</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline" data-close="modal-profiles">Cancelar</button>
+                <button type="button" id="btn-save-profiles" class="btn btn-primary">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE PRÉ-VISUALIZAÇÃO DA IMAGEM DO ENCARTE -->
+    <div id="modal-image-preview" class="modal-backdrop" style="display: none;">
+        <div class="modal-dialog modal-image">
+            <div class="modal-header">
+                <h3 id="modal-image-title">Visualização do Encarte</h3>
+                <button class="modal-close" data-close="modal-image-preview">&times;</button>
+            </div>
+            <div class="modal-body modal-image-body">
+                <img id="preview-img-element" src="" alt="Encarte">
+            </div>
+            <div class="modal-footer">
+                <a id="btn-open-original-img" href="#" target="_blank" class="btn btn-outline btn-sm">Abrir Imagem Original</a>
+                <a id="btn-open-instagram-post" href="#" target="_blank" class="btn btn-primary btn-sm">Abrir Post no Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE TESTE DE IA EM IMAGEM INDIVIDUAL -->
+    <div id="modal-single-ai-test" class="modal-backdrop" style="display: none;">
+        <div class="modal-dialog modal-large">
+            <div class="modal-header">
+                <h3 id="modal-test-title">🔬 Teste de Extração com IA</h3>
+                <button class="modal-close" data-close="modal-single-ai-test">&times;</button>
+            </div>
+            <div class="modal-body modal-test-layout">
+                <div class="test-image-col">
+                    <img id="test-img-preview" src="" alt="Encarte sendo testado">
+                    <div class="test-img-meta">
+                        <span id="test-img-market" class="badge badge-subtle"></span>
+                        <span id="test-img-model" class="badge badge-subtle"></span>
+                    </div>
+                </div>
+                <div class="test-results-col">
+                    <div id="test-loading-state" class="test-loading" style="display: none;">
+                        <div class="spinner"></div>
+                        <p style="font-weight: 600; margin-top: 12px;">Analisando encarte com a IA de visão...</p>
+                        <span style="font-size: 12px; color: var(--text-muted);">Isso leva de 2 a 8 segundos. Extraindo produtos e categorias...</span>
+                    </div>
+                    <div id="test-content-state">
+                        <div class="test-results-header">
+                            <h4>Ofertas Extraídas (<span id="test-offers-count">0</span>)</h4>
+                        </div>
+                        <div class="table-responsive test-table-wrap">
+                            <table class="table table-compact">
+                                <thead>
+                                    <tr>
+                                        <th>Produto Identificado</th>
+                                        <th style="width: 170px;">Categoria (IA)</th>
+                                        <th style="width: 95px;" class="text-right">Preço</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="test-table-body">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline" data-close="modal-single-ai-test">Fechar</button>
+                <button type="button" id="btn-retest-image" class="btn btn-primary">🔄 Reexecutar Teste</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
