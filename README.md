@@ -1,113 +1,127 @@
-# 🛒 FlyerScout AI • Instagram Supermarket Flyers Scraper
+# 🛒 FlyerScout AI • Instagram Supermarket Flyers Scraper & Price Comparator
 
-> **Automação completa para raspagem de encartes de supermercados no Instagram, extração inteligente de preços com IA de Visão.**
-
----
-
-## Visão Geral
-
-O **FlyerScout AI** transforma o processo manual de conferência de folhetos e encartes de supermercados em uma esteira 100% automatizada. A aplicação conta com um backend assíncrono e uma interface web moderna, leve e responsiva (FastAPI + Vanilla CSS Glassmorphism) que executa em segundo plano com logs e progresso em tempo real.
+> **End-to-end automated pipeline for scraping supermarket promotional flyers on Instagram, extracting prices with Vision AI, normalizing canonical product names, and comparing prices across competing stores.**
 
 ---
 
-## Funcionalidades Principais
+## 📐 System Architecture
 
-- **Raspagem Dinâmica de Perfis do Instagram:**
-  - Gerenciador interativo de supermercados (adicionar, editar, desativar ou excluir perfis).
-  - Pré-carregado com os supermercados da região.
-- **Motor de IA Visual Híbrido:**
-  - **Google Gemini Flash (Recomendado):** Ultra-rápido, alta acurácia na leitura de textos e preços em encartes e consumo mínimo de recursos.
-  - **OpenAI GPT-4o / GPT-4o-mini:** Suporte nativo para chaves da OpenAI.
-  - **Qwen2.5-VL / Local:** Suporte opcional para modelos locais via PyTorch.
-- **Categorização Semântica Automática:**
-  - Classificação inteligente em categorias do varejo alimentar (Carnes, Bebidas, Mercearia, Laticínios, Limpeza, Higiene, Hortifruti, Bazar, Pet).
-- **Exportação Profissional:**
-  - Planilha **XLSX**, **CSV** e **JSON**.
-- **Terminal de Logs ao Vivo:**
-  - Pré-visualização do encarte original direto no navegador.
+![System Architecture Flowchart](architecture_flowchart.png)
 
 ---
 
-## Estrutura do Projeto
+## ✨ Overview & Key Features
 
-<figure>
-  <img src="architecture_flowchart.png" alt="Fluxograma da Arquitetura" width="100%">
-  <figcaption align="center"><em>Fluxograma detalhado da arquitetura do projeto.</em></figcaption>
-</figure>
+**FlyerScout AI** automates the entire supermarket flyer auditing workflow. Built with an asynchronous FastAPI backend and a responsive modern Web Dashboard (Glassmorphism UI), it executes background tasks with real-time SSE streaming logs.
+
+- **📥 Decoupled 3-Stage Pipeline:**
+  - **1. Scrape Flyers (`scrape_only`):** Fetches recent Instagram posts from configured supermarket accounts and saves images & metadata to local disk cache (`data/scraped_images.json`).
+  - **2. Extract with Vision AI (`vision_only`):** Runs Multimodal LLMs exclusively on saved images without consuming scraping credits or re-fetching posts.
+  - **3. Full Pipeline (`full`):** Runs end-to-end extraction and automated export with one click.
+- **🧠 Multimodal Vision AI Engine:**
+  - **Google Gemini Flash (`gemini-flash-lite-latest`, `gemini-3.5-flash-lite`):** High speed, superior OCR precision, and automatic model fallback on demand spikes.
+  - **OpenAI GPT-4o / GPT-4o-mini:** Full support for OpenAI vision models.
+- **🪄 Canonical Product Name Normalizer (`core/normalizer.py`):**
+  - Cleans promotional noise (*"super sale"*, *"limited offer"*, *"buy 3 pay 2"*, *"today only"*).
+  - Normalizes unit measurements (*"350 ml"* ➔ `350ml`, *"1 kg"* ➔ `1kg`, *"1,5L"* ➔ `1.5L`).
+  - Recognizes and standardizes 70+ Brazilian supermarket brands (*Heineken, Omo, Tio João, Piracanjuba, Amstel, Coca-Cola, Qualy, etc.*).
+  - Unifies product descriptions into canonical names (`[Base Product] [Brand] [Package Size]`) to enable cross-store price matching.
+- **💾 Historical SQLite Database (`core/db.py`):**
+  - Stores batches (`runs`) and individual deals (`offers`) in `data/flyers_database.db`.
+  - Indexed for instant price comparisons and historical price tracking.
+- **📊 Cross-Market Price Comparator Dashboard:**
+  - Identifies the **Lowest Price** and **Cheapest Supermarket** for each product.
+  - Calculates potential savings percentage (**%**) and amount (**R$**).
+  - Displays side-by-side supermarket price chips with visual flyer previews.
+- **🖼️ Visual Flyer Gallery:**
+  - Responsive thumbnail gallery with image zoom preview and original Instagram post links.
+  - Individual **"🔬 Test with AI"** modal for real-time single-image verification.
+- **📈 Advanced Excel & CSV Exports:**
+  - Formatted `.xlsx` workbooks including a **Price Comparison Matrix** with soft green highlights on the lowest prices.
+
+---
+
+## 📁 Project Structure
 
 ```
-instagram_flyers_scraper/
-├── app.py                     # Servidor FastAPI com rotas REST e streaming SSE
-├── run.bat                    # Executável de 1 clique para Windows
-├── requirements.txt           # Dependências otimizadas
-├── .env.example               # Template de variáveis de ambiente
-├── .gitignore                 # Proteção contra vazamento de chaves e dados
-├── README.md                  # Documentação do projeto
+Weekly-Flyers-Scraper/
+├── app.py                     # FastAPI web server with REST endpoints & SSE streaming
+├── run.bat                    # 1-click Windows startup executable
+├── requirements.txt           # Python dependencies
+├── architecture_flowchart.png # Visual draw.io style architecture diagram
+├── .env.example               # Environment variables template
+├── .gitignore                 # Secret and runtime file protection
+├── README.md                  # Project documentation (English)
 ├── core/
-│   ├── config.py              # Gestão segura de chaves e perfis salvos
-│   ├── scraper.py             # Integração com Apify Instagram Scraper e filtros de data
-│   ├── vision_ai.py           # Motor de extração visual (Gemini, OpenAI, Qwen)
-│   ├── categorizer.py         # Classificador semântico de produtos de supermercado
-│   ├── exporter.py            # Geração de planilhas Excel (.xlsx) estilizadas
-│   └── task_runner.py         # Gerenciador de background tasks e streaming
+│   ├── config.py              # Secure credential management and profile persistence
+│   ├── scraper.py             # Apify Instagram scraper integration & date filters
+│   ├── vision_ai.py           # Multimodal vision extraction (Gemini / OpenAI) with fallback
+│   ├── normalizer.py          # Semantic product canonicalization & brand normalization
+│   ├── categorizer.py         # Heuristic retail category fallback classifier
+│   ├── db.py                  # SQLite database management & comparison queries
+│   ├── exporter.py            # Formatted Excel (.xlsx) comparison matrix & CSV exporter
+│   └── task_runner.py         # Background task worker and SSE log dispatcher
+├── data/                      # Local storage (gitignored: database, cache, config)
+├── output/                    # Generated Excel & CSV reports
 ├── static/
-│   ├── css/style.css          # Estilo moderno com tema escuro e glassmorphism
-│   └── js/app.js              # Lógica reativa do frontend e comunicação SSE
+│   ├── css/style.css          # Modern glassmorphism UI & responsive styles
+│   └── js/app.js              # Frontend logic, real-time SSE listener & comparator UI
 └── templates/
-    └── index.html             # Dashboard interativo
+    └── index.html             # Main dashboard template
 ```
 
 ---
 
-##  Como Executar
+## 🚀 Quick Start
 
-### 1. Pré-requisitos
-- Python 3.10 ou superior
-- Conta no [Apify](https://console.apify.com/) para obter seu `APIFY_TOKEN`.
-- Chave de API do [Google AI Studio](https://aistudio.google.com/app/apikey) para o Gemini (gratuito) ou [OpenAI](https://platform.openai.com/).
+### 1. Prerequisites
+- **Python 3.10+**
+- An [Apify](https://console.apify.com/) account for your `APIFY_TOKEN`.
+- A [Google AI Studio API Key](https://aistudio.google.com/app/apikey) for Gemini (Free tier available) or [OpenAI API Key](https://platform.openai.com/).
 
-### 2. Instalação e Inicialização no Windows
+### 2. Installation & Running
 
-Basta dar dois cliques no arquivo **`run.bat`** ou executar no terminal:
+```bash
+# 1. Clone repository
+git clone https://github.com/AVerz26/Weekly-Flyers-Scraper.git
+cd Weekly-Flyers-Scraper
 
-```powershell
-# Clone o repositório
-git clone https://github.com/averz26/instagram-flyers-scraper.git
-cd instagram-flyers-scraper
-
-# Instale as dependências
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# Inicie a aplicação
+# 3. Start the application
 python app.py
+# Or on Windows, double-click run.bat
 ```
 
-Abra o navegador no endereço: **`http://localhost:8000`**
+Open your browser and navigate to: **`http://localhost:8000`**
 
 ---
 
-## Configuração Inicial
+## ⚙️ Initial Configuration
 
-1. Na interface web, clique no botão **"⚙️ Configurações"** no topo.
-2. Insira o seu **Token do Apify** (`apify_api_...`).
-3. Insira sua **Chave do Google Gemini** (`AIzaSy...`).
-4. Clique em **Salvar Configurações**.
-5. No painel principal, selecione o período desejado e clique em **"🚀 Iniciar Extração"**.
-
----
-
-## Planilhas Geradas
-
-As planilhas são salvas automaticamente na pasta `output/` e ficam disponíveis para download direto.
-
-Estrutura das abas da planilha Excel:
-1. **Todas as Ofertas:** Lista completa com Supermercado, Categoria, Produto, Preço (R$), Data e Link do Encarte.
-2. **Por Supermercado:** Métricas de quantidade de itens, preço médio, menor e maior preço de cada mercado.
-3. **Por Categoria:** Média e menor preço encontrado por categoria de alimento.
+1. In the Web Dashboard, click **"⚙️ Configurações"** in the top navigation bar.
+2. Enter your **Apify Token** (`apify_api_...`) and **Google Gemini API Key** (`AIzaSy...`).
+3. Click **Save Settings**.
+4. In the **Profiles** modal, manage your monitored Instagram supermarket accounts.
+5. Use the top action buttons:
+   - **`1. Coletar Encartes`**: Scrapes and downloads flyer images to disk cache.
+   - **`2. Extrair c/ IA`**: Extracts deals and normalizes products from cached flyers without re-scraping.
+   - **`⚡ Pipeline Completo`**: Runs the complete automated pipeline from start to finish.
 
 ---
 
-## 🛡️ Licença & Autor
+## 📊 Generated Reports & Exports
 
-Desenvolvido por **André Verzoto** ([@averz26](https://github.com/averz26)).  
-Licença MIT.
+Exported files are automatically saved to `output/` and available for download directly in the UI:
+
+1. **`comparativo_precos_YYYY-MM-DD.xlsx`**: Cross-supermarket comparison matrix with products as rows and store prices as columns, highlighting the lowest available price in green.
+2. **`ofertas_YYYY-MM-DD.xlsx`**: Detailed deals catalog structured across 3 sheets (*All Offers*, *By Supermarket*, *By Category*).
+3. **`latest_results.csv` / `.json`**: Raw machine-readable feeds for database integration or analytics pipelines.
+
+---
+
+## 🛡️ License & Author
+
+Developed by **André Verzoto** ([@AVerz26](https://github.com/AVerz26)).  
+Released under the **MIT License**.
