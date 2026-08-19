@@ -1,9 +1,9 @@
 /**
- * FlyerScout AI - Frontend Application Logic
+ * Painel de Coleta de Encartes - Frontend Corporativo
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- ESTADO GLOBAL ---
+    // --- ESTADO ---
     let currentConfig = {};
     let currentProfiles = [];
     let currentOffers = [];
@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- ELEMENTOS DOM ---
     const statusBadge = document.getElementById('status-badge');
     const statusText = document.getElementById('status-text');
-    const badgeApify = document.getElementById('badge-apify');
-    const txtApify = document.getElementById('txt-apify');
-    const badgeAi = document.getElementById('badge-ai');
-    const txtAi = document.getElementById('txt-ai');
     const profilesCount = document.getElementById('profiles-count');
 
     const selectDateMode = document.getElementById('select-date-mode');
@@ -24,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputDateStart = document.getElementById('input-date-start');
     const inputDateEnd = document.getElementById('input-date-end');
     const inputPostLimit = document.getElementById('input-post-limit');
-    const selectAiEngine = document.getElementById('select-ai-engine');
     const btnStartScrape = document.getElementById('btn-start-scrape');
     const btnStopScrape = document.getElementById('btn-stop-scrape');
 
@@ -34,14 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBarFill = document.getElementById('progress-bar-fill');
     const progressStepDetail = document.getElementById('progress-step-detail');
 
-    // Stats
-    const statTotalItems = document.getElementById('stat-total-items');
-    const statTotalMarkets = document.getElementById('stat-total-markets');
-    const statAvgPrice = document.getElementById('stat-avg-price');
-    const statMinPrice = document.getElementById('stat-min-price');
+    // Tabela e Filtros
     const tabCountItems = document.getElementById('tab-count-items');
-
-    // Table & Filters
     const tableOffersBody = document.getElementById('table-offers-body');
     const inputSearchItems = document.getElementById('input-search-items');
     const filterCategory = document.getElementById('filter-category');
@@ -49,10 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnDownloadExcel = document.getElementById('btn-download-excel');
     const btnDownloadCsv = document.getElementById('btn-download-csv');
 
-    // Terminal
+    // Logs
     const terminalScreen = document.getElementById('terminal-screen');
     const chkAutoscroll = document.getElementById('chk-autoscroll');
     const btnClearLogs = document.getElementById('btn-clear-logs');
+    const historyContainer = document.getElementById('history-container');
 
     // Modals
     const btnOpenConfig = document.getElementById('btn-open-config');
@@ -65,10 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cfgApifyToken = document.getElementById('cfg-apify-token');
     const cfgVisionProvider = document.getElementById('cfg-vision-provider');
     const cfgGeminiKey = document.getElementById('cfg-gemini-key');
-    const cfgGeminiModel = document.getElementById('cfg-gemini-model');
     const cfgOpenaiKey = document.getElementById('cfg-openai-key');
     const groupGeminiKey = document.getElementById('group-gemini-key');
-    const groupGeminiModel = document.getElementById('group-gemini-model');
     const groupOpenaiKey = document.getElementById('group-openai-key');
     const btnSaveConfig = document.getElementById('btn-save-config');
 
@@ -82,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnResetDefaultProfiles = document.getElementById('btn-reset-default-profiles');
     const btnSaveProfiles = document.getElementById('btn-save-profiles');
 
-    // Image preview
+    // Preview
     const previewImgElement = document.getElementById('preview-img-element');
     const btnOpenOriginalImg = document.getElementById('btn-open-original-img');
     const btnOpenInstagramPost = document.getElementById('btn-open-instagram-post');
@@ -104,12 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- TABS ---
     function setupTabs() {
-        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabBtns = document.querySelectorAll('.tab-button');
         tabBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const targetTab = btn.getAttribute('data-tab');
                 tabBtns.forEach(b => b.classList.remove('active'));
-                document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(p => p.classList.remove('active'));
                 
                 btn.classList.add('active');
                 const pane = document.getElementById(targetTab);
@@ -134,17 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (modal) closeModal(modal);
             });
         });
-
-        // Toggle Eye para senhas
-        document.querySelectorAll('.btn-toggle-eye').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const targetId = btn.getAttribute('data-target');
-                const input = document.getElementById(targetId);
-                if (input) {
-                    input.type = input.type === 'password' ? 'text' : 'password';
-                }
-            });
-        });
     }
 
     function openModal(modal) {
@@ -157,106 +134,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- EVENT LISTENERS ---
     function setupEventListeners() {
-        // Date mode change
         selectDateMode.addEventListener('change', () => {
-            if (selectDateMode.value === 'custom') {
-                customDateInputs.style.display = 'grid';
-            } else {
-                customDateInputs.style.display = 'none';
-            }
+            customDateInputs.style.display = selectDateMode.value === 'custom' ? 'flex' : 'none';
         });
 
-        // Vision Provider change no modal
         cfgVisionProvider.addEventListener('change', () => {
             const prov = cfgVisionProvider.value;
             if (prov === 'gemini') {
                 groupGeminiKey.style.display = 'block';
-                groupGeminiModel.style.display = 'block';
                 groupOpenaiKey.style.display = 'none';
-            } else if (prov === 'openai') {
-                groupGeminiKey.style.display = 'none';
-                groupGeminiModel.style.display = 'none';
-                groupOpenaiKey.style.display = 'block';
             } else {
                 groupGeminiKey.style.display = 'none';
-                groupGeminiModel.style.display = 'none';
-                groupOpenaiKey.style.display = 'none';
+                groupOpenaiKey.style.display = 'block';
             }
         });
 
-        // Start & Stop
         btnStartScrape.addEventListener('click', startScraping);
         btnStopScrape.addEventListener('click', stopScraping);
-
-        // Save Config
         btnSaveConfig.addEventListener('click', saveConfiguration);
 
-        // Profiles Actions
         btnAddProfile.addEventListener('click', addNewProfile);
         btnSelectAllProfiles.addEventListener('click', () => toggleAllProfiles(true));
         btnDeselectAllProfiles.addEventListener('click', () => toggleAllProfiles(false));
         btnResetDefaultProfiles.addEventListener('click', resetDefaultProfiles);
         btnSaveProfiles.addEventListener('click', saveProfilesList);
 
-        // Table filters & search
         inputSearchItems.addEventListener('input', renderOffersTable);
         filterCategory.addEventListener('change', renderOffersTable);
         filterMarket.addEventListener('change', renderOffersTable);
 
-        // Clear terminal
-        btnClearLogs.addEventListener('click', () => {
-            terminalScreen.innerHTML = '<div class="log-line log-system">[SISTEMA] Logs limpos.</div>';
-        });
+        btnDownloadExcel.addEventListener('click', () => downloadFile('xlsx'));
+        btnDownloadCsv.addEventListener('click', () => downloadFile('csv'));
 
-        // Downloads
-        btnDownloadExcel.addEventListener('click', () => downloadFile('latest', 'xlsx'));
-        btnDownloadCsv.addEventListener('click', () => downloadFile('latest', 'csv'));
+        btnClearLogs.addEventListener('click', () => {
+            terminalScreen.innerHTML = '<div class="log-row log-sys">[SISTEMA] Console limpo.</div>';
+        });
     }
 
-    // --- API CALLS & CARREGAMENTO ---
-
+    // --- CONFIGURAÇÕES ---
     async function loadConfiguration() {
         try {
             const resp = await fetch('/api/config');
             const data = await resp.json();
             currentConfig = data;
 
-            // Atualiza indicadores do header
-            if (data.has_apify_token) {
-                badgeApify.className = 'pill-indicator ok';
-                txtApify.textContent = 'Conectado ✓';
-            } else {
-                badgeApify.className = 'pill-indicator missing';
-                txtApify.textContent = 'Pendente ⚠️';
-            }
-
-            const aiOk = (data.vision_provider === 'gemini' && data.has_gemini_key) ||
-                         (data.vision_provider === 'openai' && data.has_openai_key) ||
-                         (data.vision_provider === 'qwen');
-            if (aiOk) {
-                badgeAi.className = 'pill-indicator ok';
-                txtAi.textContent = `${data.vision_provider.toUpperCase()} ✓`;
-            } else {
-                badgeAi.className = 'pill-indicator missing';
-                txtAi.textContent = 'Sem Chave ⚠️';
-            }
-
-            // Preenche modal de config
             cfgApifyToken.value = data.apify_token_masked || '';
             cfgVisionProvider.value = data.vision_provider || 'gemini';
             cfgGeminiKey.value = data.gemini_api_key_masked || '';
-            cfgGeminiModel.value = data.gemini_model || 'gemini-1.5-flash';
             cfgOpenaiKey.value = data.openai_api_key_masked || '';
             cfgVisionProvider.dispatchEvent(new Event('change'));
 
-            // Preenche controles principais
-            selectAiEngine.value = data.vision_provider || 'gemini';
             selectDateMode.value = data.date_mode || 'yesterday_today';
             inputPostLimit.value = data.results_limit || 3;
             if (data.custom_start_date) inputDateStart.value = data.custom_start_date;
             if (data.custom_end_date) inputDateEnd.value = data.custom_end_date;
             selectDateMode.dispatchEvent(new Event('change'));
-
         } catch (e) {
             console.error('Erro ao carregar configurações:', e);
         }
@@ -268,7 +200,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 apify_token: cfgApifyToken.value.trim(),
                 vision_provider: cfgVisionProvider.value,
                 gemini_api_key: cfgGeminiKey.value.trim(),
-                gemini_model: cfgGeminiModel.value,
                 openai_api_key: cfgOpenaiKey.value.trim(),
                 date_mode: selectDateMode.value,
                 custom_start_date: inputDateStart.value,
@@ -283,17 +214,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (resp.ok) {
-                appendLog('[SISTEMA] Configurações e chaves salvas com sucesso!', 'log-success');
+                appendLog('[SISTEMA] Configurações atualizadas com sucesso.', 'log-success');
                 closeModal(modalConfig);
                 await loadConfiguration();
             } else {
-                alert('Falha ao salvar configurações.');
+                alert('Erro ao salvar configurações.');
             }
         } catch (e) {
-            alert('Erro ao salvar: ' + e.message);
+            alert('Erro: ' + e.message);
         }
     }
 
+    // --- PERFIS ---
     async function loadProfiles() {
         try {
             const resp = await fetch('/api/profiles');
@@ -311,19 +243,18 @@ document.addEventListener('DOMContentLoaded', () => {
         currentProfiles.forEach((p, idx) => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td class="text-center">
+                <td style="text-align: center;">
                     <input type="checkbox" class="chk-profile-active" data-idx="${idx}" ${p.enabled !== false ? 'checked' : ''}>
                 </td>
                 <td><strong>${escapeHtml(p.name)}</strong></td>
-                <td><a href="${escapeHtml(p.url)}" target="_blank" class="link-hint">${escapeHtml(p.url)}</a></td>
-                <td class="text-center">
-                    <button class="btn btn-ghost btn-xs text-danger btn-delete-profile" data-idx="${idx}" title="Excluir perfil">🗑️</button>
+                <td><span style="font-family: var(--font-mono); font-size: 11.5px; color: var(--text-secondary);">${escapeHtml(p.url)}</span></td>
+                <td style="text-align: center;">
+                    <button class="btn-text btn-delete-profile" data-idx="${idx}" style="color: var(--danger);">Remover</button>
                 </td>
             `;
             tableProfilesBody.appendChild(tr);
         });
 
-        // Eventos de toggle e delete
         tableProfilesBody.querySelectorAll('.chk-profile-active').forEach(chk => {
             chk.addEventListener('change', (e) => {
                 const i = parseInt(e.target.getAttribute('data-idx'));
@@ -350,12 +281,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function addNewProfile() {
         const name = newProfileName.value.trim();
         const url = newProfileUrl.value.trim();
-
         if (!name || !url) {
-            alert('Por favor, informe o nome e a URL do perfil do Instagram.');
+            alert('Informe o nome e a URL do perfil.');
             return;
         }
-
         currentProfiles.push({ name, url, enabled: true });
         newProfileName.value = '';
         newProfileUrl.value = '';
@@ -370,10 +299,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resetDefaultProfiles() {
-        if (confirm('Deseja restaurar a lista padrão de 11 supermercados?')) {
-            loadConfiguration().then(() => {
-                loadProfiles();
-            });
+        if (confirm('Restaurar lista de 11 supermercados padrão?')) {
+            loadConfiguration().then(() => loadProfiles());
         }
     }
 
@@ -385,21 +312,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({ profiles: currentProfiles })
             });
             if (resp.ok) {
-                appendLog(`[SISTEMA] Lista de perfis (${currentProfiles.length}) atualizada com sucesso.`, 'log-success');
+                appendLog(`[SISTEMA] Lista de perfis (${currentProfiles.length}) atualizada.`, 'log-success');
                 closeModal(modalProfiles);
             }
         } catch (e) {
-            alert('Erro ao salvar perfis: ' + e.message);
+            alert('Erro ao salvar: ' + e.message);
         }
     }
 
-    // --- SSE & LOG STREAMING ---
-
+    // --- SSE & LOGS ---
     function connectLogStream() {
-        if (eventSource) {
-            eventSource.close();
-        }
-
+        if (eventSource) eventSource.close();
         eventSource = new EventSource('/api/scrape/logs/stream');
 
         eventSource.onmessage = (e) => {
@@ -411,24 +334,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     updateStatusUI(data.status);
                 }
             } catch (err) {
-                console.error('Erro no parser SSE:', err);
+                console.error(err);
             }
         };
 
         eventSource.onerror = () => {
-            // Tenta reconectar em 3s
             setTimeout(connectLogStream, 3000);
         };
     }
 
-    function appendLog(line, className = '') {
+    function appendLog(line, customClass = '') {
         const div = document.createElement('div');
-        div.className = `log-line ${className}`;
+        div.className = `log-row ${customClass}`;
         
-        if (line.includes('❌') || line.includes('ERRO')) div.classList.add('log-error');
-        else if (line.includes('⚠️') || line.includes('WARN')) div.classList.add('log-warn');
-        else if (line.includes('✅') || line.includes('SUCESSO') || line.includes('✨')) div.classList.add('log-success');
-        else if (line.includes('[SISTEMA]') || line.includes('🚀')) div.classList.add('log-system');
+        if (line.includes('ERRO') || line.includes('❌')) div.classList.add('log-error');
+        else if (line.includes('WARN') || line.includes('⚠️')) div.classList.add('log-warn');
+        else if (line.includes('SUCESSO') || line.includes('✅') || line.includes('✨')) div.classList.add('log-success');
+        else if (line.includes('[SISTEMA]') || line.includes('🚀')) div.classList.add('log-sys');
 
         div.textContent = line;
         terminalScreen.appendChild(div);
@@ -440,13 +362,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateStatusUI(st) {
         if (!st) return;
-
         const wasRunning = isTaskRunning;
         isTaskRunning = st.is_running;
 
         if (st.is_running) {
             statusBadge.className = 'badge badge-running';
-            statusText.textContent = 'Executando...';
+            statusText.textContent = 'Em execução';
             btnStartScrape.style.display = 'none';
             btnStopScrape.style.display = 'inline-flex';
             progressWrapper.style.display = 'block';
@@ -465,20 +386,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 progressBarFill.style.width = '100%';
                 progressPercentage.textContent = '100%';
                 progressStepTitle.textContent = 'Concluído com Sucesso';
-                
-                // Se acabou de finalizar, recarrega dados automaticamente
                 if (wasRunning) {
                     loadLatestResults();
                     loadHistory();
                 }
             } else if (st.status === 'error') {
                 statusBadge.className = 'badge badge-error';
-                statusText.textContent = 'Erro';
+                statusText.textContent = 'Falha';
                 progressStepTitle.textContent = 'Erro na Execução';
                 progressStepDetail.textContent = st.error_message || 'Falha no processo';
             } else {
                 statusBadge.className = 'badge badge-idle';
-                statusText.textContent = 'Pronto';
+                statusText.textContent = 'Ocioso';
             }
         }
     }
@@ -490,7 +409,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 custom_start_date: inputDateStart.value,
                 custom_end_date: inputDateEnd.value,
                 results_limit: parseInt(inputPostLimit.value) || 3,
-                vision_provider: selectAiEngine.value
+                vision_provider: cfgVisionProvider.value
             };
 
             const resp = await fetch('/api/scrape/start', {
@@ -501,13 +420,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const data = await resp.json();
             if (resp.ok) {
-                appendLog('[SISTEMA] Processamento iniciado em segundo plano!', 'log-system');
-                // Alterna para aba de logs se estiver vazia
-                if (currentOffers.length === 0) {
-                    document.querySelector('[data-tab="tab-logs"]').click();
-                }
+                appendLog('[SISTEMA] Processamento iniciado em segundo plano.', 'log-sys');
+                document.querySelector('[data-tab="tab-logs"]').click();
             } else {
-                alert(data.message || 'Erro ao iniciar raspagem.');
+                alert(data.message || 'Erro ao iniciar coleta.');
             }
         } catch (e) {
             alert('Erro: ' + e.message);
@@ -515,20 +431,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function stopScraping() {
-        if (confirm('Deseja realmente cancelar o processo em andamento?')) {
+        if (confirm('Deseja interromper o processo em andamento?')) {
             await fetch('/api/scrape/stop', { method: 'POST' });
         }
     }
 
-    // --- CARREGAMENTO DE RESULTADOS & TABELA ---
-
+    // --- TABELA DE OFERTAS ---
     async function loadLatestResults() {
         try {
             const resp = await fetch('/api/results/latest');
             const data = await resp.json();
             currentOffers = data.items || [];
-            
-            updateStats(currentOffers, data.supermercados || []);
+            tabCountItems.textContent = currentOffers.length;
             populateFilterOptions(currentOffers);
             renderOffersTable();
         } catch (e) {
@@ -536,33 +450,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function updateStats(items, markets) {
-        statTotalItems.textContent = items.length;
-        tabCountItems.textContent = items.length;
-        
-        const marketSet = new Set(markets.length ? markets : items.map(i => i.supermercado));
-        statTotalMarkets.textContent = marketSet.size;
-
-        if (items.length > 0) {
-            const prices = items.map(i => parseFloat(i.valor)).filter(v => !isNaN(v) && v > 0);
-            if (prices.length > 0) {
-                const sum = prices.reduce((a, b) => a + b, 0);
-                const avg = sum / prices.length;
-                const min = Math.min(...prices);
-                statAvgPrice.textContent = formatCurrency(avg);
-                statMinPrice.textContent = formatCurrency(min);
-                return;
-            }
-        }
-        statAvgPrice.textContent = 'R$ 0,00';
-        statMinPrice.textContent = 'R$ 0,00';
-    }
-
     function populateFilterOptions(items) {
         const categories = [...new Set(items.map(i => i.categoria).filter(Boolean))].sort();
         const markets = [...new Set(items.map(i => i.supermercado).filter(Boolean))].sort();
 
-        filterCategory.innerHTML = '<option value="">Todas as Categorias</option>';
+        filterCategory.innerHTML = '<option value="">Todas as categorias</option>';
         categories.forEach(cat => {
             const opt = document.createElement('option');
             opt.value = cat;
@@ -570,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
             filterCategory.appendChild(opt);
         });
 
-        filterMarket.innerHTML = '<option value="">Todos os Mercados</option>';
+        filterMarket.innerHTML = '<option value="">Todos os supermercados</option>';
         markets.forEach(m => {
             const opt = document.createElement('option');
             opt.value = m;
@@ -598,12 +490,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (filtered.length === 0) {
             tableOffersBody.innerHTML = `
-                <tr class="empty-row">
-                    <td colspan="6">
-                        <div class="empty-state">
-                            <span class="empty-icon">🔍</span>
-                            <p>Nenhum produto encontrado com os filtros selecionados.</p>
-                        </div>
+                <tr>
+                    <td colspan="6" class="empty-state">
+                        Nenhum registro encontrado para os filtros selecionados.
                     </td>
                 </tr>
             `;
@@ -615,18 +504,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td><strong>${escapeHtml(item.supermercado)}</strong></td>
-                <td><span class="category-tag">${escapeHtml(item.categoria || 'Outros')}</span></td>
+                <td><span class="category-badge">${escapeHtml(item.categoria || 'Outros')}</span></td>
                 <td>${escapeHtml(item.item)}</td>
-                <td class="text-right"><span class="price-tag">${formatCurrency(item.valor)}</span></td>
+                <td class="text-right price-text">${formatCurrency(item.valor)}</td>
                 <td>${escapeHtml(item.data_postagem || '-')}</td>
                 <td class="text-center">
-                    ${item.link ? `<button class="btn btn-secondary btn-xs btn-preview-flyer" data-img="${escapeHtml(item.link)}" data-post="${escapeHtml(item.post_url || '')}" data-market="${escapeHtml(item.supermercado)}">🖼️ Ver</button>` : '-'}
+                    ${item.link ? `<button class="btn btn-outline btn-sm btn-preview-flyer" data-img="${escapeHtml(item.link)}" data-post="${escapeHtml(item.post_url || '')}" data-market="${escapeHtml(item.supermercado)}">Ver</button>` : '-'}
                 </td>
             `;
             tableOffersBody.appendChild(tr);
         });
 
-        // Eventos de preview
         tableOffersBody.querySelectorAll('.btn-preview-flyer').forEach(btn => {
             btn.addEventListener('click', () => {
                 const imgUrl = btn.getAttribute('data-img');
@@ -643,14 +531,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function loadHistory() {
-        const historyContainer = document.getElementById('history-container');
         try {
             const resp = await fetch('/api/results/history');
             const data = await resp.json();
             const history = data.history || [];
 
             if (history.length === 0) {
-                historyContainer.innerHTML = '<p class="text-muted text-center">Nenhuma planilha gerada anteriormente.</p>';
+                historyContainer.innerHTML = '<p class="empty-state">Nenhum arquivo histórico gerado.</p>';
                 return;
             }
 
@@ -660,29 +547,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.className = 'history-item';
                 div.innerHTML = `
                     <div>
-                        <strong>📊 ${escapeHtml(h.filename)}</strong>
-                        <div class="text-muted" style="font-size: 12px;">Gerado em: ${escapeHtml(h.date)} • ${h.size_kb} KB</div>
+                        <div class="history-name">${escapeHtml(h.filename)}</div>
+                        <div class="history-meta">Gerado em: ${escapeHtml(h.date)} • ${h.size_kb} KB</div>
                     </div>
-                    <a href="/api/download/${encodeURIComponent(h.filename)}" class="btn btn-primary btn-sm">
-                        📥 Baixar Excel
+                    <a href="/api/download/${encodeURIComponent(h.filename)}" class="btn btn-success btn-sm">
+                        Download (.xlsx)
                     </a>
                 `;
                 historyContainer.appendChild(div);
             });
         } catch (e) {
-            historyContainer.innerHTML = '<p class="text-danger">Erro ao carregar histórico.</p>';
+            historyContainer.innerHTML = '<p class="empty-state">Falha ao obter histórico.</p>';
         }
     }
 
-    function downloadFile(target, ext) {
+    function downloadFile(ext) {
         if (currentOffers.length === 0) {
-            alert('Nenhum dado disponível para download. Execute uma extração primeiro.');
+            alert('Nenhum dado disponível para download.');
             return;
         }
-        window.location.href = `/api/download/latest_results.${ext === 'xlsx' ? 'xlsx' : 'csv'}`;
+        window.location.href = `/api/download/latest_results.${ext}`;
     }
 
-    // --- HELPERS ---
     function formatCurrency(val) {
         if (val === undefined || val === null || isNaN(val)) return 'R$ 0,00';
         return parseFloat(val).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
