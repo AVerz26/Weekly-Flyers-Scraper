@@ -4,9 +4,10 @@ venv/
 env/
 ENV/
 
-# Arquivos de Configuração e Segredos (NUNCA VERSIONAR)
+# Arquivos de Configuração Local e Segredos (NUNCA VERSIONAR)
 .env
 .env.local
+data/config.json
 data/secrets.json
 
 # Cache do Python
