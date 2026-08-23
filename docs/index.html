@@ -95,6 +95,12 @@
                         <input type="text" id="search-input" placeholder="Buscar produto ou supermercado..."
                             class="form-control search-input">
                     </div>
+                    <select id="filter-date" class="form-control select-sm">
+                        <option value="">📅 Todas as Datas</option>
+                        <option value="today">✨ Postados Hoje</option>
+                        <option value="last_3_days">🕒 Últimos 3 Dias</option>
+                        <option value="last_7_days">🗓️ Últimos 7 Dias</option>
+                    </select>
                     <select id="filter-market" class="form-control select-sm">
                         <option value="">Todos os Supermercados</option>
                     </select>
@@ -102,7 +108,7 @@
                         <option value="">Todas as Categorias</option>
                     </select>
                     <select id="sort-order" class="form-control select-sm">
-                        <option value="diff-desc">Maior Diferença de Preço (Economia)</option>
+                        <option value="diff-desc">Maior Economia (R$)</option>
                         <option value="price-asc">Menor Preço ➔ Maior</option>
                         <option value="price-desc">Maior Preço ➔ Menor</option>
                         <option value="name-asc">Produto (A-Z)</option>

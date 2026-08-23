@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabCountCompared = document.getElementById('tab-count-compared');
 
     const searchInput = document.getElementById('search-input');
+    const filterDate = document.getElementById('filter-date');
     const filterMarket = document.getElementById('filter-market');
     const filterCategory = document.getElementById('filter-category');
     const sortOrder = document.getElementById('sort-order');
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setupEventListeners() {
         searchInput.addEventListener('input', applyFilters);
+        if (filterDate) filterDate.addEventListener('change', applyFilters);
         filterMarket.addEventListener('change', applyFilters);
         filterCategory.addEventListener('change', applyFilters);
         sortOrder.addEventListener('change', applyFilters);
@@ -178,9 +180,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function parseDateString(str) {
+        if (!str) return null;
+        try {
+            if (str.includes('/')) {
+                const parts = str.split('/');
+                return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
+            }
+            return new Date(str);
+        } catch (e) {
+            return null;
+        }
+    }
+
     function populateDropdowns(items) {
         const markets = [...new Set(items.map(i => i.supermercado).filter(Boolean))].sort();
         const categories = [...new Set(items.map(i => i.categoria).filter(Boolean))].sort();
+        const dates = [...new Set(items.map(i => i.data_postagem).filter(Boolean))].sort((a, b) => {
+            const dA = parseDateString(a) || new Date(0);
+            const dB = parseDateString(b) || new Date(0);
+            return dB - dA;
+        });
+
+        if (filterDate) {
+            filterDate.innerHTML = `
+                <option value="">📅 Todas as Datas</option>
+                <option value="today">✨ Postados Hoje</option>
+                <option value="last_3_days">🕒 Últimos 3 Dias</option>
+                <option value="last_7_days">🗓️ Últimos 7 Dias</option>
+            `;
+            if (dates.length > 0) {
+                const optGroup = document.createElement('optgroup');
+                optGroup.label = 'Datas Específicas';
+                dates.forEach(d => {
+                    const opt = document.createElement('option');
+                    opt.value = d;
+                    opt.textContent = `📅 ${d}`;
+                    optGroup.appendChild(opt);
+                });
+                filterDate.appendChild(optGroup);
+            }
+        }
 
         filterMarket.innerHTML = '<option value="">Todos os Supermercados</option>';
         markets.forEach(m => {
@@ -284,13 +324,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function applyFilters() {
         const query = searchInput.value.toLowerCase().trim();
+        const selectedDate = filterDate ? filterDate.value : '';
         const selectedMkt = filterMarket.value;
         const selectedCat = filterCategory.value;
         const order = sortOrder.value;
         const multiOnly = chkMultiMarketOnly ? chkMultiMarketOnly.checked : false;
 
+        const now = new Date();
+        now.setHours(23, 59, 59, 999);
+        const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
         // 1. Filtra Lista Geral de Ofertas
         let filteredOffers = allOffers.filter(item => {
+            // Checagem de Data
+            let matchDate = true;
+            if (selectedDate) {
+                const itemDate = parseDateString(item.data_postagem);
+                if (selectedDate === 'today') {
+                    matchDate = itemDate && itemDate >= todayStart;
+                } else if (selectedDate === 'last_3_days') {
+                    const d3 = new Date(todayStart);
+                    d3.setDate(d3.getDate() - 2);
+                    matchDate = itemDate && itemDate >= d3;
+                } else if (selectedDate === 'last_7_days') {
+                    const d7 = new Date(todayStart);
+                    d7.setDate(d7.getDate() - 6);
+                    matchDate = itemDate && itemDate >= d7;
+                } else {
+                    matchDate = item.data_postagem === selectedDate;
+                }
+            }
+
             const matchQuery = !query || 
                 (item.item && item.item.toLowerCase().includes(query)) ||
                 (item.supermercado && item.supermercado.toLowerCase().includes(query)) ||
@@ -299,8 +363,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const matchMkt = !selectedMkt || item.supermercado === selectedMkt;
             const matchCat = !selectedCat || item.categoria === selectedCat;
 
-            return matchQuery && matchMkt && matchCat;
+            return matchDate && matchQuery && matchMkt && matchCat;
         });
+
+        // Atualiza contadores e agrupamento dinâmico baseado na data filtrada
+        tabCountItems.textContent = filteredOffers.length.toLocaleString('pt-BR');
+        processProductGrouping(filteredOffers);
 
         // Ordenação de Ofertas
         filteredOffers.sort((a, b) => {
@@ -313,6 +381,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         renderOffersTable(filteredOffers);
+        renderMarketSummary(filteredOffers);
+        renderCategorySummary(filteredOffers);
 
         // 2. Filtra Lista de Comparativo de Produtos
         let filteredGroups = groupedProducts.filter(group => {
