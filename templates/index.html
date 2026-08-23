@@ -18,8 +18,8 @@
                 <div class="brand">
                     <div class="brand-badge"></div>
                     <div>
-                        <h1 class="brand-title">Coleta de Encartes</h1>
-                        <span class="brand-subtitle">Monitoramento de preços e ofertas do varejo</span>
+                        <h1 class="brand-title">Coleta de Encartes & Automação</h1>
+                        <span class="brand-subtitle">Monitoramento inteligente de preços e ofertas do varejo</span>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                     Perfis Monitorados (<span id="profiles-count">11</span>)
                 </button>
                 <button class="btn btn-outline" id="btn-open-config">
-                    Configurações
+                    ⚙️ Configurações & Telegram
                 </button>
             </div>
         </header>
@@ -75,10 +75,10 @@
 
                     <div class="control-actions">
                         <button id="btn-start-scrape" class="btn btn-primary">
-                            Executar Coleta
+                            ▶️ Executar Coleta Manual
                         </button>
                         <button id="btn-stop-scrape" class="btn btn-danger" style="display: none;">
-                            Interromper
+                            ⏹️ Interromper
                         </button>
                     </div>
                 </div>
@@ -101,18 +101,21 @@
                 <div class="panel-header">
                     <div class="tabs-nav">
                         <button class="tab-button active" data-tab="tab-results">
-                            Ofertas Extraídas (<span id="tab-count-items">0</span>)
+                            Última Coleta (<span id="tab-count-items">0</span>)
+                        </button>
+                        <button class="tab-button" data-tab="tab-database">
+                            💾 Banco de Dados (<span id="tab-count-db">0</span>)
                         </button>
                         <button class="tab-button" data-tab="tab-logs">
-                            Registro de Execução
+                            Console de Logs
                         </button>
                         <button class="tab-button" data-tab="tab-history">
-                            Arquivos Gerados
+                            Planilhas Geradas
                         </button>
                     </div>
 
                     <div class="tab-actions" id="results-actions">
-                        <input type="text" id="input-search-items" placeholder="Filtrar por produto ou mercado..." class="form-control input-sm search-input">
+                        <input type="text" id="input-search-items" placeholder="Buscar produto ou mercado..." class="form-control input-sm search-input">
                         <select id="filter-category" class="form-control input-sm filter-select">
                             <option value="">Todas as categorias</option>
                         </select>
@@ -120,33 +123,46 @@
                             <option value="">Todos os supermercados</option>
                         </select>
                         <button id="btn-download-excel" class="btn btn-success btn-sm">
-                            Exportar Excel (.xlsx)
+                            📥 Baixar Excel (.xlsx)
                         </button>
                         <button id="btn-download-csv" class="btn btn-outline btn-sm">
                             CSV
                         </button>
                     </div>
+
+                    <div class="tab-actions" id="database-actions" style="display: none;">
+                        <input type="text" id="input-search-db" placeholder="Buscar no banco de dados..." class="form-control input-sm search-input">
+                        <select id="filter-db-market" class="form-control input-sm filter-select">
+                            <option value="">Todos os mercados</option>
+                        </select>
+                        <button id="btn-refresh-db" class="btn btn-outline btn-sm">
+                            🔄 Atualizar
+                        </button>
+                        <a id="btn-download-db" href="/api/database/download" class="btn btn-primary btn-sm" download>
+                            💾 Baixar SQLite (.db)
+                        </a>
+                    </div>
                 </div>
 
                 <div class="panel-body">
-                    <!-- ABA 1: TABELA DE OFERTAS -->
+                    <!-- ABA 1: TABELA DE OFERTAS DA ÚLTIMA EXECUÇÃO -->
                     <div id="tab-results" class="tab-content active">
                         <div class="table-responsive">
                             <table class="table" id="table-offers">
                                 <thead>
                                     <tr>
-                                        <th style="width: 220px;">Supermercado</th>
-                                        <th style="width: 180px;">Categoria</th>
+                                        <th style="width: 200px;">Supermercado</th>
+                                        <th style="width: 170px;">Categoria</th>
                                         <th>Produto / Descrição</th>
                                         <th style="width: 110px;" class="text-right">Preço</th>
-                                        <th style="width: 110px;">Data</th>
+                                        <th style="width: 110px;">Data Post</th>
                                         <th style="width: 100px;" class="text-center">Encarte</th>
                                     </tr>
                                 </thead>
                                 <tbody id="table-offers-body">
                                     <tr>
                                         <td colspan="6" class="empty-state">
-                                            Nenhum dado carregado. Selecione o período e clique em <strong>"Executar Coleta"</strong> para iniciar o processo.
+                                            Nenhum dado carregado. Selecione o período e clique em <strong>"Executar Coleta Manual"</strong> ou aguarde a automação diária.
                                         </td>
                                     </tr>
                                 </tbody>
@@ -154,7 +170,51 @@
                         </div>
                     </div>
 
-                    <!-- ABA 2: LOGS DO SISTEMA -->
+                    <!-- ABA 2: BANCO DE DADOS PERSISTIDO & DEDUPLICADO -->
+                    <div id="tab-database" class="tab-content">
+                        <div class="db-summary-cards" style="display: flex; gap: 15px; margin-bottom: 15px;">
+                            <div class="card-metric" style="flex: 1; background: var(--bg-subtle); padding: 12px 16px; border-radius: var(--radius); border: 1px solid var(--border-color);">
+                                <span style="font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Total de Ofertas Únicas</span>
+                                <div style="font-size: 20px; font-weight: 700; color: var(--primary);" id="db-stat-total">0</div>
+                            </div>
+                            <div class="card-metric" style="flex: 1; background: var(--bg-subtle); padding: 12px 16px; border-radius: var(--radius); border: 1px solid var(--border-color);">
+                                <span style="font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Supermercados Registrados</span>
+                                <div style="font-size: 20px; font-weight: 700; color: var(--text-primary);" id="db-stat-markets">0</div>
+                            </div>
+                            <div class="card-metric" style="flex: 1; background: var(--bg-subtle); padding: 12px 16px; border-radius: var(--radius); border: 1px solid var(--border-color);">
+                                <span style="font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Categorias Identificadas</span>
+                                <div style="font-size: 20px; font-weight: 700; color: var(--text-primary);" id="db-stat-categories">0</div>
+                            </div>
+                            <div class="card-metric" style="flex: 1; background: var(--bg-subtle); padding: 12px 16px; border-radius: var(--radius); border: 1px solid var(--border-color);">
+                                <span style="font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Execuções Realizadas</span>
+                                <div style="font-size: 20px; font-weight: 700; color: var(--success);" id="db-stat-runs">0</div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table" id="table-db-offers">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 70px;">ID</th>
+                                        <th style="width: 190px;">Supermercado</th>
+                                        <th style="width: 150px;">Categoria</th>
+                                        <th>Produto</th>
+                                        <th style="width: 110px;" class="text-right">Preço</th>
+                                        <th style="width: 100px;">Data Post</th>
+                                        <th style="width: 130px;">Coletado em</th>
+                                        <th style="width: 80px;" class="text-center">Encarte</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-db-offers-body">
+                                    <tr>
+                                        <td colspan="8" class="empty-state">Carregando dados do banco de dados...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- ABA 3: LOGS DO SISTEMA -->
                     <div id="tab-logs" class="tab-content">
                         <div class="logs-toolbar">
                             <span class="logs-title">Console de execução em tempo real</span>
@@ -170,7 +230,7 @@
                         </div>
                     </div>
 
-                    <!-- ABA 3: HISTÓRICO DE ARQUIVOS -->
+                    <!-- ABA 4: HISTÓRICO DE ARQUIVOS -->
                     <div id="tab-history" class="tab-content">
                         <div class="history-list" id="history-container">
                             <p class="empty-state">Nenhum arquivo histórico registrado.</p>
@@ -182,30 +242,35 @@
 
         <!-- RODAPÉ DISCRETO -->
         <footer class="footer">
-            <span>Sistema de Coleta e Análise de Encartes</span>
-            <span class="footer-meta">Ambiente Local • Mantiqueira</span>
+            <span>Sistema de Coleta e Análise de Encartes • Grupo Mantiqueira</span>
+            <span class="footer-meta">Automação Diária em Nuvem (GitHub Actions / Cloud)</span>
         </footer>
     </div>
 
-    <!-- MODAL DE CONFIGURAÇÕES (CREDENCIAS PROTEGIDAS) -->
+    <!-- MODAL DE CONFIGURAÇÕES (CREDENCIAS E TELEGRAM) -->
     <div id="modal-config" class="modal-backdrop" style="display: none;">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-large">
             <div class="modal-header">
-                <h3>Configurações de Acesso e Integração</h3>
+                <h3>Configurações de Integração & Telegram</h3>
                 <button class="modal-close" data-close="modal-config">&times;</button>
             </div>
             <div class="modal-body">
                 <form id="form-config">
+                    <!-- SEÇÃO 1: APIs DE RASPAGEM E IA -->
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--primary); margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                        1. Scraping & Inteligência Artificial
+                    </h4>
+
                     <div class="form-group">
                         <label for="cfg-apify-token">Token da API Apify</label>
                         <input type="password" id="cfg-apify-token" class="form-control" placeholder="••••••••••••••••••••••••••••••••">
-                        <span class="form-hint">Necessário para a coleta automatizada de postagens do Instagram.</span>
+                        <span class="form-hint">Necessário para a coleta automatizada de posts do Instagram via Apify Actor.</span>
                     </div>
 
                     <div class="form-group">
-                        <label for="cfg-vision-provider">Provedor de Visão Computacional</label>
+                        <label for="cfg-vision-provider">Motor de Visão Computacional</label>
                         <select id="cfg-vision-provider" class="form-control">
-                            <option value="gemini" selected>Google Gemini (Recomendado)</option>
+                            <option value="gemini" selected>Google Gemini (Recomendado - 1.5 Flash)</option>
                             <option value="openai">OpenAI GPT-4o-mini</option>
                         </select>
                     </div>
@@ -220,8 +285,43 @@
                         <input type="password" id="cfg-openai-key" class="form-control" placeholder="••••••••••••••••••••••••••••••••">
                     </div>
 
+                    <!-- SEÇÃO 2: TELEGRAM BOT NOTIFICATIONS -->
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--primary); margin-top: 20px; margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                        2. Notificações no Telegram
+                    </h4>
+
+                    <div class="form-group">
+                        <label for="cfg-telegram-token">Token do Bot do Telegram</label>
+                        <input type="password" id="cfg-telegram-token" class="form-control" placeholder="ex: 7123456789:AAFxxx... (obtido com @BotFather)">
+                        <span class="form-hint">Crie seu bot no Telegram conversando com @BotFather e cole o token aqui.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cfg-telegram-chat-id">Chat ID / Canal do Telegram</label>
+                        <input type="text" id="cfg-telegram-chat-id" class="form-control" placeholder="ex: 123456789 ou @meu_canal ou -100123456789">
+                        <span class="form-hint">ID do seu usuário, grupo ou nome do canal para receber o resumo e a planilha Excel.</span>
+                    </div>
+
+                    <div style="display: flex; gap: 20px; margin-top: 10px; margin-bottom: 15px;">
+                        <label class="checkbox-container" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="checkbox" id="cfg-telegram-enabled" checked> 
+                            <span>Ativar envio de alertas diários</span>
+                        </label>
+                        <label class="checkbox-container" style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="checkbox" id="cfg-telegram-send-excel" checked> 
+                            <span>Anexar planilha Excel no Telegram</span>
+                        </label>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <button type="button" id="btn-test-telegram" class="btn btn-outline btn-sm">
+                            📲 Testar Envio no Telegram
+                        </button>
+                        <span id="telegram-test-feedback" style="font-size: 12px; font-weight: 500;"></span>
+                    </div>
+
                     <div class="security-note">
-                        <strong>Segurança:</strong> As chaves são criptografadas e gravadas somente no arquivo local de ambiente e não são trafegadas para repositórios externos.
+                        <strong>Segurança:</strong> As chaves são gravadas localmente no arquivo de configuração do sistema e não são expostas publicamente.
                     </div>
                 </form>
             </div>
@@ -265,7 +365,7 @@
                 <div class="profile-actions-bar">
                     <button id="btn-select-all-profiles" class="btn-text">Marcar todos</button>
                     <button id="btn-deselect-all-profiles" class="btn-text">Desmarcar todos</button>
-                    <button id="btn-reset-default-profiles" class="btn-text">Restaurar 11 perfis padrão</button>
+                    <button id="btn-reset-default-profiles" class="btn-text">Restaurar perfis padrão</button>
                 </div>
             </div>
             <div class="modal-footer">

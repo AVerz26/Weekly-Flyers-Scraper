@@ -1,5 +1,5 @@
 /**
- * Painel de Coleta de Encartes - Frontend Corporativo
+ * Painel de Coleta de Encartes - Frontend Corporativo & Automação
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentConfig = {};
     let currentProfiles = [];
     let currentOffers = [];
+    let dbOffers = [];
     let eventSource = null;
     let isTaskRunning = false;
 
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBarFill = document.getElementById('progress-bar-fill');
     const progressStepDetail = document.getElementById('progress-step-detail');
 
-    // Tabela e Filtros
+    // Tabela e Filtros da Última Coleta
     const tabCountItems = document.getElementById('tab-count-items');
     const tableOffersBody = document.getElementById('table-offers-body');
     const inputSearchItems = document.getElementById('input-search-items');
@@ -37,8 +38,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterMarket = document.getElementById('filter-market');
     const btnDownloadExcel = document.getElementById('btn-download-excel');
     const btnDownloadCsv = document.getElementById('btn-download-csv');
+    const resultsActions = document.getElementById('results-actions');
+    const databaseActions = document.getElementById('database-actions');
 
-    // Logs
+    // Banco de Dados
+    const tabCountDb = document.getElementById('tab-count-db');
+    const dbStatTotal = document.getElementById('db-stat-total');
+    const dbStatMarkets = document.getElementById('db-stat-markets');
+    const dbStatCategories = document.getElementById('db-stat-categories');
+    const dbStatRuns = document.getElementById('db-stat-runs');
+    const tableDbOffersBody = document.getElementById('table-db-offers-body');
+    const inputSearchDb = document.getElementById('input-search-db');
+    const filterDbMarket = document.getElementById('filter-db-market');
+    const btnRefreshDb = document.getElementById('btn-refresh-db');
+
+    // Logs e Histórico
     const terminalScreen = document.getElementById('terminal-screen');
     const chkAutoscroll = document.getElementById('chk-autoscroll');
     const btnClearLogs = document.getElementById('btn-clear-logs');
@@ -58,6 +72,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const cfgOpenaiKey = document.getElementById('cfg-openai-key');
     const groupGeminiKey = document.getElementById('group-gemini-key');
     const groupOpenaiKey = document.getElementById('group-openai-key');
+    
+    // Telegram Form
+    const cfgTelegramToken = document.getElementById('cfg-telegram-token');
+    const cfgTelegramChatId = document.getElementById('cfg-telegram-chat-id');
+    const cfgTelegramEnabled = document.getElementById('cfg-telegram-enabled');
+    const cfgTelegramSendExcel = document.getElementById('cfg-telegram-send-excel');
+    const btnTestTelegram = document.getElementById('btn-test-telegram');
+    const telegramTestFeedback = document.getElementById('telegram-test-feedback');
     const btnSaveConfig = document.getElementById('btn-save-config');
 
     // Profiles form
@@ -86,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await loadConfiguration();
         await loadProfiles();
         await loadLatestResults();
+        await loadDatabaseData();
         await loadHistory();
         connectLogStream();
     }
@@ -103,6 +126,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 const pane = document.getElementById(targetTab);
                 if (pane) pane.classList.add('active');
                 
+                // Mostra a barra de ações correspondente
+                if (targetTab === 'tab-results') {
+                    resultsActions.style.display = 'flex';
+                    databaseActions.style.display = 'none';
+                } else if (targetTab === 'tab-database') {
+                    resultsActions.style.display = 'none';
+                    databaseActions.style.display = 'flex';
+                    loadDatabaseData();
+                } else {
+                    resultsActions.style.display = 'none';
+                    databaseActions.style.display = 'none';
+                }
+
                 if (targetTab === 'tab-history') {
                     loadHistory();
                 }
@@ -153,6 +189,8 @@ document.addEventListener('DOMContentLoaded', () => {
         btnStopScrape.addEventListener('click', stopScraping);
         btnSaveConfig.addEventListener('click', saveConfiguration);
 
+        btnTestTelegram.addEventListener('click', testTelegramConnection);
+
         btnAddProfile.addEventListener('click', addNewProfile);
         btnSelectAllProfiles.addEventListener('click', () => toggleAllProfiles(true));
         btnDeselectAllProfiles.addEventListener('click', () => toggleAllProfiles(false));
@@ -162,6 +200,10 @@ document.addEventListener('DOMContentLoaded', () => {
         inputSearchItems.addEventListener('input', renderOffersTable);
         filterCategory.addEventListener('change', renderOffersTable);
         filterMarket.addEventListener('change', renderOffersTable);
+
+        inputSearchDb.addEventListener('input', renderDatabaseTable);
+        filterDbMarket.addEventListener('change', renderDatabaseTable);
+        btnRefreshDb.addEventListener('click', loadDatabaseData);
 
         btnDownloadExcel.addEventListener('click', () => downloadFile('xlsx'));
         btnDownloadCsv.addEventListener('click', () => downloadFile('csv'));
@@ -184,6 +226,11 @@ document.addEventListener('DOMContentLoaded', () => {
             cfgOpenaiKey.value = data.openai_api_key_masked || '';
             cfgVisionProvider.dispatchEvent(new Event('change'));
 
+            cfgTelegramToken.value = data.telegram_token_masked || '';
+            cfgTelegramChatId.value = data.telegram_chat_id || '';
+            cfgTelegramEnabled.checked = data.telegram_enabled !== false;
+            cfgTelegramSendExcel.checked = data.telegram_send_excel !== false;
+
             selectDateMode.value = data.date_mode || 'yesterday_today';
             inputPostLimit.value = data.results_limit || 3;
             if (data.custom_start_date) inputDateStart.value = data.custom_start_date;
@@ -201,6 +248,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 vision_provider: cfgVisionProvider.value,
                 gemini_api_key: cfgGeminiKey.value.trim(),
                 openai_api_key: cfgOpenaiKey.value.trim(),
+                telegram_token: cfgTelegramToken.value.trim(),
+                telegram_chat_id: cfgTelegramChatId.value.trim(),
+                telegram_enabled: cfgTelegramEnabled.checked,
+                telegram_send_excel: cfgTelegramSendExcel.checked,
                 date_mode: selectDateMode.value,
                 custom_start_date: inputDateStart.value,
                 custom_end_date: inputDateEnd.value,
@@ -222,6 +273,39 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (e) {
             alert('Erro: ' + e.message);
+        }
+    }
+
+    async function testTelegramConnection() {
+        telegramTestFeedback.style.color = 'var(--text-muted)';
+        telegramTestFeedback.textContent = 'Enviando mensagem de teste...';
+        btnTestTelegram.disabled = true;
+
+        try {
+            const payload = {
+                telegram_token: cfgTelegramToken.value.trim(),
+                telegram_chat_id: cfgTelegramChatId.value.trim()
+            };
+
+            const resp = await fetch('/api/telegram/test', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            const data = await resp.json();
+
+            if (resp.ok) {
+                telegramTestFeedback.style.color = 'var(--success)';
+                telegramTestFeedback.textContent = '✅ ' + data.message;
+            } else {
+                telegramTestFeedback.style.color = 'var(--danger)';
+                telegramTestFeedback.textContent = '❌ ' + (data.message || 'Falha no teste');
+            }
+        } catch (e) {
+            telegramTestFeedback.style.color = 'var(--danger)';
+            telegramTestFeedback.textContent = '❌ Erro: ' + e.message;
+        } finally {
+            btnTestTelegram.disabled = false;
         }
     }
 
@@ -299,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resetDefaultProfiles() {
-        if (confirm('Restaurar lista de 11 supermercados padrão?')) {
+        if (confirm('Restaurar lista de supermercados padrão?')) {
             loadConfiguration().then(() => loadProfiles());
         }
     }
@@ -318,6 +402,85 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (e) {
             alert('Erro ao salvar: ' + e.message);
         }
+    }
+
+    // --- BANCO DE DADOS PERSISTIDO ---
+    async function loadDatabaseData() {
+        try {
+            // Carrega Estatísticas
+            const respStats = await fetch('/api/database/stats');
+            const stats = await respStats.json();
+            dbStatTotal.textContent = (stats.total_offers || 0).toLocaleString('pt-BR');
+            dbStatMarkets.textContent = (stats.total_supermercados || 0).toLocaleString('pt-BR');
+            dbStatCategories.textContent = (stats.total_categorias || 0).toLocaleString('pt-BR');
+            dbStatRuns.textContent = (stats.total_runs || 0).toLocaleString('pt-BR');
+            tabCountDb.textContent = (stats.total_offers || 0).toLocaleString('pt-BR');
+
+            // Carrega Ofertas Persistidas
+            const respOffers = await fetch('/api/database/offers?limit=300');
+            const offersData = await respOffers.json();
+            dbOffers = offersData.items || [];
+            
+            // Popula filtro de mercados no BD
+            const dbMarkets = [...new Set(dbOffers.map(i => i.supermercado).filter(Boolean))].sort();
+            filterDbMarket.innerHTML = '<option value="">Todos os mercados</option>';
+            dbMarkets.forEach(m => {
+                const opt = document.createElement('option');
+                opt.value = m;
+                opt.textContent = m;
+                filterDbMarket.appendChild(opt);
+            });
+
+            renderDatabaseTable();
+        } catch (e) {
+            console.error('Erro ao carregar dados do banco:', e);
+        }
+    }
+
+    function renderDatabaseTable() {
+        const query = inputSearchDb.value.toLowerCase().trim();
+        const selectedMkt = filterDbMarket.value;
+
+        const filtered = dbOffers.filter(item => {
+            const matchesQuery = !query || 
+                (item.item && item.item.toLowerCase().includes(query)) ||
+                (item.supermercado && item.supermercado.toLowerCase().includes(query)) ||
+                (item.categoria && item.categoria.toLowerCase().includes(query));
+
+            const matchesMkt = !selectedMkt || item.supermercado === selectedMkt;
+            return matchesQuery && matchesMkt;
+        });
+
+        if (filtered.length === 0) {
+            tableDbOffersBody.innerHTML = `
+                <tr>
+                    <td colspan="8" class="empty-state">
+                        Nenhum registro encontrado no banco de dados.
+                    </td>
+                </tr>
+            `;
+            return;
+        }
+
+        tableDbOffersBody.innerHTML = '';
+        filtered.forEach(item => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><span style="font-family: var(--font-mono); color: var(--text-muted); font-size: 11px;">#${item.id}</span></td>
+                <td><strong>${escapeHtml(item.supermercado)}</strong></td>
+                <td><span class="category-badge">${escapeHtml(item.categoria || 'Outros')}</span></td>
+                <td>${escapeHtml(item.item)}</td>
+                <td class="text-right price-text">${formatCurrency(item.valor)}</td>
+                <td>${escapeHtml(item.data_postagem || '-')}</td>
+                <td><span style="font-size: 11.5px; color: var(--text-secondary);">${escapeHtml(item.created_at ? item.created_at.substring(0, 16) : '-')}</span></td>
+                <td class="text-center">
+                    ${item.link ? `<button class="btn btn-outline btn-sm btn-preview-flyer" data-img="${escapeHtml(item.link)}" data-post="${escapeHtml(item.post_url || '')}" data-market="${escapeHtml(item.supermercado)}">Ver</button>` : '-'}
+                </td>
+            `;
+            tableDbOffersBody.appendChild(tr);
+        });
+
+        bindPreviewButtons(tableDbOffersBody);
     }
 
     // --- SSE & LOGS ---
@@ -349,8 +512,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (line.includes('ERRO') || line.includes('❌')) div.classList.add('log-error');
         else if (line.includes('WARN') || line.includes('⚠️')) div.classList.add('log-warn');
-        else if (line.includes('SUCESSO') || line.includes('✅') || line.includes('✨')) div.classList.add('log-success');
-        else if (line.includes('[SISTEMA]') || line.includes('🚀')) div.classList.add('log-sys');
+        else if (line.includes('SUCESSO') || line.includes('✅') || line.includes('✨') || line.includes('🎉')) div.classList.add('log-success');
+        else if (line.includes('[SISTEMA]') || line.includes('🚀') || line.includes('💾') || line.includes('📲')) div.classList.add('log-sys');
 
         div.textContent = line;
         terminalScreen.appendChild(div);
@@ -388,6 +551,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 progressStepTitle.textContent = 'Concluído com Sucesso';
                 if (wasRunning) {
                     loadLatestResults();
+                    loadDatabaseData();
                     loadHistory();
                 }
             } else if (st.status === 'error') {
@@ -420,7 +584,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const data = await resp.json();
             if (resp.ok) {
-                appendLog('[SISTEMA] Processamento iniciado em segundo plano.', 'log-sys');
+                appendLog('[SISTEMA] Coleta iniciada em segundo plano.', 'log-sys');
                 document.querySelector('[data-tab="tab-logs"]').click();
             } else {
                 alert(data.message || 'Erro ao iniciar coleta.');
@@ -436,7 +600,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- TABELA DE OFERTAS ---
+    // --- TABELA DE OFERTAS (ÚLTIMA EXECUÇÃO) ---
     async function loadLatestResults() {
         try {
             const resp = await fetch('/api/results/latest');
@@ -515,7 +679,11 @@ document.addEventListener('DOMContentLoaded', () => {
             tableOffersBody.appendChild(tr);
         });
 
-        tableOffersBody.querySelectorAll('.btn-preview-flyer').forEach(btn => {
+        bindPreviewButtons(tableOffersBody);
+    }
+
+    function bindPreviewButtons(container) {
+        container.querySelectorAll('.btn-preview-flyer').forEach(btn => {
             btn.addEventListener('click', () => {
                 const imgUrl = btn.getAttribute('data-img');
                 const postUrl = btn.getAttribute('data-post');

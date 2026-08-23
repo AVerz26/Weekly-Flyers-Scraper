@@ -5,11 +5,13 @@ from datetime import datetime, date
 from typing import Dict, Any, List, Optional
 import asyncio
 
-from core.config import load_config
+from core.config import load_config, OUTPUT_DIR
 from core.scraper import scrape_instagram_flyers
 from core.vision_ai import process_image_offers
 from core.categorizer import categorizar_produto
 from core.exporter import export_offers_data
+from core.database import save_offers
+from core.telegram_notifier import send_daily_notification
 
 class TaskManager:
     """Gerenciador singleton de execução em segundo plano com streaming de logs em tempo real."""
@@ -248,25 +250,68 @@ class TaskManager:
                 self.add_log("🛑 Processamento cancelado.")
                 return
 
-            # --- FASE 3: EXPORTAÇÃO E CONSOLIDAÇÃO (90% a 100%) ---
-            self.current_step = "Fase 3: Formatando e Gerando Planilhas"
+            # --- FASE 3: BANCO DE DADOS & DEDUPLICAÇÃO (88% a 93%) ---
+            self.current_step = "Fase 3: Salvando no Banco de Dados"
+            self.step_detail = f"Deduplicando e persistindo {len(dados_extraidos)} ofertas..."
+            self.progress = 90
+            self.add_log(f"\n💾 Verificando ofertas existentes e salvando no banco de dados SQLite...")
+
+            run_id = datetime.now().strftime("run_%Y%m%d_%H%M%S")
+            total_novas, total_duplicadas, novas_ofertas = save_offers(dados_extraidos, run_id=run_id)
+
+            self.add_log(f"   ✨ Novas ofertas inseridas no banco: {total_novas}")
+            self.add_log(f"   ♻️ Ofertas repetidas/duplicadas ignoradas: {total_duplicadas}")
+
+            # --- FASE 4: EXPORTAÇÃO E CONSOLIDAÇÃO (93% a 97%) ---
+            self.current_step = "Fase 4: Formatando e Gerando Planilhas"
             self.step_detail = f"Estruturando {len(dados_extraidos)} ofertas extraídas..."
-            self.progress = 92
+            self.progress = 94
             self.add_log(f"\n📊 Consolidando {len(dados_extraidos)} ofertas e gerando arquivos de saída...")
 
             res_export = export_offers_data(dados_extraidos)
+            res_export["total_novas"] = total_novas
+            res_export["total_duplicadas"] = total_duplicadas
             self.last_result = res_export
+
+            # --- FASE 5: NOTIFICAÇÃO TELEGRAM (97% a 100%) ---
+            telegram_token = config.get("telegram_token", "").strip()
+            telegram_chat_id = str(config.get("telegram_chat_id", "")).strip()
+            telegram_enabled = config.get("telegram_enabled", True)
+            telegram_send_excel = config.get("telegram_send_excel", True)
+
+            if telegram_enabled and telegram_token and telegram_chat_id:
+                self.current_step = "Fase 5: Enviando Notificação Telegram"
+                self.step_detail = "Disparando relatório para o Telegram..."
+                self.progress = 97
+                self.add_log(f"\n📲 Enviando relatório de ofertas para o Telegram (Chat: {telegram_chat_id})...")
+
+                excel_path = (OUTPUT_DIR / res_export["excel_file"]) if res_export.get("excel_file") else None
+                ok_tg, msg_tg = send_daily_notification(
+                    token=telegram_token,
+                    chat_id=telegram_chat_id,
+                    novas_ofertas=novas_ofertas,
+                    total_scraped=len(dados_extraidos),
+                    total_duplicadas=total_duplicadas,
+                    excel_path=excel_path,
+                    send_excel=telegram_send_excel
+                )
+                if ok_tg:
+                    self.add_log("   ✅ Relatório enviado com sucesso ao Telegram!")
+                else:
+                    self.add_log(f"   ⚠️ Aviso ao enviar para Telegram: {msg_tg}", "WARN")
 
             self.progress = 100
             self.status = "completed"
             self.current_step = "Concluído com Sucesso!"
-            self.step_detail = f"{len(dados_extraidos)} produtos extraídos de {len(active_urls)} supermercados."
+            self.step_detail = f"{len(dados_extraidos)} produtos ({total_novas} novos) extraídos de {len(active_urls)} supermercados."
             self.end_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
             self.add_log("🎉 ===============================================")
             self.add_log(f"✅ SUCESSO! Extração concluída!")
             self.add_log(f"📁 Planilha Excel gerada: {res_export.get('excel_file')}")
             self.add_log(f"🏷️ Total de produtos encontrados: {len(dados_extraidos)}")
+            self.add_log(f"✨ Novas ofertas adicionadas ao BD: {total_novas}")
+            self.add_log(f"♻️ Duplicadas evitadas: {total_duplicadas}")
             self.add_log("🎉 ===============================================")
 
         except Exception as e:

@@ -49,6 +49,10 @@ def get_default_config() -> Dict[str, Any]:
         "custom_start_date": "",
         "custom_end_date": "",
         "results_limit": 3,
+        "telegram_token": os.getenv("TELEGRAM_BOT_TOKEN", os.getenv("TELEGRAM_TOKEN", "")),
+        "telegram_chat_id": os.getenv("TELEGRAM_CHAT_ID", ""),
+        "telegram_enabled": os.getenv("TELEGRAM_ENABLED", "true").lower() in ("true", "1", "yes"),
+        "telegram_send_excel": os.getenv("TELEGRAM_SEND_EXCEL", "true").lower() in ("true", "1", "yes"),
         "profiles": DEFAULT_PROFILES
     }
 
@@ -67,7 +71,7 @@ def load_config() -> Dict[str, Any]:
                 for key, val in defaults.items():
                     if key not in saved:
                         saved[key] = val
-                    elif key in ["apify_token", "gemini_api_key", "openai_api_key"]:
+                    elif key in ["apify_token", "gemini_api_key", "openai_api_key", "telegram_token"]:
                         # Se estiver vazio no JSON mas presente no .env, usa do .env
                         if not saved[key] and val:
                             saved[key] = val
@@ -92,7 +96,7 @@ def save_config(new_config: Dict[str, Any]) -> Dict[str, Any]:
             current = {}
             
     # Preserva chaves confidenciais se o usuário enviou valor mascarado ou em branco
-    for secret_key in ["apify_token", "gemini_api_key", "openai_api_key"]:
+    for secret_key in ["apify_token", "gemini_api_key", "openai_api_key", "telegram_token"]:
         if secret_key in new_config:
             val = new_config[secret_key]
             if not val or "*" in val:

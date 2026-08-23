@@ -3,7 +3,7 @@ import json
 import asyncio
 from pathlib import Path
 from typing import Dict, Any, List, Optional
-from fastapi import FastAPI, Request, HTTPException, BackgroundTasks
+from fastapi import FastAPI, Request, HTTPException, BackgroundTasks, Query
 from fastapi.responses import HTMLResponse, StreamingResponse, FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -15,11 +15,16 @@ from core.config import (
 )
 from core.task_runner import task_manager
 from core.exporter import get_latest_results, list_history_runs
+from core.database import init_db, get_db_stats, get_recent_offers, DB_PATH
+from core.telegram_notifier import test_telegram_connection
+
+# Inicializa banco de dados ao subir a API
+init_db()
 
 app = FastAPI(
     title="Instagram Supermarket Flyers Scraper",
     description="Interface moderna e leve para automação de scraping de encartes de supermercados e extração com IA",
-    version="1.0.0"
+    version="1.1.0"
 )
 
 # Monta arquivos estáticos e templates
@@ -37,6 +42,14 @@ class ConfigUpdate(BaseModel):
     custom_start_date: Optional[str] = ""
     custom_end_date: Optional[str] = ""
     results_limit: Optional[int] = 3
+    telegram_token: Optional[str] = None
+    telegram_chat_id: Optional[str] = None
+    telegram_enabled: Optional[bool] = True
+    telegram_send_excel: Optional[bool] = True
+
+class TelegramTestRequest(BaseModel):
+    telegram_token: Optional[str] = None
+    telegram_chat_id: Optional[str] = None
 
 class ProfileItem(BaseModel):
     name: str
@@ -68,9 +81,11 @@ async def get_configuration():
     safe_cfg["apify_token_masked"] = mask_secret(cfg.get("apify_token"))
     safe_cfg["gemini_api_key_masked"] = mask_secret(cfg.get("gemini_api_key"))
     safe_cfg["openai_api_key_masked"] = mask_secret(cfg.get("openai_api_key"))
+    safe_cfg["telegram_token_masked"] = mask_secret(cfg.get("telegram_token"))
     safe_cfg["has_apify_token"] = bool(cfg.get("apify_token"))
     safe_cfg["has_gemini_key"] = bool(cfg.get("gemini_api_key"))
     safe_cfg["has_openai_key"] = bool(cfg.get("openai_api_key"))
+    safe_cfg["has_telegram_token"] = bool(cfg.get("telegram_token"))
     return safe_cfg
 
 @app.post("/api/config")
@@ -79,6 +94,61 @@ async def update_configuration(data: ConfigUpdate):
     updates = {k: v for k, v in data.model_dump().items() if v is not None}
     saved = save_config(updates)
     return {"status": "success", "message": "Configurações salvas com sucesso!"}
+
+@app.post("/api/telegram/test")
+async def test_telegram_endpoint(req: Optional[TelegramTestRequest] = None):
+    """Testa a conexão e o envio de mensagens pelo bot do Telegram."""
+    cfg = load_config()
+    token = (req.telegram_token if req and req.telegram_token else cfg.get("telegram_token", "")).strip()
+    chat_id = str(req.telegram_chat_id if req and req.telegram_chat_id else cfg.get("telegram_chat_id", "")).strip()
+
+    if not token or "*" in token:
+        token = cfg.get("telegram_token", "")
+
+    if not token or not chat_id:
+        return JSONResponse(
+            status_code=400,
+            content={"status": "error", "message": "Informe o Token do Bot e o Chat ID para realizar o teste."}
+        )
+
+    ok, msg = test_telegram_connection(token, chat_id)
+    if ok:
+        return {"status": "success", "message": "Mensagem de teste enviada com sucesso ao seu Telegram!"}
+    else:
+        return JSONResponse(status_code=400, content={"status": "error", "message": msg})
+
+@app.get("/api/database/stats")
+async def get_database_stats():
+    """Retorna estatísticas resumidas do banco de dados SQLite."""
+    return get_db_stats()
+
+@app.get("/api/database/offers")
+async def get_database_offers(
+    limit: int = Query(50, ge=1, le=500),
+    offset: int = Query(0, ge=0),
+    supermercado: Optional[str] = None,
+    categoria: Optional[str] = None,
+    search: Optional[str] = None
+):
+    """Retorna ofertas persistidas no banco com filtros e paginação."""
+    return get_recent_offers(
+        limit=limit,
+        offset=offset,
+        supermercado=supermercado,
+        categoria=categoria,
+        search=search
+    )
+
+@app.get("/api/database/download")
+async def download_database_file():
+    """Download direto do banco de dados SQLite."""
+    if not DB_PATH.exists():
+        raise HTTPException(status_code=404, detail="Banco de dados ainda não foi criado.")
+    return FileResponse(
+        path=DB_PATH,
+        filename="offers.db",
+        media_type="application/x-sqlite3"
+    )
 
 @app.get("/api/profiles")
 async def get_profiles():
@@ -126,17 +196,14 @@ async def stream_logs():
     async def event_generator():
         q = task_manager.subscribe_logs()
         try:
-            # Envia status inicial
             yield f"data: {json.dumps({'type': 'init', 'status': task_manager.get_status()})}\n\n"
             
             while True:
-                # Checa se há novas mensagens na fila
                 try:
                     line = q.get_nowait()
                     yield f"data: {json.dumps({'type': 'log', 'text': line})}\n\n"
                 except Exception:
                     await asyncio.sleep(0.3)
-                    # Envia ping de status periódico
                     st = task_manager.get_status()
                     yield f"data: {json.dumps({'type': 'status', 'status': st})}\n\n"
         except asyncio.CancelledError:
