@@ -87,8 +87,17 @@ def scrape_instagram_flyers(
             }
             
             run = client.actor("apify/instagram-scraper").call(run_input=run_input)
-            dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
             
+            # Obtém o dataset ID de forma compatível com objeto Run (Apify v3) ou dict
+            dataset_id = getattr(run, "default_dataset_id", None) or getattr(run, "defaultDatasetId", None)
+            if not dataset_id and isinstance(run, dict):
+                dataset_id = run.get("defaultDatasetId") or run.get("default_dataset_id")
+            
+            if not dataset_id:
+                log(f"   ⚠️ Não foi possível obter o ID do dataset do Apify para @{nome_simplificado}.")
+                continue
+
+            dataset_items = list(client.dataset(dataset_id).iterate_items())
             log(f"   📥 @{nome_simplificado}: {len(dataset_items)} posts obtidos do Instagram.")
 
             posts_no_periodo = 0
