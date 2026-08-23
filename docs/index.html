@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyerScout AI • Painel de Ofertas & Encartes</title>
-    <!-- Google Fonts -->
+    <title>FlyerScout • Comparativo de Preços & Encartes</title>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="light-theme">
     <div class="app-layout">
-        <!-- CABEÇALHO -->
+        <!-- CABEÇALHO CORPORATIVO -->
         <header class="navbar">
             <div class="navbar-left">
                 <div class="brand">
                     <div class="brand-badge"></div>
                     <div>
-                        <h1 class="brand-title">FlyerScout AI • Dashboard Online</h1>
-                        <span class="brand-subtitle">Monitoramento Diário de Encartes e Ofertas de Supermercados</span>
+                        <h1 class="brand-title">FlyerScout • Comparativo de Preços</h1>
+                        <span class="brand-subtitle">Monitoramento Inteligente de Encartes e Ofertas de Supermercados</span>
                     </div>
                 </div>
             </div>
@@ -27,116 +27,150 @@
             <div class="navbar-right">
                 <div class="status-pill">
                     <span class="pulse-dot"></span>
-                    <span>Atualizado em: <strong id="last-update-text">Carregando...</strong></span>
+                    <span>Última Coleta: <strong id="last-update-text">Hoje</strong></span>
                 </div>
-                <a id="btn-raw-excel" href="../output/latest_results.xlsx" download class="btn btn-success btn-sm">
-                    📊 Baixar Planilha Excel
-                </a>
+                <div class="nav-actions">
+                    <a id="btn-download-excel" href="data/latest_results.xlsx" download class="btn btn-success btn-sm">
+                        📊 Baixar Excel (.xlsx)
+                    </a>
+                </div>
             </div>
         </header>
 
-        <!-- CARDS DE RESUMO E MÉTRICAS -->
+        <!-- CARDS DE MÉTRICAS E INTELIGÊNCIA DE PREÇOS -->
         <section class="metrics-grid">
             <div class="metric-card">
-                <span class="metric-label">Total de Ofertas do Dia</span>
+                <span class="metric-label">Total de Ofertas</span>
                 <div class="metric-value" id="metric-total-items">0</div>
-                <span class="metric-sub" id="metric-date-range">Carregando dados...</span>
+                <span class="metric-sub" id="metric-date-info">Carregando dados...</span>
             </div>
             <div class="metric-card">
                 <span class="metric-label">Supermercados Monitorados</span>
                 <div class="metric-value" id="metric-markets-count">0</div>
-                <span class="metric-sub">Com ofertas identificadas</span>
+                <span class="metric-sub">Redes com encartes ativos</span>
             </div>
             <div class="metric-card">
-                <span class="metric-label">Categorias no Radar</span>
+                <span class="metric-label">Categorias Identificadas</span>
                 <div class="metric-value" id="metric-categories-count">0</div>
                 <span class="metric-sub">Classificadas por IA</span>
             </div>
-            <div class="metric-card">
-                <span class="metric-label">Menor Preço Encontrado</span>
+            <div class="metric-card highlight-card">
+                <span class="metric-label">Menor Preço do Dia</span>
                 <div class="metric-value text-success" id="metric-min-price">R$ 0,00</div>
                 <span class="metric-sub" id="metric-min-item">-</span>
             </div>
         </section>
 
-        <!-- BARRA DE FILTROS E BUSCA -->
-        <section class="panel filter-panel">
-            <div class="search-box">
-                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-                <input type="text" id="search-input" class="search-control" placeholder="Buscar por produto, marca ou supermercado...">
+        <!-- PAINEL PRINCIPAL DE DADOS & COMPARAÇÃO -->
+        <section class="panel data-panel">
+            <div class="panel-header">
+                <!-- ABAS DE VISUALIZAÇÃO -->
+                <div class="tabs-nav">
+                    <button class="tab-button active" data-tab="tab-all-offers">
+                        🛒 Todas as Ofertas (<span id="tab-count-items">0</span>)
+                    </button>
+                    <button class="tab-button" data-tab="tab-market-comparison">
+                        🏪 Resumo por Supermercado
+                    </button>
+                    <button class="tab-button" data-tab="tab-category-summary">
+                        🏷️ Comparativo por Categoria
+                    </button>
+                </div>
+
+                <!-- FILTROS E BUSCA EM TEMPO REAL -->
+                <div class="tab-actions">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Buscar produto ou supermercado..." class="form-control search-input">
+                    </div>
+                    <select id="filter-market" class="form-control select-sm">
+                        <option value="">Todos os Supermercados</option>
+                    </select>
+                    <select id="filter-category" class="form-control select-sm">
+                        <option value="">Todas as Categorias</option>
+                    </select>
+                    <select id="sort-order" class="form-control select-sm">
+                        <option value="price-asc">Menor Preço ➔ Maior</option>
+                        <option value="price-desc">Maior Preço ➔ Menor</option>
+                        <option value="name-asc">Produto (A-Z)</option>
+                        <option value="market-asc">Supermercado (A-Z)</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="filter-controls">
-                <select id="filter-market" class="form-control select-sm">
-                    <option value="">Todos os Supermercados</option>
-                </select>
+            <div class="panel-body">
+                <!-- ABA 1: TODAS AS OFERTAS (TABELA CORPORATIVA) -->
+                <div id="tab-all-offers" class="tab-content active">
+                    <div class="table-responsive">
+                        <table class="table" id="table-offers">
+                            <thead>
+                                <tr>
+                                    <th style="width: 220px;">Supermercado</th>
+                                    <th style="width: 170px;">Categoria</th>
+                                    <th>Produto / Descrição</th>
+                                    <th style="width: 120px;" class="text-right">Preço</th>
+                                    <th style="width: 110px;">Data Post</th>
+                                    <th style="width: 100px;" class="text-center">Encarte</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-offers-body">
+                                <tr>
+                                    <td colspan="6" class="empty-state">Carregando ofertas coletadas...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-                <select id="filter-category" class="form-control select-sm">
-                    <option value="">Todas as Categorias</option>
-                </select>
+                <!-- ABA 2: RESUMO COMPARATIVO POR SUPERMERCADO -->
+                <div id="tab-market-comparison" class="tab-content">
+                    <div class="table-responsive">
+                        <table class="table" id="table-market-summary">
+                            <thead>
+                                <tr>
+                                    <th>Supermercado</th>
+                                    <th style="width: 140px;" class="text-center">Qtd. Ofertas</th>
+                                    <th style="width: 160px;" class="text-right">Preço Médio</th>
+                                    <th style="width: 160px;" class="text-right">Menor Preço</th>
+                                    <th style="width: 160px;" class="text-right">Maior Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-market-body">
+                                <!-- Preenchido via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-                <select id="sort-order" class="form-control select-sm">
-                    <option value="price-asc">Menor Preço ➔ Maior</option>
-                    <option value="price-desc">Maior Preço ➔ Menor</option>
-                    <option value="name-asc">Nome do Produto (A-Z)</option>
-                    <option value="market-asc">Supermercado (A-Z)</option>
-                </select>
-
-                <div class="view-toggle">
-                    <button class="toggle-btn active" id="btn-view-cards" title="Visualização em Cards">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                    </button>
-                    <button class="toggle-btn" id="btn-view-table" title="Visualização em Tabela">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-                    </button>
+                <!-- ABA 3: COMPARATIVO POR CATEGORIA -->
+                <div id="tab-category-summary" class="tab-content">
+                    <div class="table-responsive">
+                        <table class="table" id="table-cat-summary">
+                            <thead>
+                                <tr>
+                                    <th>Categoria de Produto</th>
+                                    <th style="width: 140px;" class="text-center">Qtd. Itens</th>
+                                    <th style="width: 160px;" class="text-right">Preço Médio</th>
+                                    <th style="width: 160px;" class="text-right">Menor Preço</th>
+                                    <th style="width: 260px;">Supermercado Mais Barato</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-cat-body">
+                                <!-- Preenchido via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- CONTEÚDO: CARDS OU TABELA -->
-        <main class="main-content">
-            <!-- VISUALIZAÇÃO EM CARDS -->
-            <div id="view-cards-container" class="cards-grid">
-                <!-- Preenchido via JavaScript -->
-            </div>
-
-            <!-- VISUALIZAÇÃO EM TABELA -->
-            <div id="view-table-container" class="table-container" style="display: none;">
-                <table class="table" id="table-offers">
-                    <thead>
-                        <tr>
-                            <th style="width: 220px;">Supermercado</th>
-                            <th style="width: 160px;">Categoria</th>
-                            <th>Produto / Oferta</th>
-                            <th style="width: 120px;" class="text-right">Preço</th>
-                            <th style="width: 110px;">Data Post</th>
-                            <th style="width: 90px;" class="text-center">Encarte</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-offers-body">
-                        <!-- Preenchido via JavaScript -->
-                    </tbody>
-                </table>
-            </div>
-
-            <div id="empty-results" class="empty-state" style="display: none;">
-                <div class="empty-icon">🔍</div>
-                <h3>Nenhuma oferta encontrada</h3>
-                <p>Tente ajustar os filtros ou a busca digitada acima.</p>
-            </div>
-        </main>
-
-        <!-- RODAPÉ -->
+        <!-- RODAPÉ DISCRETO -->
         <footer class="footer">
-            <span>FlyerScout AI • Monitoramento Automatizado de Encartes</span>
-            <span class="footer-meta">Execução Diária via GitHub Actions • Mantiqueira</span>
+            <span>FlyerScout AI • Dashboard de Inteligência de Varejo • Grupo Mantiqueira</span>
+            <span class="footer-meta">Atualização 100% Automática via GitHub Actions</span>
         </footer>
     </div>
 
-    <!-- MODAL DE PRÉ-VISUALIZAÇÃO DO ENCARTE -->
+    <!-- MODAL DE VISUALIZAÇÃO DO ENCARTE -->
     <div id="modal-image-preview" class="modal-backdrop" style="display: none;">
         <div class="modal-dialog modal-image">
             <div class="modal-header">

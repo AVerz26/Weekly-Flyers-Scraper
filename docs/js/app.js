@@ -1,32 +1,30 @@
 /**
- * FlyerScout AI - GitHub Pages Interactive Dashboard
+ * FlyerScout - Visualização de Dados & Comparativo de Preços
+ * GitHub Pages Dashboard
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     let allOffers = [];
     let currentFiltered = [];
-    let currentView = 'cards'; // 'cards' ou 'table'
 
     // Elementos DOM
     const lastUpdateText = document.getElementById('last-update-text');
     const metricTotalItems = document.getElementById('metric-total-items');
-    const metricDateRange = document.getElementById('metric-date-range');
+    const metricDateInfo = document.getElementById('metric-date-info');
     const metricMarketsCount = document.getElementById('metric-markets-count');
     const metricCategoriesCount = document.getElementById('metric-categories-count');
     const metricMinPrice = document.getElementById('metric-min-price');
     const metricMinItem = document.getElementById('metric-min-item');
+    const tabCountItems = document.getElementById('tab-count-items');
 
     const searchInput = document.getElementById('search-input');
     const filterMarket = document.getElementById('filter-market');
     const filterCategory = document.getElementById('filter-category');
     const sortOrder = document.getElementById('sort-order');
 
-    const btnViewCards = document.getElementById('btn-view-cards');
-    const btnViewTable = document.getElementById('btn-view-table');
-    const viewCardsContainer = document.getElementById('view-cards-container');
-    const viewTableContainer = document.getElementById('view-table-container');
     const tableOffersBody = document.getElementById('table-offers-body');
-    const emptyResults = document.getElementById('empty-results');
+    const tableMarketBody = document.getElementById('table-market-body');
+    const tableCatBody = document.getElementById('table-cat-body');
 
     // Modal
     const modalImagePreview = document.getElementById('modal-image-preview');
@@ -40,8 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
     init();
 
     async function init() {
+        setupTabs();
         setupEventListeners();
         await loadData();
+    }
+
+    // Gerenciamento de Abas
+    function setupTabs() {
+        const tabBtns = document.querySelectorAll('.tab-button');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetTab = btn.getAttribute('data-tab');
+                tabBtns.forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(p => p.classList.remove('active'));
+
+                btn.classList.add('active');
+                const pane = document.getElementById(targetTab);
+                if (pane) pane.classList.add('active');
+            });
+        });
     }
 
     function setupEventListeners() {
@@ -49,9 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
         filterMarket.addEventListener('change', applyFilters);
         filterCategory.addEventListener('change', applyFilters);
         sortOrder.addEventListener('change', applyFilters);
-
-        btnViewCards.addEventListener('click', () => setView('cards'));
-        btnViewTable.addEventListener('click', () => setView('table'));
 
         btnCloseModal.addEventListener('click', () => {
             modalImagePreview.style.display = 'none';
@@ -63,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function loadData() {
-        // Tenta carregar os dados de docs/data/latest_results.json ou ../output/latest_results.json
         const possibleUrls = [
             'data/latest_results.json',
             '../output/latest_results.json',
@@ -85,25 +96,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!data || !data.items || data.items.length === 0) {
             lastUpdateText.textContent = 'Aguardando primeira coleta';
-            emptyResults.style.display = 'block';
-            emptyResults.querySelector('h3').textContent = 'Nenhum dado coletado ainda';
-            emptyResults.querySelector('p').textContent = 'Execute o workflow no GitHub Actions para carregar as ofertas.';
+            tableOffersBody.innerHTML = `
+                <tr>
+                    <td colspan="6" class="empty-state">
+                        Nenhum dado coletado ainda. O robô atualizará esta página automaticamente às 07:00 da manhã.
+                    </td>
+                </tr>
+            `;
             return;
         }
 
         allOffers = data.items;
-        
-        // Atualiza timestamp
+        tabCountItems.textContent = allOffers.length.toLocaleString('pt-BR');
+
+        // Atualiza data
         if (data.timestamp) {
-            const formattedDate = data.timestamp.replace(/_/g, ' às ').replace(/-/g, '/');
-            lastUpdateText.textContent = formattedDate;
-            metricDateRange.textContent = `Coleta: ${data.timestamp.split('_')[0]}`;
+            const parts = data.timestamp.split('_');
+            const dataFmt = parts[0].replace(/-/g, '/');
+            const horaFmt = parts[1] ? parts[1].replace(/-/g, ':') : '';
+            lastUpdateText.textContent = `${dataFmt} ${horaFmt}`;
+            metricDateInfo.textContent = `Coleta: ${dataFmt}`;
         } else {
             lastUpdateText.textContent = 'Hoje';
+            metricDateInfo.textContent = 'Atualizado';
         }
 
         updateMetrics(allOffers);
         populateDropdowns(allOffers);
+        renderMarketSummary(allOffers);
+        renderCategorySummary(allOffers);
         applyFilters();
     }
 
@@ -184,74 +205,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         currentFiltered = filtered;
-        renderData();
+        renderOffersTable(filtered);
     }
 
-    function renderData() {
-        if (currentFiltered.length === 0) {
-            viewCardsContainer.style.display = 'none';
-            viewTableContainer.style.display = 'none';
-            emptyResults.style.display = 'block';
+    // ABA 1: Renderiza Tabela de Ofertas
+    function renderOffersTable(items) {
+        if (items.length === 0) {
+            tableOffersBody.innerHTML = `
+                <tr>
+                    <td colspan="6" class="empty-state">
+                        Nenhuma oferta encontrada para os filtros selecionados.
+                    </td>
+                </tr>
+            `;
             return;
         }
 
-        emptyResults.style.display = 'none';
-
-        if (currentView === 'cards') {
-            viewCardsContainer.style.display = 'grid';
-            viewTableContainer.style.display = 'none';
-            renderCards(currentFiltered);
-        } else {
-            viewCardsContainer.style.display = 'none';
-            viewTableContainer.style.display = 'block';
-            renderTable(currentFiltered);
-        }
-    }
-
-    function renderCards(items) {
-        viewCardsContainer.innerHTML = '';
-        items.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'offer-card';
-            card.innerHTML = `
-                <div>
-                    <div class="card-top">
-                        <span class="market-badge">${escapeHtml(item.supermercado)}</span>
-                        <span class="category-tag">${escapeHtml(item.categoria || 'Geral')}</span>
-                    </div>
-                    <div class="card-item-name">${escapeHtml(item.item)}</div>
-                </div>
-                <div class="card-bottom">
-                    <div class="price-box">
-                        <span class="price-label">Preço Promo</span>
-                        <span class="price-val">${formatCurrency(item.valor)}</span>
-                    </div>
-                    ${item.link ? `
-                        <button class="btn btn-outline btn-sm btn-view-flyer" data-img="${escapeHtml(item.link)}" data-post="${escapeHtml(item.post_url || '')}" data-market="${escapeHtml(item.supermercado)}">
-                            🖼️ Encarte
-                        </button>
-                    ` : ''}
-                </div>
-            `;
-            viewCardsContainer.appendChild(card);
-        });
-
-        bindPreviewButtons(viewCardsContainer);
-    }
-
-    function renderTable(items) {
         tableOffersBody.innerHTML = '';
         items.forEach(item => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td><strong>${escapeHtml(item.supermercado)}</strong></td>
-                <td><span class="category-tag">${escapeHtml(item.categoria || 'Geral')}</span></td>
+                <td><span class="category-badge">${escapeHtml(item.categoria || 'Geral')}</span></td>
                 <td>${escapeHtml(item.item)}</td>
                 <td class="text-right price-text">${formatCurrency(item.valor)}</td>
                 <td>${escapeHtml(item.data_postagem || '-')}</td>
                 <td class="text-center">
                     ${item.link ? `
-                        <button class="btn btn-outline btn-sm btn-view-flyer" data-img="${escapeHtml(item.link)}" data-post="${escapeHtml(item.post_url || '')}" data-market="${escapeHtml(item.supermercado)}">
+                        <button class="btn btn-outline btn-sm btn-preview-flyer" data-img="${escapeHtml(item.link)}" data-post="${escapeHtml(item.post_url || '')}" data-market="${escapeHtml(item.supermercado)}">
                             Ver
                         </button>
                     ` : '-'}
@@ -263,8 +244,73 @@ document.addEventListener('DOMContentLoaded', () => {
         bindPreviewButtons(tableOffersBody);
     }
 
+    // ABA 2: Resumo por Supermercado
+    function renderMarketSummary(items) {
+        const groups = {};
+        items.forEach(item => {
+            const m = item.supermercado || 'Outros';
+            if (!groups[m]) {
+                groups[m] = { count: 0, sum: 0, min: Infinity, max: -Infinity };
+            }
+            const val = parseFloat(item.valor) || 0;
+            groups[m].count++;
+            groups[m].sum += val;
+            if (val < groups[m].min) groups[m].min = val;
+            if (val > groups[m].max) groups[m].max = val;
+        });
+
+        tableMarketBody.innerHTML = '';
+        Object.keys(groups).sort().forEach(mkt => {
+            const g = groups[mkt];
+            const avg = g.count > 0 ? g.sum / g.count : 0;
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><strong>${escapeHtml(mkt)}</strong></td>
+                <td class="text-center"><span class="category-badge">${g.count} ofertas</span></td>
+                <td class="text-right">${formatCurrency(avg)}</td>
+                <td class="text-right text-success" style="font-weight: 700;">${formatCurrency(g.min)}</td>
+                <td class="text-right">${formatCurrency(g.max)}</td>
+            `;
+            tableMarketBody.appendChild(tr);
+        });
+    }
+
+    // ABA 3: Comparativo por Categoria
+    function renderCategorySummary(items) {
+        const groups = {};
+        items.forEach(item => {
+            const c = item.categoria || 'Geral';
+            if (!groups[c]) {
+                groups[c] = { count: 0, sum: 0, min: Infinity, cheapestMarket: '-', cheapestItem: '' };
+            }
+            const val = parseFloat(item.valor) || 0;
+            groups[c].count++;
+            groups[c].sum += val;
+            if (val < groups[c].min) {
+                groups[c].min = val;
+                groups[c].cheapestMarket = item.supermercado;
+                groups[c].cheapestItem = item.item;
+            }
+        });
+
+        tableCatBody.innerHTML = '';
+        Object.keys(groups).sort().forEach(cat => {
+            const g = groups[cat];
+            const avg = g.count > 0 ? g.sum / g.count : 0;
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><span class="category-badge">${escapeHtml(cat)}</span></td>
+                <td class="text-center">${g.count} itens</td>
+                <td class="text-right">${formatCurrency(avg)}</td>
+                <td class="text-right text-success" style="font-weight: 700;">${formatCurrency(g.min)}</td>
+                <td><strong>${escapeHtml(g.cheapestMarket)}</strong> <span style="font-size: 11.5px; color: var(--text-muted);">(${escapeHtml(g.cheapestItem)})</span></td>
+            `;
+            tableCatBody.appendChild(tr);
+        });
+    }
+
     function bindPreviewButtons(container) {
-        container.querySelectorAll('.btn-view-flyer').forEach(btn => {
+        container.querySelectorAll('.btn-preview-flyer').forEach(btn => {
             btn.addEventListener('click', () => {
                 const img = btn.getAttribute('data-img');
                 const post = btn.getAttribute('data-post');
@@ -277,18 +323,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 modalImagePreview.style.display = 'flex';
             });
         });
-    }
-
-    function setView(view) {
-        currentView = view;
-        if (view === 'cards') {
-            btnViewCards.classList.add('active');
-            btnViewTable.classList.remove('active');
-        } else {
-            btnViewTable.classList.add('active');
-            btnViewCards.classList.remove('active');
-        }
-        renderData();
     }
 
     function formatCurrency(val) {

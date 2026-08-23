@@ -1,12 +1,11 @@
 /* ============================================================
-   Design System - FlyerScout AI Dashboard (GitHub Pages)
+   Design System Corporativo - FlyerScout Analytics (GitHub Pages)
    ============================================================ */
 
 :root {
     --bg-page: #F8FAFC;
     --bg-surface: #FFFFFF;
     --bg-subtle: #F1F5F9;
-    --bg-card: #FFFFFF;
     
     --border-color: #E2E8F0;
     --border-subtle: #EDF2F7;
@@ -15,7 +14,6 @@
     --text-primary: #0F172A;
     --text-secondary: #475569;
     --text-muted: #64748B;
-    --text-faint: #94A3B8;
     
     --primary: #2563EB;
     --primary-hover: #1D4ED8;
@@ -31,8 +29,7 @@
     --radius: 8px;
     --radius-sm: 5px;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -79,8 +76,8 @@ body.light-theme {
 }
 
 .brand-badge {
-    width: 12px;
-    height: 38px;
+    width: 10px;
+    height: 36px;
     background: linear-gradient(180deg, #2563EB 0%, #16A34A 100%);
     border-radius: 3px;
 }
@@ -88,8 +85,8 @@ body.light-theme {
 .brand-title {
     font-size: 18px;
     font-weight: 700;
-    letter-spacing: -0.02em;
     color: var(--text-primary);
+    letter-spacing: -0.02em;
 }
 
 .brand-subtitle {
@@ -109,7 +106,7 @@ body.light-theme {
     align-items: center;
     gap: 8px;
     background: var(--bg-subtle);
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
     font-size: 12px;
     color: var(--text-secondary);
@@ -222,60 +219,63 @@ body.light-theme {
     text-overflow: ellipsis;
 }
 
-.text-success {
-    color: var(--success) !important;
-}
+.text-success { color: var(--success) !important; }
 
-/* FILTROS */
-.filter-panel {
+/* PAINEL DE DADOS E ABAS */
+.panel {
     background: var(--bg-surface);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
-    padding: 14px 20px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.panel-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 14px;
-    box-shadow: var(--shadow-sm);
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--border-color);
+    gap: 12px;
 }
 
-.search-box {
-    position: relative;
-    flex: 1;
-    min-width: 260px;
+.tabs-nav {
+    display: flex;
+    gap: 6px;
 }
 
-.search-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-muted);
-}
-
-.search-control {
-    width: 100%;
-    padding: 8px 12px 8px 36px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
+.tab-button {
+    background: transparent;
+    border: none;
+    padding: 8px 14px;
     font-size: 13px;
-    font-family: inherit;
-    background: var(--bg-page);
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    transition: all 0.15s ease;
+}
+
+.tab-button:hover {
+    background-color: var(--bg-subtle);
     color: var(--text-primary);
 }
 
-.search-control:focus {
-    outline: none;
-    border-color: var(--primary);
-    background: #FFFFFF;
+.tab-button.active {
+    background-color: var(--primary-light);
+    color: var(--primary);
 }
 
-.filter-controls {
+.tab-actions {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.search-box {
+    min-width: 220px;
 }
 
 .form-control {
@@ -294,131 +294,20 @@ body.light-theme {
 }
 
 .select-sm {
-    max-width: 220px;
+    max-width: 190px;
 }
 
-.view-toggle {
-    display: flex;
-    background: var(--bg-subtle);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
-    padding: 2px;
+.tab-content {
+    display: none;
 }
 
-.toggle-btn {
-    background: transparent;
-    border: none;
-    padding: 6px 8px;
-    border-radius: 4px;
-    cursor: pointer;
-    color: var(--text-muted);
-    display: flex;
-    align-items: center;
-}
-
-.toggle-btn.active {
-    background: #FFFFFF;
-    color: var(--primary);
-    box-shadow: var(--shadow-sm);
-}
-
-/* CARDS GRID */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
-}
-
-.offer-card {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    padding: 16px;
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.offer-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: #CBD5E1;
-}
-
-.card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
-    margin-bottom: 10px;
-}
-
-.market-badge {
-    font-weight: 700;
-    font-size: 13px;
-    color: var(--text-primary);
-}
-
-.category-tag {
-    display: inline-block;
-    padding: 2px 8px;
-    background: var(--primary-light);
-    color: var(--primary);
-    font-size: 11px;
-    font-weight: 600;
-    border-radius: 12px;
-}
-
-.card-item-name {
-    font-size: 14.5px;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 12px;
-    line-height: 1.4;
-    min-height: 40px;
-}
-
-.card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-top: 1px solid var(--border-subtle);
-    padding-top: 12px;
-}
-
-.price-box {
-    display: flex;
-    flex-direction: column;
-}
-
-.price-label {
-    font-size: 10.5px;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.price-val {
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--success);
-    letter-spacing: -0.02em;
-}
-
-.btn-view-flyer {
-    padding: 5px 10px;
-    font-size: 11.5px;
+.tab-content.active {
+    display: block;
 }
 
 /* TABELA */
-.table-container {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
+.table-responsive {
     overflow-x: auto;
-    box-shadow: var(--shadow-sm);
 }
 
 .table {
@@ -450,31 +339,23 @@ body.light-theme {
 
 .price-text {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13.5px;
     color: var(--success);
 }
 
-/* EMPTY STATE */
+.category-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    background: var(--primary-light);
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 12px;
+}
+
 .empty-state {
     text-align: center;
-    padding: 60px 20px;
-    background: var(--bg-surface);
-    border: 1px dashed var(--border-color);
-    border-radius: var(--radius);
-}
-
-.empty-icon {
-    font-size: 40px;
-    margin-bottom: 12px;
-}
-
-.empty-state h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-
-.empty-state p {
+    padding: 40px 20px;
     color: var(--text-muted);
 }
 
@@ -494,9 +375,9 @@ body.light-theme {
 .modal-dialog {
     background: #FFFFFF;
     border-radius: var(--radius);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-md);
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     overflow: hidden;
 }
 
@@ -553,7 +434,8 @@ body.light-theme {
 
 @media (max-width: 768px) {
     .navbar { flex-direction: column; align-items: flex-start; gap: 12px; }
-    .filter-panel { flex-direction: column; align-items: stretch; }
-    .filter-controls { flex-direction: column; align-items: stretch; }
+    .panel-header { flex-direction: column; align-items: stretch; }
+    .tabs-nav { overflow-x: auto; }
+    .tab-actions { flex-direction: column; align-items: stretch; }
     .select-sm { max-width: 100%; }
 }
