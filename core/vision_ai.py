@@ -4,24 +4,48 @@ import base64
 import time
 import requests
 from typing import Optional, Dict, Any, List
+from core.product_normalizer import normalize_product_name
 
-SYSTEM_PROMPT = """Você é um especialista em análise e extração de encartes, panfletos e ofertas de supermercados brasileiros.
-Analise a imagem com máxima precisão e extraia TODOS os produtos e seus respectivos preços promocionais.
+SYSTEM_PROMPT = """Você é um especialista sênior em inteligência de mercado e precificação de varejo supermercadista brasileiro.
+Sua missão é analisar a imagem do encarte com máxima precisão e extrair TODOS os produtos e preços promocionais, PADRONIZANDO as descrições dos produtos para viabilizar a comparação direta de preços entre diferentes redes concorrentes.
 
-Retorne EXCLUSIVAMENTE um objeto JSON no seguinte formato:
+FORMATO DE RESPOSTA OBRIGATÓRIO (JSON PURO):
 {
   "ofertas": [
     {
-      "item": "Nome completo do produto (com marca, tipo e peso/volume se visível no encarte)",
+      "item": "Nome Padronizado do Produto",
       "valor": 9.99
     }
   ]
 }
 
-Regras:
-1. O campo "valor" DEVE ser um número float (ex: 12.99 e não "R$ 12,99").
-2. Se a imagem não contiver ofertas ou preços (ex: apenas logotipo, foto de evento ou aviso), retorne: {"ofertas": []}.
-3. Não invente produtos nem adicione texto fora do JSON.
+REGRAS DE PADRONIZAÇÃO DE NOMES DE PRODUTOS:
+1. ESTRUTURA CANÔNICA: [Nome Principal do Produto] [Marca se visível] [Peso/Volume/Unidade Padrão]
+   Exemplos:
+   - "Arroz Tipo 1 Camil 5kg"
+   - "Leite Integral Piracanjuba 1L"
+   - "Queijo Mussarela Sadia kg"
+   - "Picanha Bovina kg"
+   - "Cerveja Heineken 350ml"
+   - "Café Torrado e Moído Pilão 500g"
+   - "Detergente Líquido Ypê 500ml"
+   - "Sabão em Pó Omo 800g"
+
+2. REMOVA RUÍDOS DE MARKETING E VARIAÇÕES IRRELEVANTES:
+   - Remova termos como: "fatiado", "em pedaço", "em posta", "a vácuo", "congelado", "resfriado", "bandeja", "cada", "unidade", "oferta", "especial", "tipo exportação", "qualidade premium", "temperado", "desossado", "o quilo", "a partir de".
+   - Exemplo: "Mussarela Fatiada ou Pedaço Sadia kg" ➔ "Queijo Mussarela Sadia kg"
+   - Exemplo: "Picanha Bovina Fatiada Resfriada a Vácuo kg" ➔ "Picanha Bovina kg"
+   - Exemplo: "Coxa e Sobrecoxa de Frango com Dorsal Congelada kg" ➔ "Coxa e Sobrecoxa de Frango kg"
+   - Exemplo: "Leite Condensado Moça Semi Desnatado TP 395g" ➔ "Leite Condensado Moça 395g"
+
+3. UNIDADES DE MEDIDA PADRÃO:
+   - Use sempre: kg, g, L, ml (sem espaço entre número e unidade: 5kg, 1kg, 500g, 1L, 900ml, 350ml).
+   - Se for preço por peso, termine com "kg" (ex: "Tomate Italiano kg", "Alcatra Bovina kg").
+
+4. REGRA DE VALOR:
+   - O campo "valor" DEVE ser estritamente um número float (ex: 12.99 e não "R$ 12,99").
+   - Se a imagem não contiver ofertas ou preços (ex: logotipo, aviso ou foto genérica), retorne: {"ofertas": []}.
+   - Não invente produtos nem adicione texto fora do JSON.
 """
 
 def extract_json_from_text(text: str) -> Optional[Dict[str, Any]]:

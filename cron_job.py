@@ -25,6 +25,7 @@ from core.config import load_config, OUTPUT_DIR
 from core.scraper import scrape_instagram_flyers
 from core.vision_ai import process_image_offers
 from core.categorizer import categorizar_produto
+from core.product_normalizer import normalize_product_name
 from core.exporter import export_offers_data
 from core.database import save_offers, init_db, get_db_stats
 from core.telegram_notifier import send_daily_notification
@@ -125,10 +126,15 @@ def run_automation(
                 ofertas = resultado["ofertas"]
                 log(f"   ✨ {len(ofertas)} ofertas identificadas!")
                 for of in ofertas:
-                    nome_prod = of.get("item") or of.get("nome")
+                    raw_nome = of.get("item") or of.get("nome")
                     val = of.get("valor")
-                    if not nome_prod or val is None:
+                    if not raw_nome or val is None:
                         continue
+                    
+                    nome_prod = normalize_product_name(raw_nome)
+                    if not nome_prod:
+                        continue
+
                     try:
                         val_float = float(str(val).replace("R$", "").replace("$", "").replace(",", ".").strip())
                     except Exception:

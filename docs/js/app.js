@@ -199,15 +199,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Normalizador de nome de produto para agrupamento inteligente
+    // Normalizador inteligente de nome de produto para agrupamento e comparação
     function normalizeProductName(name) {
         if (!name) return '';
         let norm = name.toLowerCase().trim();
         // Remove acentos
         norm = norm.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        // Padroniza separadores
-        norm = norm.replace(/[\/\-_]/g, ' ');
-        norm = norm.replace(/\s+/g, ' ');
+        // Padroniza unidades (1 kg -> 1kg, 1 litro -> 1l)
+        norm = norm.replace(/(\d+[\.,]?\d*)\s*(?:quilos?|kilos?|kgs?|kg\b)/g, '$1kg');
+        norm = norm.replace(/(\d+[\.,]?\d*)\s*(?:gramas?|grs?|g\b)/g, '$1g');
+        norm = norm.replace(/(\d+[\.,]?\d*)\s*(?:litros?|lts?|l\b)/g, '$1l');
+        norm = norm.replace(/(\d+[\.,]?\d*)\s*(?:mililitros?|mls?|ml\b)/g, '$1ml');
+
+        // Remove ruídos de corte e marketing
+        const noise = [
+            /\bfatiad[oa]s?\b/g, /\bem peda[cç]os?\b/g, /\bem postas?\b/g, /\ba v[aá]cuo\b/g,
+            /\bcongelad[oa]s?\b/g, /\bresfriad[oa]s?\b/g, /\btemperad[oa]s?\b/g, /\bdesossad[oa]s?\b/g,
+            /\bcom dorsal\b/g, /\bsem dorsal\b/g, /\bbandeja\b/g, /\bcada\b/g, /\bunidade\b/g,
+            /\bo quilo\b/g, /\bpor kg\b/g, /\boferta\b/g, /\bespecial\b/g, /\bqualidade premium\b/g,
+            /\btp\b/g, /\btetra pak\b/g, /\bpet\b/g, /\blata\b/g, /\bgarrafa\b/g, /\bpacote\b/g
+        ];
+        noise.forEach(rx => { norm = norm.replace(rx, ''); });
+
+        // Sinônimos rápidos
+        norm = norm.replace(/\bmussarela\b/g, 'queijo mussarela');
+        norm = norm.replace(/\bqueijo tipo mussarela\b/g, 'queijo mussarela');
+        norm = norm.replace(/\bqueijo tipo prato\b/g, 'queijo prato');
+
+        // Padroniza separadores e espaços
+        norm = norm.replace(/[\(\)\[\]\{\}\/\\,\-\:]+/g, ' ');
+        norm = norm.replace(/\s+/g, ' ').trim();
         return norm;
     }
 
