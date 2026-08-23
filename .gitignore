@@ -4,10 +4,9 @@ venv/
 env/
 ENV/
 
-# Arquivos de Configuração e Segredos
+# Arquivos de Configuração e Segredos (NUNCA VERSIONAR)
 .env
 .env.local
-data/config.json
 data/secrets.json
 
 # Cache do Python
@@ -17,15 +16,7 @@ __pycache__/
 *.so
 .pytest_cache/
 
-# Dados de Saída e Planilhas
-output/
-*.xlsx
-*.xls
-*.csv
-data/downloads/
-data/cache/
-
-# Logs e arquivos temporários
+# Logs e arquivos temporários de sistema
 *.log
 logs/
 .DS_Store
