@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-19_10-16-50",
+  "total_itens": 2,
+  "supermercados": [
+    "Super São Pedro",
+    "Supermercado Tuiuiú"
+  ],
+  "items": [
+    {
+      "supermercado": "Supermercado Tuiuiú",
+      "categoria": "Bebidas / Cervejas",
+      "item": "Cerveja Heineken 350ml",
+      "valor": 4.99,
+      "data_postagem": "19/08/2026",
+      "link": "https://example.com/img1.jpg",
+      "post_url": "https://instagram.com/p/123"
+    },
+    {
+      "supermercado": "Super São Pedro",
+      "categoria": "Carnes / Bovina",
+      "item": "Picanha Bovina kg",
+      "valor": 59.9,
+      "data_postagem": "19/08/2026",
+      "link": "https://example.com/img2.jpg",
+      "post_url": "https://instagram.com/p/124"
+    }
+  ]
+}
