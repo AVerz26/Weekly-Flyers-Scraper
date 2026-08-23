@@ -55,29 +55,38 @@ def extract_json_from_text(text: str) -> Optional[Dict[str, Any]]:
 def download_image_as_base64(image_url: str) -> Optional[tuple[str, str]]:
     """Baixa imagem da URL e retorna (base64_str, mime_type)."""
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
     }
-    try:
-        resp = requests.get(image_url, headers=headers, timeout=25)
-        resp.raise_for_status()
-        mime_type = resp.headers.get("Content-Type", "image/jpeg").split(";")[0]
-        if not mime_type.startswith("image/"):
-            mime_type = "image/jpeg"
-        b64 = base64.b64encode(resp.content).decode("utf-8")
-        return b64, mime_type
-    except Exception as e:
-        print(f"⚠️ Erro ao baixar imagem {image_url[:50]}: {e}")
-        return None
+    for attempt in range(2):
+        try:
+            resp = requests.get(image_url, headers=headers, timeout=25, allow_redirects=True)
+            if resp.status_code == 200 and resp.content:
+                mime_type = resp.headers.get("Content-Type", "image/jpeg").split(";")[0]
+                if not mime_type.startswith("image/"):
+                    mime_type = "image/jpeg"
+                b64 = base64.b64encode(resp.content).decode("utf-8")
+                return b64, mime_type
+        except Exception as e:
+            time.sleep(1)
+    return None
 
-def process_with_gemini(image_url: str, api_key: str, model_name: str = "gemini-1.5-flash") -> Optional[Dict[str, Any]]:
-    """Processa imagem de encarte usando a API do Google Gemini."""
+def process_with_gemini(image_url: str, api_key: str, model_name: str = "gemini-2.5-flash") -> Optional[Dict[str, Any]]:
+    """Processa imagem de encarte usando a API do Google Gemini com fallback automático de modelos."""
     img_data = download_image_as_base64(image_url)
     if not img_data:
         return None
         
     b64_img, mime_type = img_data
     
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+    # Modelos candidatos em ordem de prioridade
+    candidate_models = []
+    if model_name:
+        candidate_models.append(model_name)
+    for fallback in ["gemini-2.5-flash", "gemini-3.5-flash", "gemini-flash-latest", "gemini-1.5-flash"]:
+        if fallback not in candidate_models:
+            candidate_models.append(fallback)
+
     payload = {
         "contents": [
             {
@@ -97,23 +106,30 @@ def process_with_gemini(image_url: str, api_key: str, model_name: str = "gemini-
             "responseMimeType": "application/json"
         }
     }
-    
-    for attempt in range(3):
-        try:
-            resp = requests.post(url, json=payload, timeout=40)
-            if resp.status_code == 200:
-                data = resp.json()
-                text = data["candidates"][0]["content"]["parts"][0]["text"]
-                return extract_json_from_text(text)
-            elif resp.status_code == 429:
-                time.sleep(2 * (attempt + 1))
-            else:
-                print(f"⚠️ Erro Gemini ({resp.status_code}): {resp.text[:120]}")
+
+    for current_model in candidate_models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{current_model}:generateContent?key={api_key}"
+        for attempt in range(2):
+            try:
+                resp = requests.post(url, json=payload, timeout=40)
+                if resp.status_code == 200:
+                    data = resp.json()
+                    candidates = data.get("candidates", [])
+                    if candidates:
+                        parts = candidates[0].get("content", {}).get("parts", [])
+                        if parts:
+                            text = parts[0].get("text", "")
+                            res_json = extract_json_from_text(text)
+                            if res_json is not None:
+                                return res_json
+                elif resp.status_code == 404:
+                    # Modelo não suportado nesta versão de API, pula para o próximo modelo candidato
+                    break
+                elif resp.status_code in (429, 503):
+                    time.sleep(2 * (attempt + 1))
+            except Exception:
                 time.sleep(1)
-        except Exception as e:
-            print(f"⚠️ Exceção Gemini (tentativa {attempt+1}): {e}")
-            time.sleep(2)
-            
+
     return None
 
 def process_with_openai(image_url: str, api_key: str, model_name: str = "gpt-4o-mini") -> Optional[Dict[str, Any]]:

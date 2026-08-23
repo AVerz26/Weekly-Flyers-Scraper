@@ -44,7 +44,7 @@ def get_default_config() -> Dict[str, Any]:
         "vision_provider": os.getenv("VISION_PROVIDER", "gemini"),
         "gemini_api_key": os.getenv("GEMINI_API_KEY", ""),
         "openai_api_key": os.getenv("OPENAI_API_KEY", ""),
-        "gemini_model": os.getenv("GEMINI_MODEL", "gemini-1.5-flash"),
+        "gemini_model": os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
         "date_mode": "yesterday_today", # "today", "yesterday_today", "last_3_days", "last_7_days", "custom"
         "custom_start_date": "",
         "custom_end_date": "",
