@@ -95,7 +95,12 @@ def run_automation(
         return False
 
     if not imagens_coletadas:
-        log("ℹ️ Nenhuma imagem de encarte encontrada no período selecionado. Encerrando execução.")
+        log("ℹ️ Nenhuma nova postagem com encarte encontrada para o filtro de data.")
+        # Mantém o dashboard e a planilha populados com os dados acumulados no banco
+        db_records = get_recent_offers(limit=500)
+        if db_records and db_records.get("items"):
+            log(f"📊 Sincronizando dashboard com {len(db_records['items'])} ofertas acumuladas no banco de dados...")
+            export_offers_data(db_records["items"])
         return True
 
     # 3. Processamento de Visão com IA

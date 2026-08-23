@@ -10,17 +10,17 @@ on:
       date_mode:
         description: 'Modo de data'
         required: true
-        default: 'yesterday_today'
+        default: 'last_7_days'
         type: choice
         options:
+          - 'last_7_days'
+          - 'last_3_days'
           - 'yesterday_today'
           - 'today'
-          - 'last_3_days'
-          - 'last_7_days'
       limit:
         description: 'Limite de posts por perfil'
         required: true
-        default: '3'
+        default: '5'
 
 jobs:
   scrape-and-notify:
@@ -57,8 +57,8 @@ jobs:
           TELEGRAM_ENABLED: "true"
           TELEGRAM_SEND_EXCEL: "true"
         run: |
-          DATE_MODE="${{ github.event.inputs.date_mode || 'yesterday_today' }}"
-          LIMIT="${{ github.event.inputs.limit || '3' }}"
+          DATE_MODE="${{ github.event.inputs.date_mode || 'last_7_days' }}"
+          LIMIT="${{ github.event.inputs.limit || '5' }}"
           python cron_job.py --date-mode "$DATE_MODE" --limit "$LIMIT"
 
       - name: 🌐 Atualizar Dados do GitHub Pages
