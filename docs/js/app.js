@@ -1,11 +1,11 @@
 /**
- * FlyerScout - Visualização de Dados & Comparativo de Preços
+ * FlyerScout - Visualização de Dados & Comparativo de Preços de Produtos
  * GitHub Pages Dashboard
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     let allOffers = [];
-    let currentFiltered = [];
+    let groupedProducts = [];
 
     // Elementos DOM
     const lastUpdateText = document.getElementById('last-update-text');
@@ -16,12 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const metricMinPrice = document.getElementById('metric-min-price');
     const metricMinItem = document.getElementById('metric-min-item');
     const tabCountItems = document.getElementById('tab-count-items');
+    const tabCountCompared = document.getElementById('tab-count-compared');
 
     const searchInput = document.getElementById('search-input');
     const filterMarket = document.getElementById('filter-market');
     const filterCategory = document.getElementById('filter-category');
     const sortOrder = document.getElementById('sort-order');
+    const chkMultiMarketOnly = document.getElementById('chk-multi-market-only');
 
+    const comparisonContainer = document.getElementById('comparison-list-container');
     const tableOffersBody = document.getElementById('table-offers-body');
     const tableMarketBody = document.getElementById('table-market-body');
     const tableCatBody = document.getElementById('table-cat-body');
@@ -43,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         await loadData();
     }
 
-    // Gerenciamento de Abas
     function setupTabs() {
         const tabBtns = document.querySelectorAll('.tab-button');
         tabBtns.forEach(btn => {
@@ -64,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         filterMarket.addEventListener('change', applyFilters);
         filterCategory.addEventListener('change', applyFilters);
         sortOrder.addEventListener('change', applyFilters);
+        if (chkMultiMarketOnly) chkMultiMarketOnly.addEventListener('change', applyFilters);
 
         const btnReload = document.getElementById('btn-reload-data');
         if (btnReload) {
@@ -112,17 +115,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!data || !data.items || data.items.length === 0) {
             lastUpdateText.textContent = data && data.timestamp ? `Coleta em ${data.timestamp.split('_')[0]}` : 'Aguardando primeira coleta';
             metricDateInfo.textContent = 'Sem ofertas recentes';
-            tableOffersBody.innerHTML = `
-                <tr>
-                    <td colspan="6" class="empty-state" style="padding: 50px 20px;">
-                        <div style="font-size: 28px; margin-bottom: 8px;">⏳</div>
-                        <h4 style="margin-bottom: 6px; font-weight: 600;">Nenhum encarte novo encontrado no período</h4>
-                        <p style="font-size: 12.5px; color: var(--text-muted); max-width: 460px; margin: 0 auto;">
-                            A raspagem foi executada com sucesso, mas os supermercados ainda não publicaram encartes nas últimas 24h para as datas selecionadas.
+            if (comparisonContainer) {
+                comparisonContainer.innerHTML = `
+                    <div class="empty-state" style="padding: 60px 20px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 8px;">🛒</div>
+                        <h3 style="margin-bottom: 6px; font-weight: 700;">Aguardando Coleta dos Encartes</h3>
+                        <p style="font-size: 13px; color: var(--text-muted); max-width: 480px; margin: 0 auto;">
+                            O robô executa a coleta diária e salvará automaticamente todos os produtos aqui para comparação lado a lado.
                         </p>
-                    </td>
-                </tr>
-            `;
+                    </div>
+                `;
+            }
             return;
         }
 
@@ -143,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateMetrics(allOffers);
         populateDropdowns(allOffers);
+        processProductGrouping(allOffers);
         renderMarketSummary(allOffers);
         renderCategorySummary(allOffers);
         applyFilters();
@@ -195,13 +199,77 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Normalizador de nome de produto para agrupamento inteligente
+    function normalizeProductName(name) {
+        if (!name) return '';
+        let norm = name.toLowerCase().trim();
+        // Remove acentos
+        norm = norm.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        // Padroniza separadores
+        norm = norm.replace(/[\/\-_]/g, ' ');
+        norm = norm.replace(/\s+/g, ' ');
+        return norm;
+    }
+
+    // Agrupa os itens idênticos ou equivalentes entre múltiplos supermercados
+    function processProductGrouping(items) {
+        const groups = {};
+
+        items.forEach(item => {
+            const normName = normalizeProductName(item.item);
+            if (!normName) return;
+
+            // Chave de agrupamento baseada no nome normalizado
+            const key = normName;
+            if (!groups[key]) {
+                groups[key] = {
+                    displayName: item.item,
+                    category: item.categoria || 'Geral',
+                    offers: []
+                };
+            }
+            groups[key].offers.push(item);
+        });
+
+        groupedProducts = Object.values(groups).map(g => {
+            // Ordena as ofertas deste produto por preço (do menor para o maior)
+            g.offers.sort((a, b) => (parseFloat(a.valor) || 0) - (parseFloat(b.valor) || 0));
+            
+            const minPrice = parseFloat(g.offers[0].valor) || 0;
+            const maxPrice = parseFloat(g.offers[g.offers.length - 1].valor) || 0;
+            const diff = maxPrice - minPrice;
+            const diffPercent = maxPrice > 0 ? (diff / maxPrice) * 100 : 0;
+            const uniqueMarkets = new Set(g.offers.map(o => o.supermercado)).size;
+
+            return {
+                displayName: g.displayName,
+                category: g.category,
+                offers: g.offers,
+                minPrice,
+                maxPrice,
+                diff,
+                diffPercent,
+                uniqueMarkets,
+                cheapestMarket: g.offers[0].supermercado,
+                mostExpensiveMarket: g.offers[g.offers.length - 1].supermercado
+            };
+        });
+
+        const multiCount = groupedProducts.filter(g => g.uniqueMarkets > 1).length;
+        if (tabCountCompared) {
+            tabCountCompared.textContent = multiCount > 0 ? multiCount : groupedProducts.length;
+        }
+    }
+
     function applyFilters() {
         const query = searchInput.value.toLowerCase().trim();
         const selectedMkt = filterMarket.value;
         const selectedCat = filterCategory.value;
         const order = sortOrder.value;
+        const multiOnly = chkMultiMarketOnly ? chkMultiMarketOnly.checked : false;
 
-        let filtered = allOffers.filter(item => {
+        // 1. Filtra Lista Geral de Ofertas
+        let filteredOffers = allOffers.filter(item => {
             const matchQuery = !query || 
                 (item.item && item.item.toLowerCase().includes(query)) ||
                 (item.supermercado && item.supermercado.toLowerCase().includes(query)) ||
@@ -213,23 +281,155 @@ document.addEventListener('DOMContentLoaded', () => {
             return matchQuery && matchMkt && matchCat;
         });
 
-        // Ordenação
-        filtered.sort((a, b) => {
+        // Ordenação de Ofertas
+        filteredOffers.sort((a, b) => {
             const pA = parseFloat(a.valor) || 0;
             const pB = parseFloat(b.valor) || 0;
             if (order === 'price-asc') return pA - pB;
             if (order === 'price-desc') return pB - pA;
             if (order === 'name-asc') return (a.item || '').localeCompare(b.item || '');
-            if (order === 'market-asc') return (a.supermercado || '').localeCompare(b.supermercado || '');
-            return 0;
+            return pA - pB;
         });
 
-        currentFiltered = filtered;
-        renderOffersTable(filtered);
+        renderOffersTable(filteredOffers);
+
+        // 2. Filtra Lista de Comparativo de Produtos
+        let filteredGroups = groupedProducts.filter(group => {
+            if (multiOnly && group.uniqueMarkets < 2) return false;
+            
+            const matchCat = !selectedCat || group.category === selectedCat;
+            const matchMkt = !selectedMkt || group.offers.some(o => o.supermercado === selectedMkt);
+            const matchQuery = !query || 
+                group.displayName.toLowerCase().includes(query) ||
+                group.category.toLowerCase().includes(query) ||
+                group.offers.some(o => o.supermercado.toLowerCase().includes(query));
+
+            return matchCat && matchMkt && matchQuery;
+        });
+
+        // Ordenação de Comparativo
+        filteredGroups.sort((a, b) => {
+            if (order === 'diff-desc') return b.diff - a.diff;
+            if (order === 'price-asc') return a.minPrice - b.minPrice;
+            if (order === 'price-desc') return b.minPrice - a.minPrice;
+            if (order === 'name-asc') return a.displayName.localeCompare(b.displayName);
+            return b.diff - a.diff;
+        });
+
+        renderComparisonList(filteredGroups);
     }
 
-    // ABA 1: Renderiza Tabela de Ofertas
+    // ABA 0: Renderiza Cards de Comparativo de Mesmo Produto entre Mercados
+    function renderComparisonList(groups) {
+        if (!comparisonContainer) return;
+
+        if (groups.length === 0) {
+            comparisonContainer.innerHTML = `
+                <div class="empty-state" style="padding: 40px 20px; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 8px;">🔍</div>
+                    <p style="color: var(--text-muted); font-size: 13.5px;">
+                        Nenhum produto encontrado para os filtros selecionados.<br>
+                        <small>Desmarque a opção <em>"Apenas itens em 2+ supermercados"</em> para visualizar todos os itens.</small>
+                    </p>
+                </div>
+            `;
+            return;
+        }
+
+        comparisonContainer.innerHTML = '';
+        groups.forEach(group => {
+            const card = document.createElement('div');
+            card.className = 'comparison-card';
+
+            const hasDiff = group.uniqueMarkets > 1 && group.diff > 0;
+
+            let headerHTML = `
+                <div class="compare-card-header">
+                    <div class="compare-prod-info">
+                        <span class="compare-prod-title">${escapeHtml(group.displayName)}</span>
+                        <span class="category-badge">${escapeHtml(group.category)}</span>
+                        <span class="category-badge" style="background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-color);">
+                            ${group.uniqueMarkets} ${group.uniqueMarkets === 1 ? 'mercado' : 'mercados concorrentes'}
+                        </span>
+                    </div>
+                    <div class="compare-highlights">
+                        ${hasDiff ? `
+                            <span class="saving-badge" title="Economia máxima entre o menor e maior preço">
+                                💰 Economize até ${formatCurrency(group.diff)} (${group.diffPercent.toFixed(0)}%)
+                            </span>
+                        ` : ''}
+                        <span class="cheapest-badge">
+                            🏆 Menor Preço: ${formatCurrency(group.minPrice)} (${escapeHtml(group.cheapestMarket)})
+                        </span>
+                    </div>
+                </div>
+            `;
+
+            let rowsHTML = '';
+            group.offers.forEach((offer, idx) => {
+                const val = parseFloat(offer.valor) || 0;
+                const isBest = idx === 0;
+                const diffFromBest = val - group.minPrice;
+                const diffPct = group.minPrice > 0 ? (diffFromBest / group.minPrice) * 100 : 0;
+
+                rowsHTML += `
+                    <tr class="${isBest ? 'compare-row-best' : ''}">
+                        <td style="width: 260px;">
+                            <strong>${escapeHtml(offer.supermercado)}</strong>
+                            ${isBest ? ' <span class="status-badge-best">🏆 Menor Preço</span>' : ''}
+                        </td>
+                        <td class="text-right" style="width: 140px; font-weight: 700; font-size: 14px; color: ${isBest ? 'var(--success)' : 'var(--text-primary)'};">
+                            ${formatCurrency(val)}
+                        </td>
+                        <td style="width: 160px;">
+                            ${isBest ? `
+                                <span style="color: var(--success); font-weight: 600; font-size: 11.5px;">✓ Mais Barato</span>
+                            ` : `
+                                <span class="status-badge-diff">+${formatCurrency(diffFromBest)} (+${diffPct.toFixed(0)}%)</span>
+                            `}
+                        </td>
+                        <td style="width: 120px; color: var(--text-muted); font-size: 12px;">
+                            ${escapeHtml(offer.data_postagem || '-')}
+                        </td>
+                        <td class="text-center" style="width: 100px;">
+                            ${offer.link ? `
+                                <button class="btn btn-outline btn-sm btn-preview-flyer" data-img="${escapeHtml(offer.link)}" data-post="${escapeHtml(offer.post_url || '')}" data-market="${escapeHtml(offer.supermercado)}">
+                                    Ver Encarte
+                                </button>
+                            ` : '-'}
+                        </td>
+                    </tr>
+                `;
+            });
+
+            const tableHTML = `
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Supermercado</th>
+                            <th class="text-right">Preço</th>
+                            <th>Diferença</th>
+                            <th>Data Post</th>
+                            <th class="text-center">Encarte</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${rowsHTML}
+                    </tbody>
+                </table>
+            `;
+
+            card.innerHTML = headerHTML + tableHTML;
+            comparisonContainer.appendChild(card);
+        });
+
+        bindPreviewButtons(comparisonContainer);
+    }
+
+    // ABA 1: Renderiza Tabela de Todas as Ofertas
     function renderOffersTable(items) {
+        if (!tableOffersBody) return;
+
         if (items.length === 0) {
             tableOffersBody.innerHTML = `
                 <tr>
@@ -266,6 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ABA 2: Resumo por Supermercado
     function renderMarketSummary(items) {
+        if (!tableMarketBody) return;
         const groups = {};
         items.forEach(item => {
             const m = item.supermercado || 'Outros';
@@ -297,6 +498,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ABA 3: Comparativo por Categoria
     function renderCategorySummary(items) {
+        if (!tableCatBody) return;
         const groups = {};
         items.forEach(item => {
             const c = item.categoria || 'Geral';

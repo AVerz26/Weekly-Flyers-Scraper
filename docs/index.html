@@ -75,7 +75,10 @@
             <div class="panel-header">
                 <!-- ABAS DE VISUALIZAÇÃO -->
                 <div class="tabs-nav">
-                    <button class="tab-button active" data-tab="tab-all-offers">
+                    <button class="tab-button active" data-tab="tab-item-comparison">
+                        ⚖️ Comparativo de Produtos (<span id="tab-count-compared">0</span>)
+                    </button>
+                    <button class="tab-button" data-tab="tab-all-offers">
                         🛒 Todas as Ofertas (<span id="tab-count-items">0</span>)
                     </button>
                     <button class="tab-button" data-tab="tab-market-comparison">
@@ -99,17 +102,37 @@
                         <option value="">Todas as Categorias</option>
                     </select>
                     <select id="sort-order" class="form-control select-sm">
+                        <option value="diff-desc">Maior Diferença de Preço (Economia)</option>
                         <option value="price-asc">Menor Preço ➔ Maior</option>
                         <option value="price-desc">Maior Preço ➔ Menor</option>
                         <option value="name-asc">Produto (A-Z)</option>
-                        <option value="market-asc">Supermercado (A-Z)</option>
                     </select>
                 </div>
             </div>
 
             <div class="panel-body">
+                <!-- ABA 0: COMPARATIVO DE PREÇO DO MESMO ITEM ENTRE MERCADOS -->
+                <div id="tab-item-comparison" class="tab-content active">
+                    <div class="comparison-toolbar" style="padding: 12px 18px; background: var(--bg-subtle); border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <div style="font-size: 13px; color: var(--text-secondary); font-weight: 500;">
+                            💡 Compare o preço do mesmo item em diferentes supermercados e identifique onde economizar mais.
+                        </div>
+                        <div class="filter-toggle" style="display: flex; gap: 8px;">
+                            <label style="display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; cursor: pointer;">
+                                <input type="checkbox" id="chk-multi-market-only" checked style="accent-color: var(--primary);">
+                                <span>Apenas itens em 2+ supermercados</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="comparison-list-container" class="comparison-list">
+                        <!-- Renderizado dinamicamente via JS -->
+                        <div class="empty-state">Carregando comparação de produtos...</div>
+                    </div>
+                </div>
+
                 <!-- ABA 1: TODAS AS OFERTAS (TABELA CORPORATIVA) -->
-                <div id="tab-all-offers" class="tab-content active">
+                <div id="tab-all-offers" class="tab-content">
                     <div class="table-responsive">
                         <table class="table" id="table-offers">
                             <thead>
