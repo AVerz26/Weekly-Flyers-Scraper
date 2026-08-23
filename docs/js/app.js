@@ -65,6 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
         filterCategory.addEventListener('change', applyFilters);
         sortOrder.addEventListener('change', applyFilters);
 
+        const btnReload = document.getElementById('btn-reload-data');
+        if (btnReload) {
+            btnReload.addEventListener('click', async () => {
+                btnReload.textContent = '⏳ Atualizando...';
+                await loadData();
+                btnReload.textContent = '🔄 Atualizar';
+            });
+        }
+
         btnCloseModal.addEventListener('click', () => {
             modalImagePreview.style.display = 'none';
         });
@@ -75,31 +84,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function loadData() {
+        const cacheBuster = `?_t=${new Date().getTime()}`;
         const possibleUrls = [
-            'data/latest_results.json',
-            '../output/latest_results.json',
-            'https://raw.githubusercontent.com/AVerz26/Weekly-Flyers-Scraper/main/output/latest_results.json'
+            `data/latest_results.json${cacheBuster}`,
+            `https://raw.githubusercontent.com/AVerz26/Weekly-Flyers-Scraper/main/docs/data/latest_results.json${cacheBuster}`,
+            `https://raw.githubusercontent.com/AVerz26/Weekly-Flyers-Scraper/main/output/latest_results.json${cacheBuster}`
         ];
 
         let data = null;
         for (const url of possibleUrls) {
             try {
-                const resp = await fetch(url);
+                const resp = await fetch(url, { cache: 'no-store' });
                 if (resp.ok) {
-                    data = await resp.json();
-                    break;
+                    const parsed = await resp.json();
+                    if (parsed && Array.isArray(parsed.items) && parsed.items.length > 0) {
+                        data = parsed;
+                        break;
+                    } else if (parsed && parsed.items) {
+                        data = parsed;
+                    }
                 }
             } catch (e) {
-                // Continua para o próximo
+                console.warn('Falha ao obter dados de:', url, e);
             }
         }
 
         if (!data || !data.items || data.items.length === 0) {
-            lastUpdateText.textContent = 'Aguardando primeira coleta';
+            lastUpdateText.textContent = data && data.timestamp ? `Coleta em ${data.timestamp.split('_')[0]}` : 'Aguardando primeira coleta';
+            metricDateInfo.textContent = 'Sem ofertas recentes';
             tableOffersBody.innerHTML = `
                 <tr>
-                    <td colspan="6" class="empty-state">
-                        Nenhum dado coletado ainda. O robô atualizará esta página automaticamente às 07:00 da manhã.
+                    <td colspan="6" class="empty-state" style="padding: 50px 20px;">
+                        <div style="font-size: 28px; margin-bottom: 8px;">⏳</div>
+                        <h4 style="margin-bottom: 6px; font-weight: 600;">Nenhum encarte novo encontrado no período</h4>
+                        <p style="font-size: 12.5px; color: var(--text-muted); max-width: 460px; margin: 0 auto;">
+                            A raspagem foi executada com sucesso, mas os supermercados ainda não publicaram encartes nas últimas 24h para as datas selecionadas.
+                        </p>
                     </td>
                 </tr>
             `;

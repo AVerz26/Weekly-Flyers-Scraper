@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <!-- Google Fonts: Inter & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="light-theme">
     <div class="app-layout">
         <!-- CABEÇALHO CORPORATIVO -->
@@ -19,7 +23,8 @@
                     <div class="brand-badge"></div>
                     <div>
                         <h1 class="brand-title">FlyerScout • Comparativo de Preços</h1>
-                        <span class="brand-subtitle">Monitoramento Inteligente de Encartes e Ofertas de Supermercados</span>
+                        <span class="brand-subtitle">Monitoramento Inteligente de Encartes e Ofertas de
+                            Supermercados</span>
                     </div>
                 </div>
             </div>
@@ -29,7 +34,11 @@
                     <span class="pulse-dot"></span>
                     <span>Última Coleta: <strong id="last-update-text">Hoje</strong></span>
                 </div>
-                <div class="nav-actions">
+                <div class="nav-actions" style="display: flex; gap: 8px;">
+                    <button id="btn-reload-data" class="btn btn-outline btn-sm"
+                        title="Recarregar ofertas mais recentes">
+                        🔄 Atualizar
+                    </button>
                     <a id="btn-download-excel" href="data/latest_results.xlsx" download class="btn btn-success btn-sm">
                         📊 Baixar Excel (.xlsx)
                     </a>
@@ -80,7 +89,8 @@
                 <!-- FILTROS E BUSCA EM TEMPO REAL -->
                 <div class="tab-actions">
                     <div class="search-box">
-                        <input type="text" id="search-input" placeholder="Buscar produto ou supermercado..." class="form-control search-input">
+                        <input type="text" id="search-input" placeholder="Buscar produto ou supermercado..."
+                            class="form-control search-input">
                     </div>
                     <select id="filter-market" class="form-control select-sm">
                         <option value="">Todos os Supermercados</option>
@@ -163,11 +173,6 @@
             </div>
         </section>
 
-        <!-- RODAPÉ DISCRETO -->
-        <footer class="footer">
-            <span>FlyerScout AI • Dashboard de Inteligência de Varejo • Grupo Mantiqueira</span>
-            <span class="footer-meta">Atualização 100% Automática via GitHub Actions</span>
-        </footer>
     </div>
 
     <!-- MODAL DE VISUALIZAÇÃO DO ENCARTE -->
@@ -181,12 +186,15 @@
                 <img id="preview-img-element" src="" alt="Encarte">
             </div>
             <div class="modal-footer">
-                <a id="btn-open-original-img" href="#" target="_blank" class="btn btn-outline btn-sm">Abrir Imagem Original</a>
-                <a id="btn-open-instagram-post" href="#" target="_blank" class="btn btn-primary btn-sm">Abrir Post no Instagram</a>
+                <a id="btn-open-original-img" href="#" target="_blank" class="btn btn-outline btn-sm">Abrir Imagem
+                    Original</a>
+                <a id="btn-open-instagram-post" href="#" target="_blank" class="btn btn-primary btn-sm">Abrir Post no
+                    Instagram</a>
             </div>
         </div>
     </div>
 
     <script src="js/app.js"></script>
 </body>
+
 </html>
