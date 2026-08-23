@@ -28,6 +28,7 @@ jobs:
     timeout-minutes: 45
     permissions:
       contents: write
+      pages: write
 
     steps:
       - name: 📥 Clonar Repositório
@@ -60,15 +61,25 @@ jobs:
           LIMIT="${{ github.event.inputs.limit || '3' }}"
           python cron_job.py --date-mode "$DATE_MODE" --limit "$LIMIT"
 
-      - name: 💾 Salvar Banco de Dados e Planilhas no Repositório
+      - name: 🌐 Atualizar Dados do GitHub Pages
+        run: |
+          mkdir -p docs/data
+          if [ -f output/latest_results.json ]; then
+            cp output/latest_results.json docs/data/latest_results.json
+          fi
+          if [ -f output/latest_results.xlsx ]; then
+            cp output/latest_results.xlsx docs/data/latest_results.xlsx
+          fi
+
+      - name: 💾 Salvar Banco de Dados, Planilhas e Dashboard no Repositório
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/offers.db output/
+          git add data/offers.db output/ docs/
           if git diff --staged --quiet; then
             echo "Nenhuma alteração para commitar."
           else
-            git commit -m "🤖 [Automated] Atualização diária do banco de dados e encartes [skip ci]"
+            git commit -m "🤖 [Automated] Atualização diária do banco de dados, encartes e dashboard [skip ci]"
             git push
           fi
 
@@ -80,4 +91,5 @@ jobs:
           path: |
             output/
             data/offers.db
+            docs/data/
           retention-days: 30
