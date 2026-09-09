@@ -542,10 +542,316 @@ body.light-theme {
     border-top: 1px solid var(--border-color);
 }
 
+/* ============================================================
+   HISTÓRICO DE PREÇOS E GRÁFICOS (DOCS)
+   ============================================================ */
+
+.history-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    padding: 16px;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.history-toolbar-left {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.history-toolbar-right {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.history-select-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 170px;
+}
+
+.history-select-group label {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.history-search-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.history-product-group {
+    flex: 1.5;
+    min-width: 260px;
+}
+
+.select-highlight {
+    border-color: #3B82F6 !important;
+    background-color: #F8FAFC !important;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.select-highlight:focus {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Banner do produto */
+.history-product-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    margin: 0 16px 16px 16px;
+}
+
+.product-title-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.product-badge-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius);
+    background: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.product-main-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.product-main-title h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.history-stats-grid {
+    margin: 0 16px 16px 16px;
+}
+
+.stat-subdetail {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.trend-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: var(--radius-sm);
+}
+
+.trend-badge-down {
+    background: #DCFCE7;
+    color: #166534;
+}
+
+.trend-badge-up {
+    background: #FEE2E2;
+    color: #991B1B;
+}
+
+.trend-badge-neutral {
+    background: #F1F5F9;
+    color: #475569;
+}
+
+/* Gráfico Card */
+.chart-wrapper-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin: 0 16px 20px 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.chart-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.chart-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.chart-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.chart-subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.chart-legend-custom {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.legend-item-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 8px;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.legend-color-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.chart-canvas-wrapper {
+    position: relative;
+    height: 380px;
+    width: 100%;
+}
+
+.chart-empty-state {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface);
+    text-align: center;
+    gap: 8px;
+}
+
+.chart-empty-state h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.chart-empty-state p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* Tabela Histórica */
+.history-table-section {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 0 16px 20px 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.history-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.history-table-header h3 {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.diff-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: var(--radius-sm);
+}
+
+.diff-tag-negative {
+    background: #DCFCE7;
+    color: #166534;
+    border: 1px solid #BBF7D0;
+}
+
+.diff-tag-positive {
+    background: #FEE2E2;
+    color: #991B1B;
+    border: 1px solid #FECACA;
+}
+
+.diff-tag-neutral {
+    background: #F1F5F9;
+    color: #475569;
+    border: 1px solid #E2E8F0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-pointer:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .navbar { flex-direction: column; align-items: flex-start; gap: 12px; }
     .panel-header { flex-direction: column; align-items: stretch; }
     .tabs-nav { overflow-x: auto; }
     .tab-actions { flex-direction: column; align-items: stretch; }
     .select-sm { max-width: 100%; }
+    .history-toolbar { flex-direction: column; align-items: stretch; }
+    .history-toolbar-left, .history-toolbar-right { flex-direction: column; width: 100%; }
+    .history-select-group { width: 100%; }
 }

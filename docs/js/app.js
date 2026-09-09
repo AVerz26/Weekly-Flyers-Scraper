@@ -6,6 +6,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     let allOffers = [];
     let groupedProducts = [];
+    let productHistoryMap = {};
+    let currentProductsList = [];
+    let selectedProductName = '';
+    let priceChartInstance = null;
 
     // Elementos DOM
     const lastUpdateText = document.getElementById('last-update-text');
@@ -17,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const metricMinItem = document.getElementById('metric-min-item');
     const tabCountItems = document.getElementById('tab-count-items');
     const tabCountCompared = document.getElementById('tab-count-compared');
+    const tabCountHistory = document.getElementById('tab-count-history');
 
     const searchInput = document.getElementById('search-input');
     const filterDate = document.getElementById('filter-date');
@@ -29,6 +34,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const tableOffersBody = document.getElementById('table-offers-body');
     const tableMarketBody = document.getElementById('table-market-body');
     const tableCatBody = document.getElementById('table-cat-body');
+
+    // Elementos do Histórico de Preços
+    const filterHistoryCategory = document.getElementById('filter-history-category');
+    const inputSearchHistoryProduct = document.getElementById('input-search-history-product');
+    const selectHistoryProduct = document.getElementById('select-history-product');
+    const selectChartMode = document.getElementById('select-chart-mode');
+    const historyProductTitle = document.getElementById('history-product-title');
+    const historyProductCategory = document.getElementById('history-product-category');
+    const historyProductDates = document.getElementById('history-product-dates');
+    const statHistMinPrice = document.getElementById('stat-hist-min-price');
+    const statHistMinMarket = document.getElementById('stat-hist-min-market');
+    const statHistMaxPrice = document.getElementById('stat-hist-max-price');
+    const statHistMaxMarket = document.getElementById('stat-hist-max-market');
+    const statHistAvgPrice = document.getElementById('stat-hist-avg-price');
+    const statHistRecordsCount = document.getElementById('stat-hist-records-count');
+    const statHistRecentPrice = document.getElementById('stat-hist-recent-price');
+    const statHistTrendBadge = document.getElementById('stat-hist-trend-badge');
+    const chartLegendCustom = document.getElementById('chart-legend-custom');
+    const chartProductSubtitle = document.getElementById('chart-product-subtitle');
+    const productPriceChartCanvas = document.getElementById('product-price-chart');
+    const chartEmptyState = document.getElementById('chart-empty-state');
+    const historyTableCount = document.getElementById('history-table-count');
+    const tbodyProductHistory = document.getElementById('tbody-product-history');
 
     // Modal
     const modalImagePreview = document.getElementById('modal-image-preview');
@@ -58,6 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.add('active');
                 const pane = document.getElementById(targetTab);
                 if (pane) pane.classList.add('active');
+
+                if (targetTab === 'tab-price-history' && priceChartInstance) {
+                    setTimeout(() => priceChartInstance.resize(), 50);
+                }
             });
         });
     }
@@ -69,6 +101,16 @@ document.addEventListener('DOMContentLoaded', () => {
         filterCategory.addEventListener('change', applyFilters);
         sortOrder.addEventListener('change', applyFilters);
         if (chkMultiMarketOnly) chkMultiMarketOnly.addEventListener('change', applyFilters);
+
+        // Listeners do Histórico de Preços
+        if (filterHistoryCategory) filterHistoryCategory.addEventListener('change', () => filterAndRenderProductOptions());
+        if (inputSearchHistoryProduct) inputSearchHistoryProduct.addEventListener('input', debounce(() => filterAndRenderProductOptions(), 250));
+        if (selectHistoryProduct) selectHistoryProduct.addEventListener('change', (e) => renderProductPriceHistory(e.target.value));
+        if (selectChartMode) selectChartMode.addEventListener('change', () => {
+            if (selectedProductName && productHistoryMap[selectedProductName]) {
+                renderProductPriceHistory(selectedProductName);
+            }
+        });
 
         const btnReload = document.getElementById('btn-reload-data');
         if (btnReload) {
@@ -149,6 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateMetrics(allOffers);
         populateDropdowns(allOffers);
         processProductGrouping(allOffers);
+        buildProductHistoryMap(allOffers);
         renderMarketSummary(allOffers);
         renderCategorySummary(allOffers);
         applyFilters();
@@ -437,7 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let headerHTML = `
                 <div class="compare-card-header">
                     <div class="compare-prod-info">
-                        <span class="compare-prod-title">${escapeHtml(group.displayName)}</span>
+                        <span class="compare-prod-title cursor-pointer btn-jump-history" data-product="${escapeHtml(group.displayName)}" title="Clique para ver o gráfico de histórico de preços deste produto">${escapeHtml(group.displayName)} <span style="font-size: 11px; opacity: 0.7;">📈</span></span>
                         <span class="category-badge">${escapeHtml(group.category)}</span>
                         <span class="category-badge" style="background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-color);">
                             ${group.uniqueMarkets} ${group.uniqueMarkets === 1 ? 'mercado' : 'mercados concorrentes'}
@@ -514,6 +557,13 @@ document.addEventListener('DOMContentLoaded', () => {
             comparisonContainer.appendChild(card);
         });
 
+        comparisonContainer.querySelectorAll('.btn-jump-history').forEach(el => {
+            el.addEventListener('click', () => {
+                const prod = el.getAttribute('data-product');
+                if (prod) navigateToProductHistory(prod);
+            });
+        });
+
         bindPreviewButtons(comparisonContainer);
     }
 
@@ -538,7 +588,11 @@ document.addEventListener('DOMContentLoaded', () => {
             tr.innerHTML = `
                 <td><strong>${escapeHtml(item.supermercado)}</strong></td>
                 <td><span class="category-badge">${escapeHtml(item.categoria || 'Geral')}</span></td>
-                <td>${escapeHtml(item.item)}</td>
+                <td>
+                    <span class="cursor-pointer btn-jump-history" data-product="${escapeHtml(item.item)}" title="Clique para ver o gráfico de histórico de preços">
+                        ${escapeHtml(item.item)} <span style="font-size: 11px; opacity: 0.7;">📈</span>
+                    </span>
+                </td>
                 <td class="text-right price-text">${formatCurrency(item.valor)}</td>
                 <td>${escapeHtml(item.data_postagem || '-')}</td>
                 <td class="text-center">
@@ -550,6 +604,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 </td>
             `;
             tableOffersBody.appendChild(tr);
+        });
+
+        tableOffersBody.querySelectorAll('.btn-jump-history').forEach(el => {
+            el.addEventListener('click', () => {
+                const prod = el.getAttribute('data-product');
+                if (prod) navigateToProductHistory(prod);
+            });
         });
 
         bindPreviewButtons(tableOffersBody);
@@ -622,6 +683,445 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ============================================================
+    // HISTÓRICO DE PREÇOS POR PRODUTO E GRÁFICOS (CHART.JS)
+    // ============================================================
+
+    const MARKET_PALETTE = [
+        { border: '#2563EB', bg: 'rgba(37, 99, 235, 0.12)' },
+        { border: '#16A34A', bg: 'rgba(22, 163, 74, 0.12)' },
+        { border: '#D97706', bg: 'rgba(217, 119, 6, 0.12)' },
+        { border: '#9333EA', bg: 'rgba(147, 51, 234, 0.12)' },
+        { border: '#DC2626', bg: 'rgba(220, 38, 38, 0.12)' },
+        { border: '#0891B2', bg: 'rgba(8, 145, 178, 0.12)' },
+        { border: '#4F46E5', bg: 'rgba(79, 70, 229, 0.12)' },
+        { border: '#EA580C', bg: 'rgba(234, 88, 12, 0.12)' },
+        { border: '#059669', bg: 'rgba(5, 150, 105, 0.12)' },
+        { border: '#DB2777', bg: 'rgba(219, 39, 119, 0.12)' },
+        { border: '#6366F1', bg: 'rgba(99, 102, 241, 0.12)' },
+        { border: '#14B8A6', bg: 'rgba(20, 184, 166, 0.12)' }
+    ];
+
+    function parseDateTuple(dataPostagem) {
+        if (!dataPostagem || dataPostagem === '-') return { iso: '1970-01-01', display: '-' };
+        const clean = String(dataPostagem).trim();
+        if (clean.includes('/')) {
+            const parts = clean.split('/');
+            if (parts.length === 3) {
+                const y = parts[2].length === 2 ? `20${parts[2]}` : parts[2];
+                return { iso: `${y}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`, display: clean };
+            }
+        }
+        if (clean.includes('-')) {
+            const parts = clean.split('-');
+            if (parts.length === 3) {
+                return { iso: clean, display: `${parts[2]}/${parts[1]}/${parts[0]}` };
+            }
+        }
+        return { iso: '1970-01-01', display: clean };
+    }
+
+    function buildProductHistoryMap(items) {
+        productHistoryMap = {};
+        items.forEach(item => {
+            const normKey = normalizeProductName(item.item);
+            if (!normKey) return;
+
+            if (!productHistoryMap[normKey]) {
+                productHistoryMap[normKey] = {
+                    key: normKey,
+                    displayName: item.item,
+                    category: item.categoria || 'Geral',
+                    records: []
+                };
+            }
+
+            const dateObj = parseDateTuple(item.data_postagem);
+            productHistoryMap[normKey].records.push({
+                supermercado: item.supermercado || 'Supermercado',
+                categoria: item.categoria || productHistoryMap[normKey].category,
+                item_original: item.item,
+                valor: parseFloat(item.valor) || 0,
+                data_postagem: item.data_postagem || '-',
+                iso_date: dateObj.iso,
+                display_date: dateObj.display,
+                link: item.link || '',
+                post_url: item.post_url || ''
+            });
+        });
+
+        currentProductsList = Object.values(productHistoryMap).map(p => {
+            p.records.sort((a, b) => a.iso_date.localeCompare(b.iso_date));
+            const uniqueMarkets = new Set(p.records.map(r => r.supermercado)).size;
+            return {
+                key: p.key,
+                displayName: p.displayName,
+                category: p.category,
+                totalRecords: p.records.length,
+                uniqueMarkets: uniqueMarkets
+            };
+        });
+
+        currentProductsList.sort((a, b) => b.totalRecords - a.totalRecords || a.displayName.localeCompare(b.displayName));
+
+        if (tabCountHistory) {
+            tabCountHistory.textContent = currentProductsList.length;
+        }
+
+        populateHistoryCategoryFilter(currentProductsList);
+        filterAndRenderProductOptions();
+    }
+
+    function populateHistoryCategoryFilter(products) {
+        if (!filterHistoryCategory) return;
+        const curVal = filterHistoryCategory.value;
+        const categories = [...new Set(products.map(p => p.category).filter(Boolean))].sort();
+
+        filterHistoryCategory.innerHTML = '<option value="">Todas as categorias</option>';
+        categories.forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c;
+            opt.textContent = c;
+            filterHistoryCategory.appendChild(opt);
+        });
+        if (categories.includes(curVal)) {
+            filterHistoryCategory.value = curVal;
+        }
+    }
+
+    function filterAndRenderProductOptions(preferredKey = null) {
+        if (!selectHistoryProduct) return;
+
+        const cat = filterHistoryCategory ? filterHistoryCategory.value : '';
+        const query = inputSearchHistoryProduct ? inputSearchHistoryProduct.value.toLowerCase().trim() : '';
+
+        const filtered = currentProductsList.filter(p => {
+            const matchCat = !cat || p.category === cat;
+            const matchQuery = !query || 
+                p.displayName.toLowerCase().includes(query) ||
+                p.category.toLowerCase().includes(query);
+            return matchCat && matchQuery;
+        });
+
+        selectHistoryProduct.innerHTML = '';
+        if (filtered.length === 0) {
+            selectHistoryProduct.innerHTML = '<option value="">Nenhum produto encontrado</option>';
+            if (historyProductTitle) historyProductTitle.textContent = 'Nenhum produto selecionado';
+            if (chartEmptyState) chartEmptyState.style.display = 'flex';
+            if (priceChartInstance) {
+                priceChartInstance.destroy();
+                priceChartInstance = null;
+            }
+            if (tbodyProductHistory) {
+                tbodyProductHistory.innerHTML = '<tr><td colspan="6" class="empty-state">Nenhum registro para os filtros selecionados.</td></tr>';
+            }
+            return;
+        }
+
+        filtered.forEach(p => {
+            const opt = document.createElement('option');
+            opt.value = p.key;
+            opt.textContent = `${p.displayName} (${p.totalRecords} ofertas • ${p.uniqueMarkets} mercados)`;
+            selectHistoryProduct.appendChild(opt);
+        });
+
+        let toSelect = filtered[0].key;
+        if (preferredKey && filtered.some(p => p.key === preferredKey)) {
+            toSelect = preferredKey;
+        } else if (selectedProductName && filtered.some(p => p.key === selectedProductName)) {
+            toSelect = selectedProductName;
+        }
+
+        selectHistoryProduct.value = toSelect;
+        selectedProductName = toSelect;
+        renderProductPriceHistory(toSelect);
+    }
+
+    function renderProductPriceHistory(productKey) {
+        if (!productKey || !productHistoryMap[productKey]) return;
+        selectedProductName = productKey;
+
+        const product = productHistoryMap[productKey];
+        const records = [...product.records];
+        if (records.length === 0) return;
+
+        // Estatísticas
+        const prices = records.map(r => r.valor).filter(v => v > 0);
+        const minPrice = Math.min(...prices);
+        const maxPrice = Math.max(...prices);
+        const avgPrice = prices.length > 0 ? prices.reduce((a, b) => a + b, 0) / prices.length : 0;
+
+        const recMin = records.find(r => r.valor === minPrice) || records[0];
+        const recMax = records.find(r => r.valor === maxPrice) || records[0];
+        const recRecent = records[records.length - 1];
+
+        const varPct = avgPrice > 0 ? ((recRecent.valor - avgPrice) / avgPrice * 100) : 0;
+        const uniqueMarkets = new Set(records.map(r => r.supermercado)).size;
+
+        // 1. Atualizar Banner
+        if (historyProductTitle) historyProductTitle.textContent = product.displayName;
+        if (historyProductCategory) historyProductCategory.textContent = product.category;
+        if (historyProductDates) {
+            historyProductDates.textContent = `Registros de ${records[0].display_date} a ${recRecent.display_date}`;
+        }
+
+        // 2. Atualizar KPIs
+        if (statHistMinPrice) statHistMinPrice.textContent = formatCurrency(minPrice);
+        if (statHistMinMarket) statHistMinMarket.textContent = `No ${recMin.supermercado} (${recMin.display_date})`;
+
+        if (statHistMaxPrice) statHistMaxPrice.textContent = formatCurrency(maxPrice);
+        if (statHistMaxMarket) statHistMaxMarket.textContent = `No ${recMax.supermercado} (${recMax.display_date})`;
+
+        if (statHistAvgPrice) statHistAvgPrice.textContent = formatCurrency(avgPrice);
+        if (statHistRecordsCount) statHistRecordsCount.textContent = `${records.length} ofertas em ${uniqueMarkets} supermercado(s)`;
+
+        if (statHistRecentPrice) statHistRecentPrice.textContent = formatCurrency(recRecent.valor);
+        if (statHistTrendBadge) {
+            if (varPct < -0.5) {
+                statHistTrendBadge.innerHTML = `<span class="trend-badge trend-badge-down">↓ ${Math.abs(varPct).toFixed(1)}% vs média</span>`;
+            } else if (varPct > 0.5) {
+                statHistTrendBadge.innerHTML = `<span class="trend-badge trend-badge-up">↑ +${varPct.toFixed(1)}% vs média</span>`;
+            } else {
+                statHistTrendBadge.innerHTML = `<span class="trend-badge trend-badge-neutral">Na média histórica</span>`;
+            }
+        }
+
+        // 3. Renderizar Gráfico
+        renderHistoryChart(records, avgPrice);
+
+        // 4. Renderizar Tabela Histórica
+        renderHistoryTable(records, avgPrice);
+    }
+
+    function renderHistoryChart(records, avgPrice) {
+        if (!productPriceChartCanvas) return;
+
+        if (priceChartInstance) {
+            priceChartInstance.destroy();
+            priceChartInstance = null;
+        }
+
+        if (!records || records.length === 0) {
+            if (chartEmptyState) chartEmptyState.style.display = 'flex';
+            return;
+        }
+        if (chartEmptyState) chartEmptyState.style.display = 'none';
+
+        // Obter datas únicas ordenadas
+        const datesMap = {};
+        records.forEach(r => {
+            if (r.iso_date) datesMap[r.iso_date] = r.display_date;
+        });
+        const sortedIsoDates = Object.keys(datesMap).sort();
+        const dateLabels = sortedIsoDates.map(d => datesMap[d]);
+
+        const supermarkets = [...new Set(records.map(r => r.supermercado))].sort();
+        const mode = selectChartMode ? selectChartMode.value : 'multi_market';
+
+        let datasets = [];
+        let legendHtml = '';
+
+        if (mode === 'multi_market') {
+            supermarkets.forEach((mkt, idx) => {
+                const colorObj = MARKET_PALETTE[idx % MARKET_PALETTE.length];
+                const mktRecords = records.filter(r => r.supermercado === mkt);
+                const dateToVal = {};
+                mktRecords.forEach(r => { dateToVal[r.iso_date] = r.valor; });
+
+                const dataPoints = sortedIsoDates.map(d => dateToVal[d] !== undefined ? dateToVal[d] : null);
+
+                datasets.push({
+                    label: mkt,
+                    data: dataPoints,
+                    borderColor: colorObj.border,
+                    backgroundColor: colorObj.bg,
+                    borderWidth: 2.5,
+                    tension: 0.25,
+                    pointRadius: 5,
+                    pointHoverRadius: 7,
+                    pointBackgroundColor: colorObj.border,
+                    pointBorderColor: '#FFFFFF',
+                    pointBorderWidth: 2,
+                    spanGaps: true
+                });
+
+                legendHtml += `
+                    <div class="legend-item-chip">
+                        <span class="legend-color-dot" style="background: ${colorObj.border};"></span>
+                        <span>${escapeHtml(mkt)}</span>
+                    </div>
+                `;
+            });
+        } else if (mode === 'average_trend') {
+            const avgPoints = sortedIsoDates.map(d => {
+                const vals = records.filter(r => r.iso_date === d).map(r => r.valor).filter(v => v > 0);
+                return vals.length > 0 ? (vals.reduce((a, b) => a + b, 0) / vals.length) : null;
+            });
+
+            datasets.push({
+                label: 'Preço Médio nos Encartes',
+                data: avgPoints,
+                borderColor: '#2563EB',
+                backgroundColor: 'rgba(37, 99, 235, 0.12)',
+                borderWidth: 3,
+                tension: 0.3,
+                fill: true,
+                pointRadius: 6,
+                pointHoverRadius: 8,
+                pointBackgroundColor: '#2563EB',
+                pointBorderColor: '#FFFFFF',
+                pointBorderWidth: 2,
+                spanGaps: true
+            });
+
+            legendHtml = `
+                <div class="legend-item-chip">
+                    <span class="legend-color-dot" style="background: #2563EB;"></span>
+                    <span>Preço Médio dos Encartes</span>
+                </div>
+            `;
+        } else if (mode === 'bar_comparison') {
+            supermarkets.forEach((mkt, idx) => {
+                const colorObj = MARKET_PALETTE[idx % MARKET_PALETTE.length];
+                const mktRecords = records.filter(r => r.supermercado === mkt);
+                const dateToVal = {};
+                mktRecords.forEach(r => { dateToVal[r.iso_date] = r.valor; });
+
+                const dataPoints = sortedIsoDates.map(d => dateToVal[d] !== undefined ? dateToVal[d] : null);
+
+                datasets.push({
+                    type: 'bar',
+                    label: mkt,
+                    data: dataPoints,
+                    backgroundColor: colorObj.border,
+                    borderColor: colorObj.border,
+                    borderWidth: 1,
+                    borderRadius: 4
+                });
+
+                legendHtml += `
+                    <div class="legend-item-chip">
+                        <span class="legend-color-dot" style="background: ${colorObj.border};"></span>
+                        <span>${escapeHtml(mkt)}</span>
+                    </div>
+                `;
+            });
+        }
+
+        if (chartLegendCustom) chartLegendCustom.innerHTML = legendHtml;
+        if (chartProductSubtitle) chartProductSubtitle.textContent = `${dateLabels.length} data(s) • ${datasets.length} série(s) de dados`;
+
+        const ctx = productPriceChartCanvas.getContext('2d');
+        priceChartInstance = new Chart(ctx, {
+            type: mode === 'bar_comparison' ? 'bar' : 'line',
+            data: {
+                labels: dateLabels,
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#0F172A',
+                        titleColor: '#F8FAFC',
+                        bodyColor: '#F1F5F9',
+                        padding: 12,
+                        cornerRadius: 6,
+                        callbacks: {
+                            label: function(context) {
+                                const val = context.parsed.y;
+                                if (val === null || val === undefined || isNaN(val)) return null;
+                                const dsLabel = context.dataset.label || 'Preço';
+                                return ` ${dsLabel}: ${formatCurrency(val)}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        grace: '10%',
+                        grid: { color: '#EDF2F7' },
+                        ticks: {
+                            color: '#64748B',
+                            font: { family: 'Inter', size: 11 },
+                            callback: function(val) {
+                                return 'R$ ' + parseFloat(val).toFixed(2).replace('.', ',');
+                            }
+                        }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: {
+                            color: '#64748B',
+                            font: { family: 'Inter', size: 11 }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function renderHistoryTable(records, avgPrice) {
+        if (!tbodyProductHistory) return;
+
+        const descRecords = [...records].reverse();
+        if (historyTableCount) historyTableCount.textContent = descRecords.length;
+
+        tbodyProductHistory.innerHTML = '';
+        descRecords.forEach(item => {
+            const tr = document.createElement('tr');
+            const diff = item.valor - avgPrice;
+            const diffPct = avgPrice > 0 ? (diff / avgPrice * 100) : 0;
+
+            let diffTagHtml = '';
+            if (diffPct < -0.5) {
+                diffTagHtml = `<span class="diff-tag diff-tag-negative">↓ ${Math.abs(diffPct).toFixed(1)}% (${formatCurrency(Math.abs(diff))})</span>`;
+            } else if (diffPct > 0.5) {
+                diffTagHtml = `<span class="diff-tag diff-tag-positive">↑ +${diffPct.toFixed(1)}% (+${formatCurrency(diff)})</span>`;
+            } else {
+                diffTagHtml = `<span class="diff-tag diff-tag-neutral">≈ Na média</span>`;
+            }
+
+            tr.innerHTML = `
+                <td style="text-align: center; font-weight: 600; color: var(--text-secondary);">${escapeHtml(item.display_date)}</td>
+                <td><strong>${escapeHtml(item.supermercado)}</strong></td>
+                <td style="font-size: 12.5px; color: var(--text-primary);">${escapeHtml(item.item_original)}</td>
+                <td class="text-right price-text" style="font-size: 13.5px;">${formatCurrency(item.valor)}</td>
+                <td style="text-align: center;">${diffTagHtml}</td>
+                <td class="text-center">
+                    ${item.link ? `
+                        <button class="btn btn-outline btn-sm btn-preview-flyer" 
+                                data-img="${escapeHtml(item.link)}" 
+                                data-post="${escapeHtml(item.post_url || '')}" 
+                                data-market="${escapeHtml(item.supermercado)}">
+                            Ver
+                        </button>
+                    ` : '-'}
+                </td>
+            `;
+            tbodyProductHistory.appendChild(tr);
+        });
+
+        bindPreviewButtons(tbodyProductHistory);
+    }
+
+    function navigateToProductHistory(productName) {
+        if (!productName) return;
+        const normKey = normalizeProductName(productName);
+        const tabBtn = document.querySelector('[data-tab="tab-price-history"]');
+        if (tabBtn) {
+            tabBtn.click();
+            filterAndRenderProductOptions(normKey);
+        }
+    }
+
     function bindPreviewButtons(container) {
         container.querySelectorAll('.btn-preview-flyer').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -641,6 +1141,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function formatCurrency(val) {
         if (val === undefined || val === null || isNaN(val)) return 'R$ 0,00';
         return parseFloat(val).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
     }
 
     function escapeHtml(str) {

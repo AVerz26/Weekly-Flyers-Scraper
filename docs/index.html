@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Chart.js para Gráficos Interativos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 
 <body class="light-theme">
@@ -78,6 +80,9 @@
                     <button class="tab-button active" data-tab="tab-item-comparison">
                         ⚖️ Comparativo de Produtos (<span id="tab-count-compared">0</span>)
                     </button>
+                    <button class="tab-button" data-tab="tab-price-history">
+                        📈 Histórico de Preços (<span id="tab-count-history">0</span>)
+                    </button>
                     <button class="tab-button" data-tab="tab-all-offers">
                         🛒 Todas as Ofertas (<span id="tab-count-items">0</span>)
                     </button>
@@ -134,6 +139,143 @@
                     <div id="comparison-list-container" class="comparison-list">
                         <!-- Renderizado dinamicamente via JS -->
                         <div class="empty-state">Carregando comparação de produtos...</div>
+                    </div>
+                </div>
+
+                <!-- ABA DE HISTÓRICO DE PREÇOS (GRÁFICO) -->
+                <div id="tab-price-history" class="tab-content">
+                    <!-- BARRA DE SELEÇÃO E FILTRO DO PRODUTO -->
+                    <div class="history-toolbar">
+                        <div class="history-toolbar-left">
+                            <div class="history-select-group">
+                                <label for="filter-history-category">Filtrar Categoria:</label>
+                                <select id="filter-history-category" class="form-control">
+                                    <option value="">Todas as categorias</option>
+                                </select>
+                            </div>
+                            
+                            <div class="history-select-group history-search-group">
+                                <label for="input-search-history-product">Buscar Produto:</label>
+                                <input type="text" id="input-search-history-product" placeholder="Filtrar por nome do produto..." class="form-control">
+                            </div>
+
+                            <div class="history-select-group history-product-group">
+                                <label for="select-history-product">Selecione o Produto:</label>
+                                <select id="select-history-product" class="form-control select-highlight">
+                                    <option value="">Carregando produtos...</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="history-toolbar-right">
+                            <div class="history-select-group">
+                                <label for="select-chart-mode">Visualização:</label>
+                                <select id="select-chart-mode" class="form-control">
+                                    <option value="multi_market" selected>Comparativo por Supermercado</option>
+                                    <option value="average_trend">Preço Médio e Tendência</option>
+                                    <option value="bar_comparison">Barras por Data</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BANNER DE DETALHES DO PRODUTO SELECIONADO -->
+                    <div id="history-product-banner" class="history-product-banner">
+                        <div class="product-title-area">
+                            <div class="product-badge-icon">🏷️</div>
+                            <div>
+                                <div class="product-main-title">
+                                    <h2 id="history-product-title">Selecione um produto acima</h2>
+                                    <span id="history-product-category" class="category-badge">Categoria</span>
+                                </div>
+                                <div class="product-sub-meta">
+                                    <span id="history-product-dates" class="text-muted" style="font-size: 12px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARDS DE KPIS E ESTATÍSTICAS DO PRODUTO -->
+                    <div class="stats-grid history-stats-grid" id="history-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background: rgba(22, 163, 74, 0.1); color: var(--success);">🟢</div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="stat-hist-min-price">R$ 0,00</span>
+                                <span class="stat-label">Menor Preço Histórico</span>
+                                <span class="stat-subdetail" id="stat-hist-min-market">-</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background: rgba(220, 38, 38, 0.1); color: var(--danger);">🔴</div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="stat-hist-max-price">R$ 0,00</span>
+                                <span class="stat-label">Maior Preço Histórico</span>
+                                <span class="stat-subdetail" id="stat-hist-max-market">-</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background: rgba(37, 99, 235, 0.1); color: var(--primary);">⚖️</div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="stat-hist-avg-price">R$ 0,00</span>
+                                <span class="stat-label">Preço Médio</span>
+                                <span class="stat-subdetail" id="stat-hist-records-count">0 ofertas registradas</span>
+                            </div>
+                        </div>
+                        <div class="stat-card stat-card-highlight">
+                            <div class="stat-icon" style="background: rgba(217, 119, 6, 0.1); color: #d97706;">📉</div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="stat-hist-recent-price">R$ 0,00</span>
+                                <span class="stat-label">Último Preço Coletado</span>
+                                <span class="stat-subdetail" id="stat-hist-trend-badge">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER DO GRÁFICO -->
+                    <div class="chart-wrapper-card">
+                        <div class="chart-card-header">
+                            <div class="chart-title-wrap">
+                                <h3 class="chart-title">Evolução do Preço ao Longo do Tempo</h3>
+                                <span class="chart-subtitle" id="chart-product-subtitle">Histórico diário extraído dos encartes</span>
+                            </div>
+                            <div class="chart-legend-custom" id="chart-legend-custom"></div>
+                        </div>
+                        <div class="chart-canvas-wrapper" style="position: relative; height: 360px; width: 100%;">
+                            <canvas id="product-price-chart"></canvas>
+                            <div id="chart-empty-state" class="chart-empty-state" style="display: none;">
+                                <h3>Nenhum histórico disponível para este item</h3>
+                                <p>Selecione outro produto para visualizar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TABELA HISTÓRICA DETALHADA -->
+                    <div class="history-table-section">
+                        <div class="history-table-header">
+                            <div>
+                                <h3>Linha do Tempo dos Encartes (<span id="history-table-count">0</span>)</h3>
+                                <span class="text-muted" style="font-size: 12px;">Todos os preços identificados nos encartes ordenados cronologicamente</span>
+                            </div>
+                        </div>
+                        <div class="table-responsive" style="margin-top: 0.75rem;">
+                            <table class="table table-hover" id="table-product-history">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 120px; text-align: center;">Data do Encarte</th>
+                                        <th style="width: 200px;">Supermercado</th>
+                                        <th style="min-width: 220px;">Texto no Encarte Original</th>
+                                        <th style="width: 130px; text-align: right;">Preço Registrado</th>
+                                        <th style="width: 140px; text-align: center;">Variação vs Média</th>
+                                        <th style="width: 100px; text-align: center;">Encarte</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-product-history">
+                                    <tr>
+                                        <td colspan="6" class="empty-state">Selecione um produto para visualizar o histórico detalhado.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
