@@ -724,23 +724,27 @@ document.addEventListener('DOMContentLoaded', () => {
     function buildProductHistoryMap(items) {
         productHistoryMap = {};
         items.forEach(item => {
-            const normKey = normalizeProductName(item.item);
+            const rawName = item.produto_padronizado || item.item || '';
+            const normKey = normalizeProductName(rawName);
             if (!normKey) return;
 
             if (!productHistoryMap[normKey]) {
                 productHistoryMap[normKey] = {
                     key: normKey,
-                    displayName: item.item,
+                    displayName: item.produto_padronizado || item.item || rawName,
                     category: item.categoria || 'Geral',
                     records: []
                 };
             }
 
-            const dateObj = parseDateTuple(item.data_postagem);
+            const dateObj = parseDateTuple(item.data_postagem || item.created_at);
             productHistoryMap[normKey].records.push({
                 supermercado: item.supermercado || 'Supermercado',
                 categoria: item.categoria || productHistoryMap[normKey].category,
-                item_original: item.item,
+                item_original: item.item || rawName,
+                produto_padronizado: item.produto_padronizado || rawName,
+                marca: item.marca || '',
+                embalagem: item.embalagem || '',
                 valor: parseFloat(item.valor) || 0,
                 data_postagem: item.data_postagem || '-',
                 iso_date: dateObj.iso,

@@ -1,10 +1,11 @@
 import sqlite3
 import json
+import hashlib
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
-from core.config import DATA_DIR
+from core.config import DATA_DIR, OUTPUT_DIR, DOCS_DIR
 
 DB_PATH = DATA_DIR / "flyers_database.db"
 
@@ -15,8 +16,39 @@ def get_connection() -> sqlite3.Connection:
     conn.row_factory = sqlite3.Row
     return conn
 
+def generate_offer_hash(
+    supermercado: str,
+    produto_padronizado: str,
+    data_postagem: Optional[str],
+    valor: float,
+    link_imagem: Optional[str] = None,
+    post_url: Optional[str] = None,
+    item_original: Optional[str] = None
+) -> str:
+    """
+    Gera uma assinatura hash determinística única para a oferta.
+    Duas ofertas com mesmo mercado, produto padronizado (ou item original),
+    mesma data de postagem, mesmo valor e mesma imagem/post são tratadas como o mesmo registro.
+    """
+    mkt = (supermercado or "").strip().lower()
+    prod = (produto_padronizado or item_original or "").strip().lower()
+    dt = (data_postagem or "-").strip().lower()
+    val = f"{float(valor):.2f}"
+    
+    # Identificador limpo da imagem (sem parâmetros dinâmicos de CDN)
+    img_clean = ""
+    if link_imagem:
+        img_clean = link_imagem.split("?")[0].strip().lower()
+        if "/" in img_clean:
+            img_clean = img_clean.split("/")[-1]
+    elif post_url:
+        img_clean = post_url.strip().lower()
+        
+    raw_key = f"{mkt}|{prod}|{dt}|{val}|{img_clean}"
+    return hashlib.sha256(raw_key.encode("utf-8")).hexdigest()
+
 def init_db():
-    """Inicializa as tabelas do banco de dados SQLite caso não existam."""
+    """Inicializa as tabelas do banco de dados SQLite caso não existam e aplica migrações de integridade."""
     conn = get_connection()
     cursor = conn.cursor()
     
@@ -45,7 +77,9 @@ def init_db():
             data_postagem TEXT,
             link_imagem TEXT,
             post_url TEXT,
+            offer_hash TEXT,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (run_id) REFERENCES runs(id) ON DELETE SET NULL
         );
 
@@ -53,10 +87,81 @@ def init_db():
         CREATE INDEX IF NOT EXISTS idx_offers_supermercado ON offers(supermercado);
         CREATE INDEX IF NOT EXISTS idx_offers_categoria ON offers(categoria);
         CREATE INDEX IF NOT EXISTS idx_offers_run_id ON offers(run_id);
+        CREATE INDEX IF NOT EXISTS idx_offers_data_postagem ON offers(data_postagem);
     """)
     
+    # Migração segura para colunas novas caso a tabela já existisse
+    cursor.execute("PRAGMA table_info(offers)")
+    columns = [col["name"] for col in cursor.fetchall()]
+    if "offer_hash" not in columns:
+        cursor.execute("ALTER TABLE offers ADD COLUMN offer_hash TEXT")
+        
+    if "updated_at" not in columns:
+        cursor.execute("ALTER TABLE offers ADD COLUMN updated_at TEXT")
+        
     conn.commit()
     conn.close()
+    
+    # Higieniza o banco e preenche os hashes antes de criar o índice único
+    deduplicate_database()
+    
+    # Cria o índice único no hash após deduplicação
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_offers_hash ON offers(offer_hash)")
+    conn.commit()
+    conn.close()
+
+def deduplicate_database() -> int:
+    """
+    Higieniza o banco de dados removendo ofertas duplicadas existentes,
+    mantendo apenas uma ocorrência por produto/data/mercado/preço e preenchendo o hash único.
+    """
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    cursor.execute("""
+        SELECT id, supermercado, produto_padronizado, item_original, 
+               data_postagem, valor, link_imagem, post_url, offer_hash
+        FROM offers
+        ORDER BY id ASC
+    """)
+    rows = cursor.fetchall()
+    
+    seen_hashes = {}
+    duplicates_to_delete = []
+    updates_to_make = []
+    
+    for r in rows:
+        h = r["offer_hash"]
+        if not h:
+            h = generate_offer_hash(
+                supermercado=r["supermercado"],
+                produto_padronizado=r["produto_padronizado"],
+                data_postagem=r["data_postagem"],
+                valor=r["valor"],
+                link_imagem=r["link_imagem"],
+                post_url=r["post_url"],
+                item_original=r["item_original"]
+            )
+            
+        if h in seen_hashes:
+            # Já vimos essa oferta exata -> remove duplicata
+            duplicates_to_delete.append(r["id"])
+        else:
+            seen_hashes[h] = r["id"]
+            if r["offer_hash"] != h:
+                updates_to_make.append((h, r["id"]))
+                
+    for h, row_id in updates_to_make:
+        cursor.execute("UPDATE offers SET offer_hash = ? WHERE id = ?", (h, row_id))
+        
+    if duplicates_to_delete:
+        cursor.executemany("DELETE FROM offers WHERE id = ?", [(did,) for did in duplicates_to_delete])
+        
+    conn.commit()
+    conn.close()
+    return len(duplicates_to_delete)
 
 def save_run_and_offers(
     mode: str,
@@ -64,8 +169,12 @@ def save_run_and_offers(
     model: str,
     excel_file: str,
     offers_list: List[Dict[str, Any]]
-) -> int:
-    """Salva a execução e todas as ofertas extraídas no banco de dados SQLite."""
+) -> Dict[str, Any]:
+    """
+    Salva a execução e acumula as ofertas no banco de dados SQLite dia a dia,
+    excluindo duplicadas de forma inteligente.
+    Retorna dicionário com estatísticas detalhadas da persistência.
+    """
     init_db()
     conn = get_connection()
     cursor = conn.cursor()
@@ -78,30 +187,132 @@ def save_run_and_offers(
     
     run_id = cursor.lastrowid
     
+    cursor.execute("SELECT offer_hash FROM offers")
+    existing_hashes = set(row[0] for row in cursor.fetchall() if row[0])
+    
+    inserted_count = 0
+    duplicate_count = 0
+    
     for of in offers_list:
-        cursor.execute("""
-            INSERT INTO offers (
-                run_id, supermercado, categoria, item_original, 
-                produto_padronizado, marca, embalagem, valor, 
-                data_postagem, link_imagem, post_url
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (
-            run_id,
-            of.get("supermercado", "Supermercado"),
-            of.get("categoria", "Outros"),
-            of.get("item", of.get("item_original", "")),
-            of.get("produto_padronizado", of.get("item", "")),
-            of.get("marca", ""),
-            of.get("embalagem", ""),
-            float(of.get("valor", 0.0)),
-            of.get("data_postagem", "-"),
-            of.get("link", of.get("link_imagem", "")),
-            of.get("post_url", "")
-        ))
+        mkt = of.get("supermercado", "Supermercado")
+        cat = of.get("categoria", "Outros")
+        item_orig = of.get("item", of.get("item_original", ""))
+        prod_canon = of.get("produto_padronizado", of.get("item", ""))
+        marca = of.get("marca", "")
+        embalagem = of.get("embalagem", "")
+        valor = float(of.get("valor", 0.0))
+        dt_post = of.get("data_postagem", "-")
+        link_img = of.get("link", of.get("link_imagem", ""))
+        p_url = of.get("post_url", "")
         
+        h = generate_offer_hash(
+            supermercado=mkt,
+            produto_padronizado=prod_canon,
+            data_postagem=dt_post,
+            valor=valor,
+            link_imagem=link_img,
+            post_url=p_url,
+            item_original=item_orig
+        )
+        
+        if h in existing_hashes:
+            duplicate_count += 1
+            cursor.execute("""
+                UPDATE offers 
+                SET run_id = ?, updated_at = CURRENT_TIMESTAMP
+                WHERE offer_hash = ?
+            """, (run_id, h))
+        else:
+            inserted_count += 1
+            existing_hashes.add(h)
+            cursor.execute("""
+                INSERT INTO offers (
+                    run_id, supermercado, categoria, item_original, 
+                    produto_padronizado, marca, embalagem, valor, 
+                    data_postagem, link_imagem, post_url, offer_hash, updated_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            """, (
+                run_id, mkt, cat, item_orig, prod_canon, marca, embalagem,
+                valor, dt_post, link_img, p_url, h
+            ))
+            
     conn.commit()
+    
+    cursor.execute("SELECT COUNT(*) FROM offers")
+    total_db_offers = cursor.fetchone()[0]
+    
+    cursor.execute("SELECT COUNT(DISTINCT produto_padronizado) FROM offers")
+    total_db_products = cursor.fetchone()[0]
+    
     conn.close()
-    return run_id
+    
+    # Sincroniza o acervo consolidado do banco com output/ e docs/
+    sync_database_to_exports()
+    
+    return {
+        "run_id": run_id,
+        "total_processed": len(offers_list),
+        "inserted_count": inserted_count,
+        "duplicate_count": duplicate_count,
+        "total_db_offers": total_db_offers,
+        "total_db_products": total_db_products
+    }
+
+def sync_database_to_exports() -> Dict[str, Any]:
+    """
+    Exporta todo o acervo histórico consolidado do banco de dados SQLite
+    para os arquivos de saída (output/latest_results.json e docs/data/latest_results.json),
+    garantindo que tanto o painel local quanto o GitHub Pages tenham acesso
+    ao histórico temporal completo de todos os dias e mercados.
+    """
+    init_db()
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    cursor.execute("""
+        SELECT 
+            supermercado,
+            categoria,
+            produto_padronizado,
+            marca,
+            embalagem,
+            item_original as item,
+            valor,
+            data_postagem,
+            link_imagem as link,
+            post_url,
+            created_at,
+            updated_at
+        FROM offers
+        ORDER BY categoria ASC, produto_padronizado ASC, valor ASC
+    """)
+    
+    rows = cursor.fetchall()
+    all_items = [dict(r) for r in rows]
+    
+    supermercados = sorted(list(set(i["supermercado"] for i in all_items if i.get("supermercado"))))
+    
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    payload = {
+        "timestamp": timestamp,
+        "total_itens": len(all_items),
+        "supermercados": supermercados,
+        "items": all_items
+    }
+    
+    # 1. Grava no output/
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    with open(OUTPUT_DIR / "latest_results.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+        
+    # 2. Grava no docs/data/ (GitHub Pages)
+    docs_data_dir = DOCS_DIR / "data"
+    docs_data_dir.mkdir(parents=True, exist_ok=True)
+    with open(docs_data_dir / "latest_results.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+        
+    conn.close()
+    return payload
 
 def get_price_comparison(
     category: Optional[str] = None,

@@ -311,16 +311,20 @@ class TaskManager:
             res_export = export_offers_data(dados_extraidos)
             self.last_result = res_export
 
-            # Salva no Banco de Dados SQLite Histórico
+            # Salva no Banco de Dados SQLite Histórico (Acumulando dia a dia sem duplicadas)
             try:
-                run_id = save_run_and_offers(
+                res_db = save_run_and_offers(
                     mode=mode,
                     provider=vision_provider,
                     model=active_model_desc,
                     excel_file=res_export.get('excel_file', ''),
                     offers_list=dados_extraidos
                 )
-                self.add_log(f"💾 {len(dados_extraidos)} ofertas salvas com sucesso no banco de dados SQLite (Lote #{run_id}).")
+                self.add_log(
+                    f"💾 Banco SQLite: {res_db['inserted_count']} novas ofertas inseridas "
+                    f"({res_db['duplicate_count']} duplicadas ignoradas). "
+                    f"Acervo total: {res_db['total_db_offers']} ofertas ({res_db['total_db_products']} produtos)."
+                )
             except Exception as e_db:
                 self.add_log(f"⚠️ Aviso: Não foi possível gravar no banco SQLite: {e_db}")
 

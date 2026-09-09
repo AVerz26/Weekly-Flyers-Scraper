@@ -153,14 +153,18 @@ document.addEventListener('DOMContentLoaded', () => {
         setupTabs();
         setupModals();
         setupEventListeners();
-        await loadConfiguration();
-        await loadProfiles();
-        await loadScrapedImages();
-        await loadLatestResults();
-        await loadDatabaseStats();
-        await loadPriceComparison();
-        await loadProductsList();
-        await loadHistory();
+        
+        await Promise.allSettled([
+            loadConfiguration(),
+            loadProfiles(),
+            loadScrapedImages(),
+            loadLatestResults(),
+            loadDatabaseStats(),
+            loadPriceComparison(),
+            loadProductsList(),
+            loadHistory()
+        ]);
+        
         connectLogStream();
     }
 
