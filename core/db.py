@@ -117,6 +117,27 @@ def get_price_comparison(
     cursor = conn.cursor()
     
     query = """
+        WITH latest_offers AS (
+            SELECT 
+                id,
+                run_id,
+                supermercado,
+                categoria,
+                item_original,
+                produto_padronizado,
+                marca,
+                embalagem,
+                valor,
+                data_postagem,
+                link_imagem,
+                post_url,
+                created_at,
+                ROW_NUMBER() OVER (
+                    PARTITION BY produto_padronizado, supermercado 
+                    ORDER BY id DESC
+                ) as rn
+            FROM offers
+        )
         SELECT 
             produto_padronizado,
             categoria,
@@ -127,8 +148,8 @@ def get_price_comparison(
             AVG(valor) as preco_medio,
             COUNT(DISTINCT supermercado) as qtd_mercados,
             COUNT(id) as total_ofertas
-        FROM offers
-        WHERE 1=1
+        FROM latest_offers
+        WHERE rn = 1
     """
     params = []
     
@@ -160,11 +181,21 @@ def get_price_comparison(
         economia_reais = round(maior - menor, 2)
         economia_pct = round(((maior - menor) / maior * 100), 1) if maior > 0 else 0.0
         
-        # Busca todas as ofertas detalhadas deste produto por supermercado
+        # Busca a oferta mais recente deste produto por supermercado
         cursor.execute("""
+            WITH latest_offers AS (
+                SELECT 
+                    supermercado, valor, data_postagem, link_imagem, post_url, item_original,
+                    ROW_NUMBER() OVER (
+                        PARTITION BY supermercado 
+                        ORDER BY id DESC
+                    ) as rn
+                FROM offers
+                WHERE produto_padronizado = ?
+            )
             SELECT supermercado, valor, data_postagem, link_imagem, post_url, item_original
-            FROM offers
-            WHERE produto_padronizado = ?
+            FROM latest_offers
+            WHERE rn = 1
             ORDER BY valor ASC
         """, (prod_name,))
         
@@ -232,14 +263,98 @@ def get_database_stats() -> Dict[str, Any]:
         "ultima_atualizacao": ultima_atualizacao
     }
 
+def get_distinct_products_summary(
+    category: Optional[str] = None,
+    search: Optional[str] = None
+) -> List[Dict[str, Any]]:
+    """
+    Retorna a lista de produtos padronizados únicos com contagem de ofertas,
+    supermercados, faixa de preço e categoria para seletores e autocomplete.
+    """
+    init_db()
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    query = """
+        SELECT 
+            produto_padronizado,
+            categoria,
+            marca,
+            embalagem,
+            MIN(valor) as menor_preco,
+            MAX(valor) as maior_preco,
+            AVG(valor) as preco_medio,
+            COUNT(DISTINCT supermercado) as qtd_mercados,
+            COUNT(id) as total_ofertas,
+            MAX(created_at) as ultima_atualizacao
+        FROM offers
+        WHERE 1=1
+    """
+    params = []
+    
+    if category:
+        query += " AND categoria = ?"
+        params.append(category)
+        
+    if search:
+        query += " AND (produto_padronizado LIKE ? OR item_original LIKE ? OR marca LIKE ?)"
+        term = f"%{search}%"
+        params.extend([term, term, term])
+        
+    query += """
+        GROUP BY produto_padronizado
+        ORDER BY total_ofertas DESC, produto_padronizado ASC
+    """
+    
+    cursor.execute(query, params)
+    rows = cursor.fetchall()
+    
+    products = []
+    for r in rows:
+        products.append({
+            "produto_padronizado": r["produto_padronizado"],
+            "categoria": r["categoria"] or "Outros",
+            "marca": r["marca"] or "",
+            "embalagem": r["embalagem"] or "",
+            "menor_preco": round(r["menor_preco"], 2) if r["menor_preco"] is not None else 0.0,
+            "maior_preco": round(r["maior_preco"], 2) if r["maior_preco"] is not None else 0.0,
+            "preco_medio": round(r["preco_medio"], 2) if r["preco_medio"] is not None else 0.0,
+            "qtd_mercados": r["qtd_mercados"],
+            "total_ofertas": r["total_ofertas"],
+            "ultima_atualizacao": r["ultima_atualizacao"] or ""
+        })
+        
+    conn.close()
+    return products
+
+def parse_date_tuple(data_postagem: Optional[str], created_at: Optional[str]) -> tuple:
+    """Normaliza data para (iso_date 'YYYY-MM-DD', display_date 'DD/MM/YYYY')."""
+    if data_postagem and data_postagem != "-":
+        data_clean = data_postagem.strip()
+        if len(data_clean) == 10 and data_clean[2] == "/" and data_clean[5] == "/":
+            d, m, y = data_clean.split("/")
+            return f"{y}-{m}-{d}", data_clean
+        elif len(data_clean) >= 10 and data_clean[4] == "-" and data_clean[7] == "-":
+            y, m, d = data_clean[:10].split("-")
+            return f"{y}-{m}-{d}", f"{d}/{m}/{y}"
+            
+    if created_at:
+        c_date = created_at.strip().split()[0]
+        if len(c_date) >= 10 and c_date[4] == "-" and c_date[7] == "-":
+            y, m, d = c_date[:10].split("-")
+            return f"{y}-{m}-{d}", f"{d}/{m}/{y}"
+            
+    return "1970-01-01", "-"
+
 def get_product_price_history(product_name: str) -> List[Dict[str, Any]]:
-    """Retorna o histórico de preços de um produto ao longo do tempo."""
+    """Retorna o histórico de preços de um produto ao longo do tempo (lista simples)."""
     init_db()
     conn = get_connection()
     cursor = conn.cursor()
     
     cursor.execute("""
-        SELECT o.supermercado, o.valor, o.data_postagem, o.created_at, o.link_imagem, o.item_original
+        SELECT o.id, o.supermercado, o.categoria, o.valor, o.data_postagem, 
+               o.created_at, o.link_imagem, o.item_original, o.marca, o.embalagem, o.post_url
         FROM offers o
         WHERE o.produto_padronizado = ?
         ORDER BY o.created_at DESC
@@ -249,3 +364,168 @@ def get_product_price_history(product_name: str) -> List[Dict[str, Any]]:
     history = [dict(r) for r in rows]
     conn.close()
     return history
+
+def get_product_price_history_analytics(product_name: str) -> Dict[str, Any]:
+    """
+    Retorna o histórico cronológico completo, séries temporais para gráficos Chart.js,
+    estatísticas analíticas e KPIs para um produto específico.
+    """
+    init_db()
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    cursor.execute("""
+        SELECT o.id, o.supermercado, o.categoria, o.valor, o.data_postagem, 
+               o.created_at, o.link_imagem, o.item_original, o.marca, o.embalagem, o.post_url
+        FROM offers o
+        WHERE o.produto_padronizado = ?
+        ORDER BY o.created_at ASC
+    """, (product_name,))
+    
+    rows = cursor.fetchall()
+    conn.close()
+    
+    if not rows:
+        return {
+            "produto_padronizado": product_name,
+            "categoria": "",
+            "marca": "",
+            "embalagem": "",
+            "stats": {},
+            "timeline": [],
+            "chart_data": {
+                "dates": [],
+                "datasets": [],
+                "average_series": []
+            }
+        }
+        
+    records = []
+    supermercados_set = set()
+    category = rows[0]["categoria"] or "Outros"
+    brand = rows[0]["marca"] or ""
+    pack = rows[0]["embalagem"] or ""
+    
+    for r in rows:
+        iso_date, display_date = parse_date_tuple(r["data_postagem"], r["created_at"])
+        item_dict = {
+            "id": r["id"],
+            "supermercado": r["supermercado"],
+            "categoria": r["categoria"] or category,
+            "valor": round(float(r["valor"]), 2),
+            "data_postagem": r["data_postagem"] or "-",
+            "created_at": r["created_at"],
+            "iso_date": iso_date,
+            "display_date": display_date,
+            "link_imagem": r["link_imagem"] or "",
+            "post_url": r["post_url"] or "",
+            "item_original": r["item_original"] or product_name,
+            "marca": r["marca"] or brand,
+            "embalagem": r["embalagem"] or pack
+        }
+        records.append(item_dict)
+        supermercados_set.add(r["supermercado"])
+        if not brand and r["marca"]:
+            brand = r["marca"]
+        if not pack and r["embalagem"]:
+            pack = r["embalagem"]
+            
+    # Ordena cronologicamente por iso_date, depois por created_at
+    records.sort(key=lambda x: (x["iso_date"], x["created_at"]))
+    
+    # Cálculos estatísticos
+    precos = [rec["valor"] for rec in records]
+    menor_preco = min(precos)
+    maior_preco = max(precos)
+    preco_medio = round(sum(precos) / len(precos), 2)
+    
+    # Registro com menor e maior preço
+    rec_menor = next((rec for rec in records if rec["valor"] == menor_preco), records[0])
+    rec_maior = next((rec for rec in records if rec["valor"] == maior_preco), records[0])
+    rec_recente = records[-1]
+    
+    # Variação em relação à média
+    variacao_vs_medio = round(((rec_recente["valor"] - preco_medio) / preco_medio * 100), 1) if preco_medio > 0 else 0.0
+    
+    stats = {
+        "menor_preco": menor_preco,
+        "menor_mercado": rec_menor["supermercado"],
+        "menor_data": rec_menor["display_date"],
+        "maior_preco": maior_preco,
+        "maior_mercado": rec_maior["supermercado"],
+        "maior_data": rec_maior["display_date"],
+        "preco_medio": preco_medio,
+        "preco_recente": rec_recente["valor"],
+        "recente_mercado": rec_recente["supermercado"],
+        "recente_data": rec_recente["display_date"],
+        "variacao_vs_medio_pct": variacao_vs_medio,
+        "total_registros": len(records),
+        "qtd_mercados": len(supermercados_set),
+        "supermercados": sorted(list(supermercados_set))
+    }
+    
+    # Estruturação para Chart.js
+    # Obter todas as datas únicas ordenadas
+    unique_dates_map = {}
+    for rec in records:
+        key = rec["iso_date"]
+        if key not in unique_dates_map:
+            unique_dates_map[key] = rec["display_date"]
+            
+    sorted_iso_dates = sorted(unique_dates_map.keys())
+    date_labels = [unique_dates_map[d] for d in sorted_iso_dates]
+    
+    # Para cada supermercado, mapear valor por data (usando o último valor registrado se houver mais de um na mesma data)
+    datasets = []
+    for mkt in sorted(list(supermercados_set)):
+        mkt_records = [r for r in records if r["supermercado"] == mkt]
+        date_to_val = {}
+        for r in mkt_records:
+            date_to_val[r["iso_date"]] = r["valor"]
+            
+        data_points = []
+        for d in sorted_iso_dates:
+            data_points.append(date_to_val.get(d, None))
+            
+        datasets.append({
+            "label": mkt,
+            "data": data_points,
+            "raw_points": [
+                {"date": d, "display_date": unique_dates_map[d], "valor": date_to_val.get(d, None)} 
+                for d in sorted_iso_dates
+            ]
+        })
+        
+    # Média diária geral
+    average_series = []
+    for d in sorted_iso_dates:
+        vals = [r["valor"] for r in records if r["iso_date"] == d]
+        if vals:
+            average_series.append(round(sum(vals) / len(vals), 2))
+        else:
+            average_series.append(None)
+            
+    # Tabela com ordem decrescente (mais recente primeiro)
+    timeline_desc = sorted(records, key=lambda x: (x["iso_date"], x["created_at"]), reverse=True)
+    
+    # Adicionar variação percentual individual vs média para cada registro da tabela
+    for item in timeline_desc:
+        diff = round(item["valor"] - preco_medio, 2)
+        diff_pct = round((diff / preco_medio * 100), 1) if preco_medio > 0 else 0.0
+        item["diff_vs_avg"] = diff
+        item["diff_vs_avg_pct"] = diff_pct
+        
+    return {
+        "produto_padronizado": product_name,
+        "categoria": category,
+        "marca": brand,
+        "embalagem": pack,
+        "stats": stats,
+        "timeline": timeline_desc,
+        "chart_data": {
+            "iso_dates": sorted_iso_dates,
+            "date_labels": date_labels,
+            "datasets": datasets,
+            "average_series": average_series
+        }
+    }

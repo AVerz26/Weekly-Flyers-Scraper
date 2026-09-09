@@ -72,6 +72,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const tbodyComparator = document.getElementById('tbody-comparator');
     let currentComparisonData = [];
 
+    // Histórico de Preços e Gráficos
+    const tabCountHistoryProducts = document.getElementById('tab-count-history-products');
+    const filterHistoryCategory = document.getElementById('filter-history-category');
+    const inputSearchHistoryProduct = document.getElementById('input-search-history-product');
+    const selectHistoryProduct = document.getElementById('select-history-product');
+    const selectChartMode = document.getElementById('select-chart-mode');
+    const btnRefreshHistory = document.getElementById('btn-refresh-history');
+    const historyProductTitle = document.getElementById('history-product-title');
+    const historyProductCategory = document.getElementById('history-product-category');
+    const historyProductBrand = document.getElementById('history-product-brand');
+    const historyProductPack = document.getElementById('history-product-pack');
+    const historyProductDates = document.getElementById('history-product-dates');
+    const statHistMinPrice = document.getElementById('stat-hist-min-price');
+    const statHistMinMarket = document.getElementById('stat-hist-min-market');
+    const statHistMaxPrice = document.getElementById('stat-hist-max-price');
+    const statHistMaxMarket = document.getElementById('stat-hist-max-market');
+    const statHistAvgPrice = document.getElementById('stat-hist-avg-price');
+    const statHistRecordsCount = document.getElementById('stat-hist-records-count');
+    const statHistRecentPrice = document.getElementById('stat-hist-recent-price');
+    const statHistTrendBadge = document.getElementById('stat-hist-trend-badge');
+    const chartLegendCustom = document.getElementById('chart-legend-custom');
+    const chartProductSubtitle = document.getElementById('chart-product-subtitle');
+    const productPriceChartCanvas = document.getElementById('product-price-chart');
+    const chartEmptyState = document.getElementById('chart-empty-state');
+    const historyTableCount = document.getElementById('history-table-count');
+    const tbodyProductHistory = document.getElementById('tbody-product-history');
+    let currentProductsList = [];
+    let selectedProductName = '';
+    let currentHistoryAnalytics = null;
+    let priceChartInstance = null;
+
     // Modals
     const btnOpenConfig = document.getElementById('btn-open-config');
     const btnOpenProfiles = document.getElementById('btn-open-profiles');
@@ -128,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await loadLatestResults();
         await loadDatabaseStats();
         await loadPriceComparison();
+        await loadProductsList();
         await loadHistory();
         connectLogStream();
     }
@@ -152,6 +184,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (targetTab === 'tab-comparator') {
                     loadDatabaseStats();
                     loadPriceComparison();
+                } else if (targetTab === 'tab-price-history') {
+                    if (currentProductsList.length === 0) {
+                        loadProductsList();
+                    } else if (priceChartInstance) {
+                        setTimeout(() => priceChartInstance.resize(), 60);
+                    }
                 }
             });
         });
@@ -223,6 +261,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (filterComparatorCategory) filterComparatorCategory.addEventListener('change', () => loadPriceComparison());
         if (chkMultipleMarketsOnly) chkMultipleMarketsOnly.addEventListener('change', () => loadPriceComparison());
         if (btnExportComparison) btnExportComparison.addEventListener('click', exportComparisonToExcel);
+
+        // Listeners do Histórico de Preços
+        if (filterHistoryCategory) filterHistoryCategory.addEventListener('change', () => filterAndRenderProductOptions());
+        if (inputSearchHistoryProduct) inputSearchHistoryProduct.addEventListener('input', debounce(() => filterAndRenderProductOptions(), 250));
+        if (selectHistoryProduct) selectHistoryProduct.addEventListener('change', (e) => loadProductPriceHistory(e.target.value));
+        if (selectChartMode) selectChartMode.addEventListener('change', () => {
+            if (currentHistoryAnalytics) renderPriceChart(currentHistoryAnalytics.chart_data, currentHistoryAnalytics.stats);
+        });
+        if (btnRefreshHistory) btnRefreshHistory.addEventListener('click', () => {
+            if (selectedProductName) {
+                loadProductPriceHistory(selectedProductName);
+            } else {
+                loadProductsList();
+            }
+        });
 
         btnDownloadExcel.addEventListener('click', () => downloadFile('xlsx'));
         btnDownloadCsv.addEventListener('click', () => downloadFile('csv'));
@@ -783,8 +836,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td><strong>${escapeHtml(item.supermercado)}</strong></td>
                 <td><span class="category-badge">${escapeHtml(item.categoria || 'Outros')}</span></td>
                 <td>
-                    <div class="badge-canonical-product">
-                        <span class="canonical-name">${escapeHtml(canon)}</span>
+                    <div class="badge-canonical-product cursor-pointer btn-jump-history" data-product="${escapeHtml(canon)}" title="Clique para ver o gráfico de histórico de preços">
+                        <span class="canonical-name">${escapeHtml(canon)} <span style="font-size: 11px; opacity: 0.7;">📈</span></span>
                         <div class="canonical-tags">
                             ${item.marca ? `<span class="tag-brand">${escapeHtml(item.marca)}</span>` : ''}
                             ${item.embalagem ? `<span class="tag-pack">${escapeHtml(item.embalagem)}</span>` : ''}
@@ -799,6 +852,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 </td>
             `;
             targetBody.appendChild(tr);
+        });
+
+        targetBody.querySelectorAll('.btn-jump-history').forEach(el => {
+            el.addEventListener('click', () => {
+                const prod = el.getAttribute('data-product');
+                if (prod) navigateToProductHistory(prod);
+            });
         });
 
         targetBody.querySelectorAll('.btn-preview-flyer').forEach(btn => {
@@ -912,8 +972,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             tr.innerHTML = `
                 <td>
-                    <div class="badge-canonical-product">
-                        <span class="canonical-name">${escapeHtml(item.produto_padronizado)}</span>
+                    <div class="badge-canonical-product cursor-pointer btn-jump-history" data-product="${escapeHtml(item.produto_padronizado)}" title="Clique para ver o gráfico de histórico de preços">
+                        <span class="canonical-name">${escapeHtml(item.produto_padronizado)} <span style="font-size: 11px; opacity: 0.7;">📈</span></span>
                         <div class="canonical-tags">
                             ${item.marca ? `<span class="tag-brand">${escapeHtml(item.marca)}</span>` : ''}
                             ${item.embalagem ? `<span class="tag-pack">${escapeHtml(item.embalagem)}</span>` : ''}
@@ -941,8 +1001,24 @@ document.addEventListener('DOMContentLoaded', () => {
             tbodyComparator.appendChild(tr);
         });
 
+        tbodyComparator.querySelectorAll('.btn-jump-history').forEach(el => {
+            el.addEventListener('click', () => {
+                const prod = el.getAttribute('data-product');
+                if (prod) navigateToProductHistory(prod);
+            });
+        });
+
         if (statMaxSavings) {
             statMaxSavings.textContent = `${maxSavings}%`;
+        }
+    }
+
+    function navigateToProductHistory(productName) {
+        if (!productName) return;
+        const tabBtn = document.querySelector('[data-tab="tab-price-history"]');
+        if (tabBtn) {
+            tabBtn.click();
+            loadProductsList(productName);
         }
     }
 
@@ -976,6 +1052,439 @@ document.addEventListener('DOMContentLoaded', () => {
             btnExportComparison.disabled = false;
             btnExportComparison.textContent = '📊 Exportar Comparativo Excel (.xlsx)';
         }
+    }
+
+    // ============================================================
+    // HISTÓRICO DE PREÇOS POR PRODUTO E GRÁFICOS (CHART.JS)
+    // ============================================================
+
+    const MARKET_PALETTE = [
+        { border: '#2563EB', bg: 'rgba(37, 99, 235, 0.12)' },
+        { border: '#16A34A', bg: 'rgba(22, 163, 74, 0.12)' },
+        { border: '#D97706', bg: 'rgba(217, 119, 6, 0.12)' },
+        { border: '#9333EA', bg: 'rgba(147, 51, 234, 0.12)' },
+        { border: '#DC2626', bg: 'rgba(220, 38, 38, 0.12)' },
+        { border: '#0891B2', bg: 'rgba(8, 145, 178, 0.12)' },
+        { border: '#4F46E5', bg: 'rgba(79, 70, 229, 0.12)' },
+        { border: '#EA580C', bg: 'rgba(234, 88, 12, 0.12)' },
+        { border: '#059669', bg: 'rgba(5, 150, 105, 0.12)' },
+        { border: '#DB2777', bg: 'rgba(219, 39, 119, 0.12)' },
+        { border: '#6366F1', bg: 'rgba(99, 102, 241, 0.12)' },
+        { border: '#14B8A6', bg: 'rgba(20, 184, 166, 0.12)' }
+    ];
+
+    async function loadProductsList(preferredProduct = null) {
+        try {
+            const cat = filterHistoryCategory ? filterHistoryCategory.value : '';
+            const query = inputSearchHistoryProduct ? inputSearchHistoryProduct.value.trim() : '';
+
+            const params = new URLSearchParams();
+            if (cat) params.append('category', cat);
+            if (query) params.append('search', query);
+
+            const resp = await fetch(`/api/database/products?${params.toString()}`);
+            const data = await resp.json();
+            currentProductsList = data.products || [];
+
+            if (tabCountHistoryProducts) {
+                tabCountHistoryProducts.textContent = currentProductsList.length;
+            }
+
+            populateHistoryCategoryFilter(currentProductsList);
+            filterAndRenderProductOptions(preferredProduct);
+        } catch (e) {
+            console.error('Erro ao carregar lista de produtos:', e);
+        }
+    }
+
+    function populateHistoryCategoryFilter(products) {
+        if (!filterHistoryCategory) return;
+        const curVal = filterHistoryCategory.value;
+        const categories = [...new Set(products.map(p => p.categoria).filter(Boolean))].sort();
+
+        const existingOptions = Array.from(filterHistoryCategory.options).map(o => o.value);
+        if (categories.length > 0 && categories.some(c => !existingOptions.includes(c))) {
+            filterHistoryCategory.innerHTML = '<option value="">Todas as categorias</option>';
+            categories.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c;
+                filterHistoryCategory.appendChild(opt);
+            });
+            if (categories.includes(curVal)) {
+                filterHistoryCategory.value = curVal;
+            }
+        }
+    }
+
+    function filterAndRenderProductOptions(preferredProduct = null) {
+        if (!selectHistoryProduct) return;
+
+        const cat = filterHistoryCategory ? filterHistoryCategory.value : '';
+        const query = inputSearchHistoryProduct ? inputSearchHistoryProduct.value.toLowerCase().trim() : '';
+
+        const filtered = currentProductsList.filter(p => {
+            const matchesCat = !cat || p.categoria === cat;
+            const matchesQuery = !query || 
+                p.produto_padronizado.toLowerCase().includes(query) ||
+                (p.marca && p.marca.toLowerCase().includes(query)) ||
+                (p.categoria && p.categoria.toLowerCase().includes(query));
+            return matchesCat && matchesQuery;
+        });
+
+        selectHistoryProduct.innerHTML = '';
+        if (filtered.length === 0) {
+            selectHistoryProduct.innerHTML = '<option value="">Nenhum produto encontrado</option>';
+            if (historyProductTitle) historyProductTitle.textContent = 'Nenhum produto selecionado';
+            if (chartEmptyState) chartEmptyState.style.display = 'flex';
+            if (priceChartInstance) {
+                priceChartInstance.destroy();
+                priceChartInstance = null;
+            }
+            if (tbodyProductHistory) {
+                tbodyProductHistory.innerHTML = '<tr><td colspan="6" class="empty-state">Nenhum produto disponível para os filtros atuais.</td></tr>';
+            }
+            return;
+        }
+
+        filtered.forEach(p => {
+            const opt = document.createElement('option');
+            opt.value = p.produto_padronizado;
+            opt.textContent = `${p.produto_padronizado} (${p.total_ofertas} ofertas • ${p.qtd_mercados} mercados)`;
+            selectHistoryProduct.appendChild(opt);
+        });
+
+        let toSelect = filtered[0].produto_padronizado;
+        if (preferredProduct && filtered.some(p => p.produto_padronizado === preferredProduct)) {
+            toSelect = preferredProduct;
+        } else if (selectedProductName && filtered.some(p => p.produto_padronizado === selectedProductName)) {
+            toSelect = selectedProductName;
+        }
+
+        selectHistoryProduct.value = toSelect;
+        selectedProductName = toSelect;
+        loadProductPriceHistory(toSelect);
+    }
+
+    async function loadProductPriceHistory(productName) {
+        if (!productName) return;
+        selectedProductName = productName;
+
+        try {
+            if (chartEmptyState) chartEmptyState.style.display = 'none';
+            const resp = await fetch(`/api/database/product-history?product_name=${encodeURIComponent(productName)}`);
+            const data = await resp.json();
+            currentHistoryAnalytics = data.analytics || {};
+            renderProductPriceHistory(currentHistoryAnalytics);
+        } catch (e) {
+            console.error('Erro ao carregar histórico do produto:', e);
+        }
+    }
+
+    function renderProductPriceHistory(analytics) {
+        if (!analytics || !analytics.produto_padronizado) return;
+
+        const stats = analytics.stats || {};
+        const chartData = analytics.chart_data || {};
+        const timeline = analytics.timeline || [];
+
+        // 1. Atualizar Banner do Produto
+        if (historyProductTitle) historyProductTitle.textContent = analytics.produto_padronizado;
+        if (historyProductCategory) {
+            historyProductCategory.textContent = analytics.categoria || 'Outros';
+        }
+        if (historyProductBrand) {
+            if (analytics.marca) {
+                historyProductBrand.textContent = analytics.marca;
+                historyProductBrand.style.display = 'inline-block';
+            } else {
+                historyProductBrand.style.display = 'none';
+            }
+        }
+        if (historyProductPack) {
+            if (analytics.embalagem) {
+                historyProductPack.textContent = analytics.embalagem;
+                historyProductPack.style.display = 'inline-block';
+            } else {
+                historyProductPack.style.display = 'none';
+            }
+        }
+        if (historyProductDates) {
+            if (stats.menor_data && stats.recente_data) {
+                historyProductDates.textContent = `Registros de ${stats.menor_data} a ${stats.recente_data}`;
+            } else {
+                historyProductDates.textContent = '';
+            }
+        }
+
+        // 2. Atualizar Cards de KPIs
+        if (statHistMinPrice) statHistMinPrice.textContent = formatCurrency(stats.menor_preco);
+        if (statHistMinMarket) statHistMinMarket.textContent = stats.menor_mercado ? `No ${stats.menor_mercado} (${stats.menor_data})` : '-';
+
+        if (statHistMaxPrice) statHistMaxPrice.textContent = formatCurrency(stats.maior_preco);
+        if (statHistMaxMarket) statHistMaxMarket.textContent = stats.maior_mercado ? `No ${stats.maior_mercado} (${stats.maior_data})` : '-';
+
+        if (statHistAvgPrice) statHistAvgPrice.textContent = formatCurrency(stats.preco_medio);
+        if (statHistRecordsCount) statHistRecordsCount.textContent = `${stats.total_registros || 0} ofertas em ${stats.qtd_mercados || 0} supermercado(s)`;
+
+        if (statHistRecentPrice) statHistRecentPrice.textContent = formatCurrency(stats.preco_recente);
+        if (statHistTrendBadge) {
+            const varPct = stats.variacao_vs_medio_pct || 0;
+            if (varPct < 0) {
+                statHistTrendBadge.innerHTML = `<span class="trend-badge trend-badge-down">↓ ${Math.abs(varPct)}% vs média</span>`;
+            } else if (varPct > 0) {
+                statHistTrendBadge.innerHTML = `<span class="trend-badge trend-badge-up">↑ +${varPct}% vs média</span>`;
+            } else {
+                statHistTrendBadge.innerHTML = `<span class="trend-badge trend-badge-neutral">Na média histórica</span>`;
+            }
+        }
+
+        // 3. Renderizar Gráfico
+        renderPriceChart(chartData, stats);
+
+        // 4. Renderizar Tabela Histórica
+        renderTimelineTable(timeline, stats.preco_medio || 0);
+    }
+
+    function renderPriceChart(chartData, stats) {
+        if (!productPriceChartCanvas) return;
+
+        if (priceChartInstance) {
+            priceChartInstance.destroy();
+            priceChartInstance = null;
+        }
+
+        if (!chartData || !chartData.date_labels || chartData.date_labels.length === 0) {
+            if (chartEmptyState) chartEmptyState.style.display = 'flex';
+            if (chartLegendCustom) chartLegendCustom.innerHTML = '';
+            return;
+        }
+
+        if (chartEmptyState) chartEmptyState.style.display = 'none';
+
+        const mode = selectChartMode ? selectChartMode.value : 'multi_market';
+        const labels = chartData.date_labels;
+        let datasets = [];
+        let legendHtml = '';
+
+        if (mode === 'multi_market') {
+            (chartData.datasets || []).forEach((ds, idx) => {
+                const colorObj = MARKET_PALETTE[idx % MARKET_PALETTE.length];
+                datasets.push({
+                    label: ds.label,
+                    data: ds.data,
+                    borderColor: colorObj.border,
+                    backgroundColor: colorObj.bg,
+                    borderWidth: 2.5,
+                    tension: 0.25,
+                    pointRadius: 5,
+                    pointHoverRadius: 7,
+                    pointBackgroundColor: colorObj.border,
+                    pointBorderColor: '#FFFFFF',
+                    pointBorderWidth: 2,
+                    spanGaps: true
+                });
+
+                legendHtml += `
+                    <div class="legend-item-chip">
+                        <span class="legend-color-dot" style="background: ${colorObj.border};"></span>
+                        <span>${escapeHtml(ds.label)}</span>
+                    </div>
+                `;
+            });
+        } else if (mode === 'average_trend') {
+            datasets.push({
+                label: 'Preço Médio nos Encartes',
+                data: chartData.average_series || [],
+                borderColor: '#2563EB',
+                backgroundColor: 'rgba(37, 99, 235, 0.12)',
+                borderWidth: 3,
+                tension: 0.3,
+                fill: true,
+                pointRadius: 6,
+                pointHoverRadius: 8,
+                pointBackgroundColor: '#2563EB',
+                pointBorderColor: '#FFFFFF',
+                pointBorderWidth: 2,
+                spanGaps: true
+            });
+
+            legendHtml = `
+                <div class="legend-item-chip">
+                    <span class="legend-color-dot" style="background: #2563EB;"></span>
+                    <span>Preço Médio nos Encartes</span>
+                </div>
+            `;
+        } else if (mode === 'bar_comparison') {
+            (chartData.datasets || []).forEach((ds, idx) => {
+                const colorObj = MARKET_PALETTE[idx % MARKET_PALETTE.length];
+                datasets.push({
+                    type: 'bar',
+                    label: ds.label,
+                    data: ds.data,
+                    backgroundColor: colorObj.border,
+                    borderColor: colorObj.border,
+                    borderWidth: 1,
+                    borderRadius: 4
+                });
+
+                legendHtml += `
+                    <div class="legend-item-chip">
+                        <span class="legend-color-dot" style="background: ${colorObj.border};"></span>
+                        <span>${escapeHtml(ds.label)}</span>
+                    </div>
+                `;
+            });
+        }
+
+        if (chartLegendCustom) {
+            chartLegendCustom.innerHTML = legendHtml;
+        }
+
+        if (chartProductSubtitle) {
+            chartProductSubtitle.textContent = `${labels.length} data(s) registrada(s) • ${datasets.length} série(s) de dados`;
+        }
+
+        const ctx = productPriceChartCanvas.getContext('2d');
+        priceChartInstance = new Chart(ctx, {
+            type: mode === 'bar_comparison' ? 'bar' : 'line',
+            data: {
+                labels: labels,
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        backgroundColor: '#0F172A',
+                        titleColor: '#F8FAFC',
+                        bodyColor: '#F1F5F9',
+                        padding: 12,
+                        cornerRadius: 6,
+                        callbacks: {
+                            label: function(context) {
+                                const val = context.parsed.y;
+                                if (val === null || val === undefined || isNaN(val)) return null;
+                                const dsLabel = context.dataset.label || 'Preço';
+                                return ` ${dsLabel}: ${formatCurrency(val)}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        grace: '10%',
+                        grid: {
+                            color: '#EDF2F7'
+                        },
+                        ticks: {
+                            color: '#64748B',
+                            font: { family: 'Inter', size: 11 },
+                            callback: function(val) {
+                                return 'R$ ' + parseFloat(val).toFixed(2).replace('.', ',');
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            color: '#64748B',
+                            font: { family: 'Inter', size: 11 }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function renderTimelineTable(timeline, avgPrice) {
+        if (!tbodyProductHistory) return;
+
+        if (historyTableCount) {
+            historyTableCount.textContent = timeline.length;
+        }
+
+        if (!timeline || timeline.length === 0) {
+            tbodyProductHistory.innerHTML = `
+                <tr>
+                    <td colspan="6" class="empty-state">Nenhum registro histórico disponível.</td>
+                </tr>
+            `;
+            return;
+        }
+
+        tbodyProductHistory.innerHTML = '';
+        timeline.forEach(item => {
+            const tr = document.createElement('tr');
+            
+            let diffTagHtml = '';
+            const diffPct = item.diff_vs_avg_pct || 0;
+            const diffVal = item.diff_vs_avg || 0;
+
+            if (diffPct < -0.5) {
+                diffTagHtml = `
+                    <span class="diff-tag diff-tag-negative" title="Preço abaixo da média histórica">
+                        ↓ ${Math.abs(diffPct)}% (${formatCurrency(Math.abs(diffVal))})
+                    </span>
+                `;
+            } else if (diffPct > 0.5) {
+                diffTagHtml = `
+                    <span class="diff-tag diff-tag-positive" title="Preço acima da média histórica">
+                        ↑ +${diffPct}% (+${formatCurrency(diffVal)})
+                    </span>
+                `;
+            } else {
+                diffTagHtml = `
+                    <span class="diff-tag diff-tag-neutral" title="Preço equivalente à média">
+                        ≈ Na média
+                    </span>
+                `;
+            }
+
+            tr.innerHTML = `
+                <td style="text-align: center; font-weight: 600; color: var(--text-secondary);">${escapeHtml(item.display_date || item.data_postagem)}</td>
+                <td><strong>${escapeHtml(item.supermercado)}</strong></td>
+                <td style="font-size: 12.5px; color: var(--text-primary);">${escapeHtml(item.item_original || item.produto_padronizado)}</td>
+                <td class="text-right price-text" style="font-size: 13.5px;">${formatCurrency(item.valor)}</td>
+                <td style="text-align: center;">${diffTagHtml}</td>
+                <td class="text-center">
+                    ${item.link_imagem ? `
+                        <button class="btn btn-outline btn-sm btn-preview-flyer" 
+                                data-img="${escapeHtml(item.link_imagem)}" 
+                                data-post="${escapeHtml(item.post_url || '')}" 
+                                data-market="${escapeHtml(item.supermercado)}">
+                            Ver
+                        </button>
+                    ` : '-'}
+                </td>
+            `;
+            tbodyProductHistory.appendChild(tr);
+        });
+
+        tbodyProductHistory.querySelectorAll('.btn-preview-flyer').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const imgUrl = btn.getAttribute('data-img');
+                const postUrl = btn.getAttribute('data-post');
+                const mkt = btn.getAttribute('data-market');
+
+                previewImgElement.src = imgUrl;
+                btnOpenOriginalImg.href = imgUrl;
+                btnOpenInstagramPost.href = postUrl || imgUrl;
+                modalImageTitle.textContent = `Encarte: ${mkt}`;
+                openModal(modalImagePreview);
+            });
+        });
     }
 
     async function loadHistory() {

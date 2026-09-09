@@ -12,7 +12,10 @@ cd /d "%~dp0"
 echo [1/3] Verificando dependencias...
 pip install -r requirements.txt --quiet
 
-echo [2/3] Iniciando Servidor Web (FastAPI)...
+echo [2/3] Abrindo navegador em http://localhost:8000...
+start "" "http://localhost:8000"
+
+echo [3/3] Iniciando Servidor Web (FastAPI)...
 echo.
 echo ============================================================
 echo   Aplicacao rodando em: http://localhost:8000
@@ -22,3 +25,4 @@ echo.
 
 python app.py
 pause
+

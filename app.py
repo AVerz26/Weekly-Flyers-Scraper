@@ -229,7 +229,8 @@ async def get_latest_data():
 
 from core.db import (
     init_db, get_price_comparison, get_database_stats, 
-    get_product_price_history
+    get_product_price_history, get_distinct_products_summary,
+    get_product_price_history_analytics
 )
 from core.exporter import get_latest_results, list_history_runs, export_comparison_excel
 
@@ -240,6 +241,18 @@ init_db()
 async def get_db_stats():
     """Retorna estatísticas gerais das ofertas e produtos armazenados no banco SQLite."""
     return get_database_stats()
+
+@app.get("/api/database/products")
+async def get_db_products(
+    category: Optional[str] = None,
+    search: Optional[str] = None
+):
+    """Retorna lista de produtos padronizados com resumo para seletores e autocomplete."""
+    products = get_distinct_products_summary(category=category, search=search)
+    return {
+        "total_produtos": len(products),
+        "products": products
+    }
 
 @app.get("/api/database/comparison")
 async def get_db_comparison(
@@ -259,8 +272,14 @@ async def get_db_comparison(
 
 @app.get("/api/database/product-history")
 async def get_product_history(product_name: str):
-    """Retorna histórico de preços de um produto específico."""
-    return {"history": get_product_price_history(product_name)}
+    """Retorna histórico analítico de preços, séries para gráficos e estatísticas de um produto."""
+    analytics = get_product_price_history_analytics(product_name)
+    return {
+        "status": "success",
+        "produto": product_name,
+        "analytics": analytics,
+        "history": analytics.get("timeline", [])
+    }
 
 class ExportComparisonRequest(BaseModel):
     category: Optional[str] = None
