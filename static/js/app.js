@@ -1154,7 +1154,9 @@ document.addEventListener('DOMContentLoaded', () => {
         filtered.forEach(p => {
             const opt = document.createElement('option');
             opt.value = p.produto_padronizado;
-            opt.textContent = `${p.produto_padronizado} (${p.total_ofertas} ofertas • ${p.qtd_mercados} mercados)`;
+            const offerStr = p.total_ofertas === 1 ? '1 oferta' : `${p.total_ofertas} ofertas`;
+            const mktStr = p.qtd_mercados === 1 ? '1 mercado' : `${p.qtd_mercados} mercados`;
+            opt.textContent = `${p.produto_padronizado} (${offerStr} • ${mktStr})`;
             selectHistoryProduct.appendChild(opt);
         });
 

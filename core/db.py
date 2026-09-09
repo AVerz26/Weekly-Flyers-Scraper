@@ -163,6 +163,71 @@ def deduplicate_database() -> int:
     conn.close()
     return len(duplicates_to_delete)
 
+def normalize_all_database_products() -> int:
+    """
+    Varre todas as ofertas do banco SQLite, reaplica o padronizador canônico,
+    limpa marcas falsas e pontuações, recalculando os hashes de integridade
+    e removendo quaisquer duplicatas consolidadas.
+    """
+    from core.normalizer import padronizar_produto
+    from core.categorizer import categorizar_produto
+    
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    # Temporariamente remove o índice único para permitir recomputação de hashes
+    cursor.execute("DROP INDEX IF EXISTS idx_offers_hash")
+    
+    cursor.execute("""
+        SELECT id, item_original, produto_padronizado, marca, embalagem, categoria, supermercado, data_postagem, valor, link_imagem, post_url
+        FROM offers
+        ORDER BY id ASC
+    """)
+    rows = cursor.fetchall()
+    
+    updated_count = 0
+    for r in rows:
+        raw_name = r["item_original"] or r["produto_padronizado"]
+        old_brand = r["marca"]
+        
+        canon_name, canon_brand, canon_emb = padronizar_produto(raw_name, fallback_brand=old_brand)
+        
+        cat = r["categoria"]
+        if not cat or cat.lower() in ["outros", "geral"]:
+            cat = categorizar_produto(canon_name)
+            
+        new_hash = generate_offer_hash(
+            supermercado=r["supermercado"],
+            produto_padronizado=canon_name,
+            data_postagem=r["data_postagem"],
+            valor=r["valor"],
+            link_imagem=r["link_imagem"],
+            post_url=r["post_url"],
+            item_original=r["item_original"]
+        )
+        
+        cursor.execute("""
+            UPDATE offers
+            SET produto_padronizado = ?, marca = ?, embalagem = ?, categoria = ?, offer_hash = ?
+            WHERE id = ?
+        """, (canon_name, canon_brand, canon_emb, cat, new_hash, r["id"]))
+        updated_count += 1
+        
+    conn.commit()
+    conn.close()
+    
+    # Deduplica após unificação dos nomes canônicos e recria índice único
+    dedup_removed = deduplicate_database()
+    
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_offers_hash ON offers(offer_hash)")
+    conn.commit()
+    conn.close()
+    
+    sync_database_to_exports()
+    return updated_count
+
 def save_run_and_offers(
     mode: str,
     provider: str,

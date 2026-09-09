@@ -825,7 +825,9 @@ document.addEventListener('DOMContentLoaded', () => {
         filtered.forEach(p => {
             const opt = document.createElement('option');
             opt.value = p.key;
-            opt.textContent = `${p.displayName} (${p.totalRecords} ofertas • ${p.uniqueMarkets} mercados)`;
+            const offerStr = p.totalRecords === 1 ? '1 oferta' : `${p.totalRecords} ofertas`;
+            const mktStr = p.uniqueMarkets === 1 ? '1 mercado' : `${p.uniqueMarkets} mercados`;
+            opt.textContent = `${p.displayName} (${offerStr} • ${mktStr})`;
             selectHistoryProduct.appendChild(opt);
         });
 
