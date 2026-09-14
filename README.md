@@ -111,13 +111,36 @@ Open your browser and navigate to: **`http://localhost:8000`**
 
 ---
 
-## 📊 Generated Reports & Exports
+---
 
-Exported files are automatically saved to `output/` and available for download directly in the UI:
+## 🤖 GitHub Actions • Daily Automation
 
-1. **`comparativo_precos_YYYY-MM-DD.xlsx`**: Cross-supermarket comparison matrix with products as rows and store prices as columns, highlighting the lowest available price in green.
-2. **`ofertas_YYYY-MM-DD.xlsx`**: Detailed deals catalog structured across 3 sheets (*All Offers*, *By Supermarket*, *By Category*).
-3. **`latest_results.csv` / `.json`**: Raw machine-readable feeds for database integration or analytics pipelines.
+The repository includes a fully automated GitHub Actions workflow (`.github/workflows/daily_scraper.yml`) that runs daily to scrape supermarket flyers, extract deals with Vision AI, update the SQLite database, and sync the latest results with **GitHub Pages**.
+
+### ⏰ Schedule & Triggers
+- **Daily Cron:** Runs every day at **10:00 UTC** (07:00 AM Brasília Time).
+- **Manual Trigger (`workflow_dispatch`):** Run the scraper anytime on demand directly from the GitHub web UI.
+
+### 🔑 Repository Secrets Setup
+To enable the workflow in your GitHub repository:
+1. Navigate to your repository: `https://github.com/AVerz26/Weekly-Flyers-Scraper`
+2. Go to **Settings** ➔ **Secrets and variables** ➔ **Actions**.
+3. Under **Repository secrets**, click **New repository secret** and add:
+   - `APIFY_TOKEN`: Your Apify API token (`apify_api_...`)
+   - `GEMINI_API_KEY`: Your Google AI Studio Gemini API Key (`AIzaSy...`)
+   - *(Optional)* `OPENAI_API_KEY`: If you prefer OpenAI models.
+4. Go to **Settings** ➔ **Actions** ➔ **General** ➔ **Workflow permissions**, and ensure **"Read and write permissions"** is selected so the action can commit updated results to `docs/data/` and `data/`.
+
+### 💻 Headless CLI Execution
+You can also run the scraper locally or on any server without the web UI:
+
+```bash
+# Run full pipeline with default settings
+python run_scraper.py
+
+# Custom mode and date filter
+python run_scraper.py --mode full --date-mode yesterday_today --limit 3 --provider gemini --model gemini-flash-lite-latest
+```
 
 ---
 

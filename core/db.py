@@ -111,6 +111,42 @@ def init_db():
     cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_offers_hash ON offers(offer_hash)")
     conn.commit()
     conn.close()
+    
+    # Hidrata banco de dados a partir do histórico JSON se a tabela estiver vazia
+    bootstrap_db_from_json()
+
+def bootstrap_db_from_json():
+    """
+    Se o banco SQLite for recém-criado ou estiver sem ofertas,
+    importa o acervo histórico de docs/data/latest_results.json.
+    Garante resiliência completa em ambientes efêmeros de CI/CD (GitHub Actions).
+    """
+    try:
+        conn = get_connection()
+        cursor = conn.cursor()
+        cursor.execute("SELECT COUNT(*) FROM offers")
+        count = cursor.fetchone()[0]
+        conn.close()
+        
+        if count == 0:
+            json_file = DOCS_DIR / "data" / "latest_results.json"
+            if not json_file.exists():
+                json_file = OUTPUT_DIR / "latest_results.json"
+                
+            if json_file.exists():
+                with open(json_file, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                items = data.get("items", [])
+                if items:
+                    save_run_and_offers(
+                        mode="bootstrap",
+                        provider="seed",
+                        model="seed",
+                        excel_file="",
+                        offers_list=items
+                    )
+    except Exception as e:
+        print(f"⚠️ Erro ao importar histórico inicial no SQLite: {e}")
 
 def deduplicate_database() -> int:
     """
@@ -375,6 +411,15 @@ def sync_database_to_exports() -> Dict[str, Any]:
     docs_data_dir.mkdir(parents=True, exist_ok=True)
     with open(docs_data_dir / "latest_results.json", "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
+        
+    # 3. Sincroniza planilha Excel com docs/data/ para download no GitHub Pages
+    latest_xlsx = OUTPUT_DIR / "latest_results.xlsx"
+    if latest_xlsx.exists():
+        try:
+            import shutil
+            shutil.copy2(latest_xlsx, docs_data_dir / "latest_results.xlsx")
+        except Exception:
+            pass
         
     conn.close()
     return payload

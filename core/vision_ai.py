@@ -125,8 +125,16 @@ def process_with_gemini(image_url: str, api_key: str, model_name: str = "gemini-
         
     b64_img, mime_type = img_data
     
-    # Ordem de tentativa: modelo solicitado seguido dos modelos ativos no endpoint
-    candidate_models = [model_name or "gemini-flash-lite-latest", "gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3-flash-preview"]
+    # Ordem de tentativa: modelo solicitado seguido dos modelos de alta velocidade com fallback
+    candidate_models = [
+        model_name or "gemini-flash-lite-latest",
+        "gemini-flash-lite-latest",
+        "gemini-2.5-flash",
+        "gemini-2.0-flash",
+        "gemini-1.5-flash",
+        "gemini-3.5-flash-lite",
+        "gemini-2.0-flash-lite-preview-02-05"
+    ]
     seen = set()
     models_to_try = [m for m in candidate_models if m and not (m in seen or seen.add(m))]
 

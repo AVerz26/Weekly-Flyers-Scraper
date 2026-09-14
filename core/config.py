@@ -67,16 +67,16 @@ def get_default_config() -> Dict[str, Any]:
         "vision_provider": os.getenv("VISION_PROVIDER", "gemini"),
         "gemini_api_key": os.getenv("GEMINI_API_KEY", ""),
         "openai_api_key": os.getenv("OPENAI_API_KEY", ""),
-        "gemini_model": os.getenv("GEMINI_MODEL", "gemini-1.5-flash"),
-        "date_mode": "yesterday_today", # "today", "yesterday_today", "last_3_days", "last_7_days", "custom"
-        "custom_start_date": "",
-        "custom_end_date": "",
-        "results_limit": 3,
+        "gemini_model": os.getenv("GEMINI_MODEL", "gemini-flash-lite-latest"),
+        "date_mode": os.getenv("DATE_MODE", "yesterday_today"),
+        "custom_start_date": os.getenv("CUSTOM_START_DATE", ""),
+        "custom_end_date": os.getenv("CUSTOM_END_DATE", ""),
+        "results_limit": int(os.getenv("RESULTS_LIMIT", "3")),
         "profiles": DEFAULT_PROFILES
     }
 
 def load_config() -> Dict[str, Any]:
-    """Carrega configuração do arquivo JSON ou cria padrão."""
+    """Carrega configuração do arquivo JSON ou cria padrão, priorizando variáveis de ambiente."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     
@@ -91,9 +91,21 @@ def load_config() -> Dict[str, Any]:
                     if key not in saved:
                         saved[key] = val
                     elif key in ["apify_token", "gemini_api_key", "openai_api_key"]:
-                        # Se estiver vazio no JSON mas presente no .env, usa do .env
+                        # Se estiver vazio no JSON mas presente no ambiente/.env, usa do ambiente
                         if not saved[key] and val:
                             saved[key] = val
+                        # Se estiver presente no ambiente/secrets, sobrescreve
+                        elif os.getenv(key.upper()):
+                            saved[key] = os.getenv(key.upper())
+                # Permite sobrescrever provider/model/date_mode por env var se setados explicitamente
+                if os.getenv("VISION_PROVIDER"):
+                    saved["vision_provider"] = os.getenv("VISION_PROVIDER")
+                if os.getenv("GEMINI_MODEL"):
+                    saved["gemini_model"] = os.getenv("GEMINI_MODEL")
+                if os.getenv("DATE_MODE"):
+                    saved["date_mode"] = os.getenv("DATE_MODE")
+                if os.getenv("RESULTS_LIMIT"):
+                    saved["results_limit"] = int(os.getenv("RESULTS_LIMIT"))
                 return saved
         except Exception:
             pass

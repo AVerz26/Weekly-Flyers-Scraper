@@ -1,0 +1,119 @@
+name: Daily Flyer Scraping & Price Extraction
+
+on:
+  # Executa todos os dias às 10:00 UTC (07:00 da manhã no Horário de Brasília)
+  schedule:
+    - cron: '0 10 * * *'
+
+  # Permite execução manual a qualquer momento via aba "Actions" no GitHub
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Modo de Execução'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - scrape_only
+          - vision_only
+      date_mode:
+        description: 'Filtro de Data das Publicações'
+        required: true
+        default: 'yesterday_today'
+        type: choice
+        options:
+          - yesterday_today
+          - today
+          - last_3_days
+          - last_7_days
+      results_limit:
+        description: 'Limite de Posts por Perfil'
+        required: true
+        default: '3'
+        type: string
+      vision_provider:
+        description: 'Motor de Inteligência Artificial'
+        required: true
+        default: 'gemini'
+        type: choice
+        options:
+          - gemini
+          - openai
+      gemini_model:
+        description: 'Modelo Gemini'
+        required: false
+        default: 'gemini-flash-lite-latest'
+        type: string
+
+# Garante que apenas uma execução ocorra por vez para evitar concorrência no banco
+concurrency:
+  group: flyer-scraper-pipeline
+  cancel-in-progress: false
+
+# Permissões necessárias para gravar os dados e atualizar o GitHub Pages
+permissions:
+  contents: write
+
+jobs:
+  scrape_and_update:
+    name: Run Scraping & Update GitHub Pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 🚀 Run FlyerScout Scraper & Vision AI Pipeline
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python run_scraper.py \
+            --mode "${{ github.event.inputs.mode || 'full' }}" \
+            --date-mode "${{ github.event.inputs.date_mode || 'yesterday_today' }}" \
+            --limit "${{ github.event.inputs.results_limit || '3' }}" \
+            --provider "${{ github.event.inputs.vision_provider || 'gemini' }}" \
+            --model "${{ github.event.inputs.gemini_model || 'gemini-flash-lite-latest' }}"
+
+      - name: 💾 Commit & Push Updated Data to GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Adiciona os arquivos atualizados para o commit
+          git add docs/data/latest_results.json docs/data/latest_results.xlsx data/flyers_database.db data/scraped_images.json || true
+          
+          # Realiza o commit apenas se houver alterações
+          if git diff --staged --quiet; then
+            echo "ℹ️ Nenhuma alteração nos dados para commitar."
+          else
+            git commit -m "chore(data): auto-update flyer offers and price matrix [skip ci]"
+            git push origin main
+            echo "✅ Dados atualizados com sucesso e enviados para a branch main!"
+          fi
+
+      - name: 📤 Upload Generated Reports as Workflow Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: flyer-reports-${{ github.run_number }}
+          path: output/
+          if-no-files-found: ignore
+          retention-days: 14
