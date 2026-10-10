@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-09_16-54-05",
-  "total_itens": 3054,
+  "timestamp": "2026-10-10_15-47-27",
+  "total_itens": 3139,
   "supermercados": [
     "Bom Jesus Primavera do Leste 🛒",
     "Machadão Atacadista",
@@ -1149,6 +1149,20 @@
       "updated_at": "2026-09-29 16:28:36"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bazar / Eletro",
+      "produto_padronizado": "Térmica Mor 18L",
+      "marca": "Mor",
+      "embalagem": "18L",
+      "item": "CAIXA TÉRMICA MOR 18L",
+      "valor": 69.9,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Bazar / Eletro",
       "produto_padronizado": "Térmica Mor 34L",
@@ -1273,6 +1287,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwrEk8B5/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bazar / Eletro",
+      "produto_padronizado": "Ventilador de Mesa Mondial Power 40cm 127v",
+      "marca": "Mondial",
+      "embalagem": "",
+      "item": "VENTILADOR MONDIAL SUPER POWER 40CM 127V UNI",
+      "valor": 159.9,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -1455,6 +1483,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwrEk8B5/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Alcoólicos Diversos",
+      "produto_padronizado": "Vinho Chilano 750ml",
+      "marca": "Chilano",
+      "embalagem": "750ml",
+      "item": "VINHO CHILANO 750ML DE: R$ 38,69 POR: R$ 29,99",
+      "valor": 29.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -1753,6 +1795,20 @@
     {
       "supermercado": "Supermercado Bianchi",
       "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja 12x Itaipava 269ml",
+      "marca": "Itaipava",
+      "embalagem": "269ml",
+      "item": "CERVEJA ITAIPAVA CX C/ 12X269ML",
+      "valor": 26.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Cervejas",
       "produto_padronizado": "Cerveja Extra Corona 330ml",
       "marca": "Corona",
       "embalagem": "330ml",
@@ -1861,6 +1917,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwrEk8B5/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Extra Long Neck Corona 330ml",
+      "marca": "Corona",
+      "embalagem": "330ml",
+      "item": "CERVEJA CORONA EXTRA 330ML",
+      "valor": 6.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -2325,6 +2395,34 @@
       "updated_at": "2026-09-30 16:22:34"
     },
     {
+      "supermercado": "Super Compras Supermercado",
+      "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Lata Pack 15 Brahma 269ml",
+      "marca": "Brahma",
+      "embalagem": "269ml",
+      "item": "Cerveja Brahma Multipack c/ 15 Und. 269ml 41,85",
+      "valor": 41.85,
+      "data_postagem": "09/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwGSl7Wn&_nc_oc=AdoxoTIn6nfdsGKxEQQfGixcmAvmGEi7bzbZhGmrRYEUg7vqIbOMpQjLuS0kT89LSsc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=VEcezsx-y_Ggt-ihAz92lQ&_nc_ss=7a22e&oh=00_AQPmStjQZR_YHzgsnBNMjyAWXG1il9NviJN03VVG2ZnE9A&oe=6AD02B39",
+      "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Lata Pack 15 Brahma 269ml",
+      "marca": "Brahma",
+      "embalagem": "269ml",
+      "item": "Cerveja Brahma, Multipack Com 15 Latas De 269 Ml",
+      "valor": 41.85,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
       "categoria": "Bebidas / Cervejas",
       "produto_padronizado": "Cerveja Lata Pack 15 Skol 269ml",
@@ -2364,7 +2462,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwFYMjLb&_nc_oc=AdoFM6uvpMFXwJdOEH0O2XxyPJPhtxbe9Uoh5jLWsXIuYOkoq3K2VdxIriSXaGgVjz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMxIsfwoCyv5hY_kv7Gdohs_x3-YWbN8DqkCOMSietJ2g&oe=6ACED9B9",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "SUPERMERCADO PARANAENSE",
@@ -2378,7 +2476,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -2406,7 +2504,35 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwFYMjLb&_nc_oc=AdoFM6uvpMFXwJdOEH0O2XxyPJPhtxbe9Uoh5jLWsXIuYOkoq3K2VdxIriSXaGgVjz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMxIsfwoCyv5hY_kv7Gdohs_x3-YWbN8DqkCOMSietJ2g&oe=6ACED9B9",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Long Neck Heineken 330ml",
+      "marca": "Heineken",
+      "embalagem": "330ml",
+      "item": "Cerveja Heineken Long Neck Tradicional Ou Zero 330 Ml",
+      "valor": 6.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Long Neck Stella Artois 330ml",
+      "marca": "Stella Artois",
+      "embalagem": "330ml",
+      "item": "Cerveja Stella Artois Long Neck Tradicional 330 ml",
+      "valor": 6.19,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/843458388_18381415531237813_2367712638242326356_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1MDUyNTEwMjQyNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=xv2w_djQwfgQ7kNvwG32HuP&_nc_oc=AdpkrI2VB8Ko3Pm8JktY-h_aQiksnS1GdyOgYBQ5VGGseK6V-FNaAsI7QpSuFL3nr7SMB-RmuNApir3cnn9TEyPD&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQOCMqCwGotQE7ca1zC_7wgKOrIB6p3_6C6zJAuxJWNiSg&oe=6AD0306E",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -2533,6 +2659,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwrEk8B5/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Michelob Ultra 6x 330ml",
+      "marca": "Michelob",
+      "embalagem": "330ml",
+      "item": "CERVEJA MICHELOB ULTRA CX C/ 6X330ML DE: R$ 47,94 POR: R$ 36,99",
+      "valor": 36.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -2913,6 +3053,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Pure Gold 8x Stella Artois 269ml",
+      "marca": "Stella Artois",
+      "embalagem": "269ml",
+      "item": "CERVEJA STELLA PURE GOLD CX C/ 8X269ML",
+      "valor": 33.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Bebidas / Cervejas",
       "produto_padronizado": "Cerveja Pure Gold Lata Stella Artois 269ml",
@@ -3121,6 +3275,20 @@
       "post_url": "https://www.instagram.com/p/Dd5clbTnBtF/",
       "created_at": "2026-09-30 16:22:34",
       "updated_at": "2026-10-01 16:59:57"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Refrigerantes",
+      "produto_padronizado": "Laranja Pera Sukita Kg",
+      "marca": "Sukita",
+      "embalagem": "2L",
+      "item": "REFRIGERANTE SUKITA 2L",
+      "valor": 6.49,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -3470,7 +3638,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwFYMjLb&_nc_oc=AdoFM6uvpMFXwJdOEH0O2XxyPJPhtxbe9Uoh5jLWsXIuYOkoq3K2VdxIriSXaGgVjz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMxIsfwoCyv5hY_kv7Gdohs_x3-YWbN8DqkCOMSietJ2g&oe=6ACED9B9",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -3681,6 +3849,34 @@
       "post_url": "https://www.instagram.com/p/DdmNw2TlLyD/",
       "created_at": "2026-09-23 15:08:54",
       "updated_at": "2026-09-23 15:08:54"
+    },
+    {
+      "supermercado": "SUPERMERCADO PARANAENSE",
+      "categoria": "Bebidas / Sucos e Diversos",
+      "produto_padronizado": "Achocolatado Pirakids 200ml",
+      "marca": "Pirakids",
+      "embalagem": "200ml",
+      "item": "ACHOCALATADO PIRAKIDS 200ml",
+      "valor": 1.49,
+      "data_postagem": "09/10/2026",
+      "link": "https://instagram.fbcn7-2.fna.fbcdn.net/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwF9fHDt&_nc_oc=AdoACW8UL8NrnFFy_h6QmmxNeDOnIgmLwx-ifdBmNzDQf4PAGAaxSGs6LZ_hwy8Qi6I&_nc_ad=z-m&_nc_cid=1022&_nc_zt=23&_nc_ht=instagram.fbcn7-2.fna&_nc_gid=B5F6lx7SixCcheJ_VIw9CA&_nc_ss=7a22e&oh=00_AQMMB4q3gRzf7R7Z1v5isb7l59cm-_RU7_PzlZnPKsaRPA&oe=6AD0326B",
+      "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "SUPERMERCADO PARANAENSE",
+      "categoria": "Bebidas / Sucos e Diversos",
+      "produto_padronizado": "Achocolatado Toddy 370g",
+      "marca": "Toddy",
+      "embalagem": "370g",
+      "item": "ACHOCALATADO TODDY 370g",
+      "valor": 6.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://instagram.fbcn7-2.fna.fbcdn.net/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwF9fHDt&_nc_oc=AdoACW8UL8NrnFFy_h6QmmxNeDOnIgmLwx-ifdBmNzDQf4PAGAaxSGs6LZ_hwy8Qi6I&_nc_ad=z-m&_nc_cid=1022&_nc_zt=23&_nc_ht=instagram.fbcn7-2.fna&_nc_gid=B5F6lx7SixCcheJ_VIw9CA&_nc_ss=7a22e&oh=00_AQMMB4q3gRzf7R7Z1v5isb7l59cm-_RU7_PzlZnPKsaRPA&oe=6AD0326B",
+      "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -3946,7 +4142,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwFYMjLb&_nc_oc=AdoFM6uvpMFXwJdOEH0O2XxyPJPhtxbe9Uoh5jLWsXIuYOkoq3K2VdxIriSXaGgVjz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMxIsfwoCyv5hY_kv7Gdohs_x3-YWbN8DqkCOMSietJ2g&oe=6ACED9B9",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -3960,7 +4156,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwFYMjLb&_nc_oc=AdoFM6uvpMFXwJdOEH0O2XxyPJPhtxbe9Uoh5jLWsXIuYOkoq3K2VdxIriSXaGgVjz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMxIsfwoCyv5hY_kv7Gdohs_x3-YWbN8DqkCOMSietJ2g&oe=6ACED9B9",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -4394,7 +4590,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwFYMjLb&_nc_oc=AdoFM6uvpMFXwJdOEH0O2XxyPJPhtxbe9Uoh5jLWsXIuYOkoq3K2VdxIriSXaGgVjz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMxIsfwoCyv5hY_kv7Gdohs_x3-YWbN8DqkCOMSietJ2g&oe=6ACED9B9",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -4422,7 +4618,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -4492,7 +4688,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwFYMjLb&_nc_oc=AdoFM6uvpMFXwJdOEH0O2XxyPJPhtxbe9Uoh5jLWsXIuYOkoq3K2VdxIriSXaGgVjz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMxIsfwoCyv5hY_kv7Gdohs_x3-YWbN8DqkCOMSietJ2g&oe=6ACED9B9",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -4943,6 +5139,20 @@
       "updated_at": "2026-09-17 14:59:48"
     },
     {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Coxinha da Asa de Frango Bello kg",
+      "marca": "Bello",
+      "embalagem": "800g",
+      "item": "Coxinhas Da Asa Bello IQF Pct 800 G",
+      "valor": 11.69,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Carnes / Aves",
       "produto_padronizado": "Coxinha da Asa de Frango Perdigão kg",
@@ -5081,6 +5291,20 @@
       "post_url": "https://www.instagram.com/p/DdpelwjDGi9/",
       "created_at": "2026-09-25 15:11:02",
       "updated_at": "2026-09-25 15:11:02"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Coxinha da Asa de Frango Sadia kg",
+      "marca": "Sadia",
+      "embalagem": "1kg",
+      "item": "COXINHAS DAS ASAS FRANGO SADIA PCT C/ 1KG",
+      "valor": 14.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "SUPERMERCADO PARANAENSE",
@@ -5475,6 +5699,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Empanado de Frango Perdigão 100g",
+      "marca": "Perdigão",
+      "embalagem": "100g",
+      "item": "EMPANADO FRANGO TRADICIONAL PERDIGÃO 100G DE: R$ 2,59 POR: R$ 1,89",
+      "valor": 1.89,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Carnes / Aves",
       "produto_padronizado": "Empanado de Frango Sadia 100g",
@@ -5557,6 +5795,20 @@
       "post_url": "https://www.instagram.com/p/Dd31RB5FAEf/",
       "created_at": "2026-09-29 16:28:36",
       "updated_at": "2026-09-30 16:22:34"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Filezinho de Frango Sassami Bello Iqf 800g",
+      "marca": "Bello",
+      "embalagem": "800g",
+      "item": "Filezinho De Frango Sassami Bello IQF, Pct 800 G",
+      "valor": 14.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -5687,6 +5939,20 @@
     {
       "supermercado": "Supermercado Bianchi",
       "categoria": "Carnes / Aves",
+      "produto_padronizado": "Filé de Peito de Frango Lar kg",
+      "marca": "Lar",
+      "embalagem": "1kg",
+      "item": "FILÉ PEITO FRANGO LAR BDJ C/ 1KG",
+      "valor": 18.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Aves",
       "produto_padronizado": "Filé de Peito de Frango Sadia kg",
       "marca": "Sadia",
       "embalagem": "400g",
@@ -5710,7 +5976,7 @@
       "link": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwHJP0ie&_nc_oc=Adq5b8b_1BlXHmozjhuskpiA_tDLN2H8wNVVESCL6nxDkkSLs96EKq61N50UP9mN9S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQNprFVrnpqS5FeJvFw0cKds7eJwzhg4kwCfVZbBI34ebA&oe=6ACEF061",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -5879,6 +6145,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwrEk8B5/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Frango Inteiro Nho Bento kg",
+      "marca": "Nho Bento",
+      "embalagem": "Kg",
+      "item": "FRANGO INTEIRO CAIPIRA NHO BENTO",
+      "valor": 17.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -6063,6 +6343,20 @@
       "updated_at": "2026-10-07 17:28:53"
     },
     {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Frango Passarinho Bello Iqf 800g",
+      "marca": "Bello",
+      "embalagem": "800g",
+      "item": "Frango A Passarinho Bello IQF, Pacote De 800G",
+      "valor": 9.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado São Pedro",
       "categoria": "Carnes / Aves",
       "produto_padronizado": "Frango Passarinho Bello Zip 800g",
@@ -6131,6 +6425,20 @@
       "post_url": "https://www.instagram.com/p/DdsNj8wnBOE/",
       "created_at": "2026-09-25 15:11:02",
       "updated_at": "2026-09-26 14:10:52"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Frango Passarinho Lar 1kg",
+      "marca": "Lar",
+      "embalagem": "1kg",
+      "item": "FRANGO A PASSARINHO LAR PCT C/ 1KG DE: R$ 15,99 POR: R$ 11,99",
+      "valor": 11.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -6455,6 +6763,20 @@
       "updated_at": "2026-09-26 14:10:52"
     },
     {
+      "supermercado": "SUPERMERCADO PARANAENSE",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Nuggets Tekitos Seara 300g",
+      "marca": "Seara",
+      "embalagem": "300g",
+      "item": "TEKITOS SEARA 300g TRADICIONAL",
+      "valor": 7.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://instagram.fbcn7-2.fna.fbcdn.net/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwF9fHDt&_nc_oc=AdoACW8UL8NrnFFy_h6QmmxNeDOnIgmLwx-ifdBmNzDQf4PAGAaxSGs6LZ_hwy8Qi6I&_nc_ad=z-m&_nc_cid=1022&_nc_zt=23&_nc_ht=instagram.fbcn7-2.fna&_nc_gid=B5F6lx7SixCcheJ_VIw9CA&_nc_ss=7a22e&oh=00_AQMMB4q3gRzf7R7Z1v5isb7l59cm-_RU7_PzlZnPKsaRPA&oe=6AD0326B",
+      "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Carnes / Aves",
       "produto_padronizado": "Pescoço de Frango Kg",
@@ -6761,6 +7083,20 @@
       "post_url": "https://www.instagram.com/p/DdYxdO-DStG/",
       "created_at": "2026-09-17 14:59:48",
       "updated_at": "2026-09-18 14:11:10"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Aves",
+      "produto_padronizado": "Sobrecoxa de Frango Seara kg",
+      "marca": "Seara",
+      "embalagem": "Kg",
+      "item": "SOBRECOXA FRANGO SEARA kg",
+      "valor": 10.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg4-3.cdninstagram.com/v/t39.30808-6/842678441_1707709741359423_3930579678639430265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwNDc5MDgwNjE1NDg1NDUxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_yOg1cV2_uAQ7kNvwHB7PWI&_nc_oc=Adpj2SQvFo9sWpYalLeA3xjOb8pcRU-f97l4Dly_3UDx-rEto8bnb8rS2jtJqdjnSTzEl_R3IpjJhKlv8k0Gstjo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQMUyDWps7-MhgU2C7ebnwQf5AoI7Qk7A_i_NSE7lE9Dig&oe=6AD036B4",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -7418,7 +7754,21 @@
       "link": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwHJP0ie&_nc_oc=Adq5b8b_1BlXHmozjhuskpiA_tDLN2H8wNVVESCL6nxDkkSLs96EKq61N50UP9mN9S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQNprFVrnpqS5FeJvFw0cKds7eJwzhg4kwCfVZbBI34ebA&oe=6ACEF061",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Alcatra Bovina kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "CORAÇÃO DA ALCATRA BOV. kg R$ 49,99",
+      "valor": 49.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg6-1.cdninstagram.com/v/t39.30808-6/842019035_1707709738026090_1505090813353421152_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=NDAwNDc5MDgwNzQ0NjcyNjg3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mq1Pw4xj_5YQ7kNvwFkpd82&_nc_oc=AdqBd7x_IBij61ogejx8FUWrnIvSe4YKEirjUaW2RvoCAzSJql9eITY8Joj9b3kTRgFtdtV90ZHUQQluYhgsIBde&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg6-1.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQOHzFpQPkKwuQ8MbMFiDoDvdzJjpPjS-RkYUzlSbqjWgw&oe=6AD03C3F",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -7600,7 +7950,7 @@
       "link": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwHJP0ie&_nc_oc=Adq5b8b_1BlXHmozjhuskpiA_tDLN2H8wNVVESCL6nxDkkSLs96EKq61N50UP9mN9S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQNprFVrnpqS5FeJvFw0cKds7eJwzhg4kwCfVZbBI34ebA&oe=6ACEF061",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -7629,6 +7979,20 @@
       "post_url": "https://www.instagram.com/p/DdYxdO-DStG/",
       "created_at": "2026-09-17 14:59:48",
       "updated_at": "2026-09-18 14:11:10"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Bisteca Contrafilé Bovina kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "BISTECA BOV. kg R$ 38,99",
+      "valor": 38.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg6-1.cdninstagram.com/v/t39.30808-6/842019035_1707709738026090_1505090813353421152_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=NDAwNDc5MDgwNzQ0NjcyNjg3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mq1Pw4xj_5YQ7kNvwFkpd82&_nc_oc=AdqBd7x_IBij61ogejx8FUWrnIvSe4YKEirjUaW2RvoCAzSJql9eITY8Joj9b3kTRgFtdtV90ZHUQQluYhgsIBde&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg6-1.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQOHzFpQPkKwuQ8MbMFiDoDvdzJjpPjS-RkYUzlSbqjWgw&oe=6AD03C3F",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -8123,6 +8487,20 @@
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
       "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Contrafilé Bovino Sulbeef kg",
+      "marca": "Sulbeef",
+      "embalagem": "Kg",
+      "item": "Capa De Contrafilé Sulbeef Ou Friboi Embalado",
+      "valor": 32.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Bovina",
       "produto_padronizado": "Contrafilé Bovino kg",
       "marca": "",
       "embalagem": "Kg",
@@ -8258,7 +8636,7 @@
       "link": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwHJP0ie&_nc_oc=Adq5b8b_1BlXHmozjhuskpiA_tDLN2H8wNVVESCL6nxDkkSLs96EKq61N50UP9mN9S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQNprFVrnpqS5FeJvFw0cKds7eJwzhg4kwCfVZbBI34ebA&oe=6ACEF061",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -8301,6 +8679,20 @@
       "post_url": "https://www.instagram.com/p/DeEhIq1kQvA/",
       "created_at": "2026-10-04 15:11:01",
       "updated_at": "2026-10-05 19:12:42"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Contrafilé Bovino kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "CAPA CONTRA FILÉ BOV. kg R$ 36,99",
+      "valor": 36.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg6-1.cdninstagram.com/v/t39.30808-6/842019035_1707709738026090_1505090813353421152_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=NDAwNDc5MDgwNzQ0NjcyNjg3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mq1Pw4xj_5YQ7kNvwFkpd82&_nc_oc=AdqBd7x_IBij61ogejx8FUWrnIvSe4YKEirjUaW2RvoCAzSJql9eITY8Joj9b3kTRgFtdtV90ZHUQQluYhgsIBde&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg6-1.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQOHzFpQPkKwuQ8MbMFiDoDvdzJjpPjS-RkYUzlSbqjWgw&oe=6AD03C3F",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -8807,6 +9199,20 @@
       "updated_at": "2026-09-26 14:10:52"
     },
     {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Costela Bovina Sulbeef kg",
+      "marca": "Sulbeef",
+      "embalagem": "Kg",
+      "item": "Costela Bovina Sulbeef",
+      "valor": 23.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Mercado Talismã",
       "categoria": "Carnes / Bovina",
       "produto_padronizado": "Costela Bovina kg",
@@ -8860,7 +9266,7 @@
       "link": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwHJP0ie&_nc_oc=Adq5b8b_1BlXHmozjhuskpiA_tDLN2H8wNVVESCL6nxDkkSLs96EKq61N50UP9mN9S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQNprFVrnpqS5FeJvFw0cKds7eJwzhg4kwCfVZbBI34ebA&oe=6ACEF061",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -9439,6 +9845,20 @@
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
       "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Coxão Mole Bovino Friboi kg",
+      "marca": "Friboi",
+      "embalagem": "Kg",
+      "item": "Coxão Mole Friboi",
+      "valor": 39.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Bovina",
       "produto_padronizado": "Coxão Mole Bovino Sulbeef kg",
       "marca": "Sulbeef",
       "embalagem": "Kg",
@@ -9701,6 +10121,20 @@
       "post_url": "https://www.instagram.com/p/DduqyvFlGeO/",
       "created_at": "2026-09-26 14:10:52",
       "updated_at": "2026-09-26 14:10:52"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Cupim Bovino Kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "CUPIM BOV. kg R$ 45,99",
+      "valor": 45.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg6-1.cdninstagram.com/v/t39.30808-6/842019035_1707709738026090_1505090813353421152_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=NDAwNDc5MDgwNzQ0NjcyNjg3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mq1Pw4xj_5YQ7kNvwFkpd82&_nc_oc=AdqBd7x_IBij61ogejx8FUWrnIvSe4YKEirjUaW2RvoCAzSJql9eITY8Joj9b3kTRgFtdtV90ZHUQQluYhgsIBde&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg6-1.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQOHzFpQPkKwuQ8MbMFiDoDvdzJjpPjS-RkYUzlSbqjWgw&oe=6AD03C3F",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -10610,7 +11044,7 @@
       "link": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwHJP0ie&_nc_oc=Adq5b8b_1BlXHmozjhuskpiA_tDLN2H8wNVVESCL6nxDkkSLs96EKq61N50UP9mN9S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQNprFVrnpqS5FeJvFw0cKds7eJwzhg4kwCfVZbBI34ebA&oe=6ACEF061",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -11915,6 +12349,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Picanha Bovina kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "PICANHA FATIADA BOV. kg R$ 45,99",
+      "valor": 45.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg6-1.cdninstagram.com/v/t39.30808-6/842019035_1707709738026090_1505090813353421152_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=NDAwNDc5MDgwNzQ0NjcyNjg3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=mq1Pw4xj_5YQ7kNvwFkpd82&_nc_oc=AdqBd7x_IBij61ogejx8FUWrnIvSe4YKEirjUaW2RvoCAzSJql9eITY8Joj9b3kTRgFtdtV90ZHUQQluYhgsIBde&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg6-1.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQOHzFpQPkKwuQ8MbMFiDoDvdzJjpPjS-RkYUzlSbqjWgw&oe=6AD03C3F",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Carnes / Bovina",
       "produto_padronizado": "Picanha Bovina kg",
@@ -12053,6 +12501,20 @@
       "post_url": "https://www.instagram.com/p/DdZapvTl_4u/",
       "created_at": "2026-09-18 14:11:10",
       "updated_at": "2026-09-18 14:11:10"
+    },
+    {
+      "supermercado": "Super Compras Supermercado",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Ponta de Peito Bovino Sem Osso Kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "Ponta de Peito Bovino sem Osso - Kg",
+      "valor": 32.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://instagram.fktw1-1.fna.fbcdn.net/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwGJHU4I&_nc_oc=Adoy-fuJRYmPoMT3PVSuns9ACObcBWSfa1OOrclpXKXyraDNzNaKdNOqUjbTjPBbLXA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw1-1.fna&_nc_gid=VEcezsx-y_Ggt-ihAz92lQ&_nc_ss=7a22e&oh=00_AQN-MLMnO6JkT6dO7ob17piCHrB3NxhNKPDAIyhBVkX9Ug&oe=6AD041E1",
+      "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "SUPERMERCADO PARANAENSE",
@@ -12503,6 +12965,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Peixes",
+      "produto_padronizado": "Camarão Sem Cabeça Costa Sul 300g",
+      "marca": "Costa Sul",
+      "embalagem": "300g",
+      "item": "CAMARÃO COSTA SUL S/ CABEÇA PCT C/ 300G DE: R$ 42,99 POR: R$ 36,99",
+      "valor": 36.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado São Pedro",
       "categoria": "Carnes / Peixes",
       "produto_padronizado": "Filé de Panga Seara 800g",
@@ -12669,6 +13145,20 @@
       "post_url": "https://www.instagram.com/p/DcOL048gsvP/",
       "created_at": "2026-08-19 16:55:32",
       "updated_at": null
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Peixes",
+      "produto_padronizado": "Filé de Tilápia Seara 600g",
+      "marca": "Seara",
+      "embalagem": "600g",
+      "item": "FILÉ DE PEIXE TILÁPIA SEARA 600G",
+      "valor": 32.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -13054,6 +13544,20 @@
       "produto_padronizado": "Bacon em Manta Seara kg",
       "marca": "Seara",
       "embalagem": "Kg",
+      "item": "Bacon Manta Seara",
+      "valor": 28.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Bacon em Manta Seara kg",
+      "marca": "Seara",
+      "embalagem": "Kg",
       "item": "Bacon Seara Manta R$ 29,99 KG",
       "valor": 29.99,
       "data_postagem": "19/08/2026",
@@ -13243,6 +13747,20 @@
       "post_url": "https://www.instagram.com/p/DeL_L4zlgWt/",
       "created_at": "2026-10-07 17:28:53",
       "updated_at": "2026-10-08 17:28:07"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Bisteca Suína Excelência kg",
+      "marca": "Excelência",
+      "embalagem": "Kg",
+      "item": "Bisteca Suína Excelência",
+      "valor": 12.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -13721,6 +14239,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Hambúrguer Misto Bovino Aves Sadia 56g",
+      "marca": "Sadia",
+      "embalagem": "56g",
+      "item": "HAMBÚRGUER BOVINO E AVES SADIA 56G",
+      "valor": 1.39,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
       "categoria": "Carnes / Suína e Embutidos",
       "produto_padronizado": "Hambúrguer Perdigão 56g",
@@ -13915,6 +14447,20 @@
       "post_url": "https://www.instagram.com/p/Ddz2ygxlWZ9/",
       "created_at": "2026-09-28 18:21:48",
       "updated_at": "2026-09-29 16:28:36"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Linguiça Calabresa Seara kg",
+      "marca": "Seara",
+      "embalagem": "400g",
+      "item": "LINGUIÇA TIPO CALABRESA DEFUMADA SEARA 400G DE: R$ 15,99 POR: R$ 10,99",
+      "valor": 10.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -14272,6 +14818,20 @@
       "produto_padronizado": "Linguiça Toscana Frimesa kg",
       "marca": "Frimesa",
       "embalagem": "Kg",
+      "item": "LINGUIÇA TOSCANA FRIMESA kg",
+      "valor": 19.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg4-3.cdninstagram.com/v/t39.30808-6/842678441_1707709741359423_3930579678639430265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwNDc5MDgwNjE1NDg1NDUxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_yOg1cV2_uAQ7kNvwHB7PWI&_nc_oc=Adpj2SQvFo9sWpYalLeA3xjOb8pcRU-f97l4Dly_3UDx-rEto8bnb8rS2jtJqdjnSTzEl_R3IpjJhKlv8k0Gstjo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQMUyDWps7-MhgU2C7ebnwQf5AoI7Qk7A_i_NSE7lE9Dig&oe=6AD036B4",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Linguiça Toscana Frimesa kg",
+      "marca": "Frimesa",
+      "embalagem": "Kg",
       "item": "Linguiça Toscana Frimesa R$ 20,99 / Kg",
       "valor": 20.99,
       "data_postagem": "24/09/2026",
@@ -14307,6 +14867,20 @@
       "post_url": "https://www.instagram.com/p/DeMMXuHjL_Q/",
       "created_at": "2026-10-07 17:28:53",
       "updated_at": "2026-10-08 17:28:07"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Linguiça Toscana Nutribras kg",
+      "marca": "Nutribras",
+      "embalagem": "Kg",
+      "item": "Linguiça Suína Nutribras",
+      "valor": 10.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -14474,7 +15048,7 @@
       "link": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwHJP0ie&_nc_oc=Adq5b8b_1BlXHmozjhuskpiA_tDLN2H8wNVVESCL6nxDkkSLs96EKq61N50UP9mN9S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQNprFVrnpqS5FeJvFw0cKds7eJwzhg4kwCfVZbBI34ebA&oe=6ACEF061",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -14657,6 +15231,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwrEk8B5/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Linguiça Toscana Perdigão kg",
+      "marca": "Perdigão",
+      "embalagem": "600g",
+      "item": "LINGUIÇA TOSCANA PERDIGÃO NA BRASA 600G",
+      "valor": 19.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -14883,6 +15471,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Linguiça Toscana kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "LINGUIÇA FINA APIMENTADA kg",
+      "valor": 21.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg4-3.cdninstagram.com/v/t39.30808-6/842678441_1707709741359423_3930579678639430265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwNDc5MDgwNjE1NDg1NDUxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_yOg1cV2_uAQ7kNvwHB7PWI&_nc_oc=Adpj2SQvFo9sWpYalLeA3xjOb8pcRU-f97l4Dly_3UDx-rEto8bnb8rS2jtJqdjnSTzEl_R3IpjJhKlv8k0Gstjo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQMUyDWps7-MhgU2C7ebnwQf5AoI7Qk7A_i_NSE7lE9Dig&oe=6AD036B4",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Carnes / Suína e Embutidos",
       "produto_padronizado": "Lombo Suíno com Osso Kg",
@@ -14951,6 +15553,20 @@
       "post_url": "https://www.instagram.com/p/DdZZofpl4yN/",
       "created_at": "2026-09-18 14:11:10",
       "updated_at": "2026-09-18 14:11:10"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Mortadela Defumada Seara 180g",
+      "marca": "Seara",
+      "embalagem": "180g",
+      "item": "MORTADELA DEFUMADA FATIADA SEARA 180G",
+      "valor": 6.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -15441,6 +16057,20 @@
       "post_url": "https://www.instagram.com/p/DeL_L4zlgWt/",
       "created_at": "2026-10-07 17:28:53",
       "updated_at": "2026-10-08 17:28:07"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Pernil Suíno Frigorífico Ochove kg",
+      "marca": "Frigorífico Ochove",
+      "embalagem": "Kg",
+      "item": "Pernil Suíno Frigorífico Ochove",
+      "valor": 9.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -16042,7 +16672,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwHscf7C&_nc_oc=AdrJemZWxSnmKFf7gUMDBS1DHO4azRcuvkg-DzT2Pc1UoowOPjo8eif1a2aXM731YgM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMzTZX5laR3cn270Voi-aMO7U9h5YIpvN4YaO2VLrC-Bg&oe=6ACEF6A7",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -16481,6 +17111,20 @@
     {
       "supermercado": "Supermercado Bianchi",
       "categoria": "Congelados e Sobremesas",
+      "produto_padronizado": "Açaí Toda Hora 1.5L",
+      "marca": "Toda Hora",
+      "embalagem": "1.5L",
+      "item": "AÇAI ORIGEM TODA HORA 1,5L",
+      "valor": 22.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Congelados e Sobremesas",
       "produto_padronizado": "Açaí com Iogurte Grego Polpanorte 1.5L",
       "marca": "Polpanorte",
       "embalagem": "1.5L",
@@ -16546,7 +17190,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -16561,6 +17205,20 @@
       "post_url": "https://www.instagram.com/p/Dduqrj6EalY/",
       "created_at": "2026-09-26 14:10:52",
       "updated_at": "2026-09-26 14:10:52"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Congelados e Sobremesas",
+      "produto_padronizado": "Chantilly Amélia 1L",
+      "marca": "Amélia",
+      "embalagem": "1L",
+      "item": "CHANTILY AMÉLIA TRADICIONAL 1L",
+      "valor": 19.9,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -16589,6 +17247,20 @@
       "post_url": "https://www.instagram.com/p/DeO0l8nDLg5/",
       "created_at": "2026-10-08 17:28:07",
       "updated_at": "2026-10-09 16:54:05"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Congelados e Sobremesas",
+      "produto_padronizado": "Empanado de Frango Mini Chicken Perdigão 275g",
+      "marca": "Perdigão",
+      "embalagem": "275g",
+      "item": "EMPANADO FRANGO MINI CHICKEN TRADICIONAL PERDIGÃO 275G",
+      "valor": 6.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -16799,6 +17471,20 @@
       "post_url": "https://www.instagram.com/p/Dduqrj6EalY/",
       "created_at": "2026-09-26 14:10:52",
       "updated_at": "2026-09-26 14:10:52"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Congelados e Sobremesas",
+      "produto_padronizado": "Morango Congelado Pura Polpa 1.005kg",
+      "marca": "Pura Polpa",
+      "embalagem": "1.005kg",
+      "item": "MORANGO CONGELADO PURA POLPA PCT C/ 1,005KG",
+      "valor": 24.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/841804712_1707711234692607_396299358716974924_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1NzgxODQ2NTU2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=St3N4BlhGfAQ7kNvwG6qpY9&_nc_oc=AdoMJg-SaK8Dqwsw15yQXCbN349GcESNLgkguIE9EC7OC7_2uFi7zABiSXXKRbEWOBpyAJIiRJjMRvOrbPwpF99L&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQNkBzh_YqRR2jMcbaitZqEsDy3Q-lg-yaTps2lxQZiEzw&oe=6AD038EB",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -17758,6 +18444,20 @@
       "produto_padronizado": "Desodorante Aerosol Rexona 150ml",
       "marca": "Rexona",
       "embalagem": "150ml",
+      "item": "Desodorante Aerosol Antitrans. Rexona Fragrâncias 150 ml",
+      "valor": 12.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Higiene / Cuidados Pessoais",
+      "produto_padronizado": "Desodorante Aerosol Rexona 150ml",
+      "marca": "Rexona",
+      "embalagem": "150ml",
       "item": "Desodorante Aerosol Antitranspirante Rexona Fragrâncias 150ml",
       "valor": 14.99,
       "data_postagem": "22/09/2026",
@@ -18542,6 +19242,20 @@
       "produto_padronizado": "Sabonete Nivea 85g",
       "marca": "Nivea",
       "embalagem": "85g",
+      "item": "Sabonete Nivea, Fragrâncias Variadas 85G",
+      "valor": 1.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Higiene / Cuidados Pessoais",
+      "produto_padronizado": "Sabonete Nivea 85g",
+      "marca": "Nivea",
+      "embalagem": "85g",
       "item": "Sabonete em Barra Nivea Fragrâncias 85g",
       "valor": 2.29,
       "data_postagem": "29/09/2026",
@@ -19206,7 +19920,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -19291,6 +20005,20 @@
       "post_url": "https://www.instagram.com/p/Ddh0_Y4EW_u/",
       "created_at": "2026-09-21 16:18:26",
       "updated_at": "2026-09-21 16:18:26"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Higiene / Papelaria",
+      "produto_padronizado": "Papel Higiênico Folha Dupla c/ 12 Mili",
+      "marca": "Mili",
+      "embalagem": "c/ 12",
+      "item": "Papel Higiênico Mili Folha Dupla Neutro e Perfumado com 12 unidades",
+      "valor": 13.9,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -23378,7 +24106,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -23812,7 +24540,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -25520,7 +26248,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -27009,6 +27737,20 @@
     {
       "supermercado": "Supermercado Bianchi",
       "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Bebida Láctea Yopro Protein 15g 250ml",
+      "marca": "",
+      "embalagem": "250ml",
+      "item": "BEBIDA LACTEA YOPRO PROTEIN DANONE 15G DE: R$ 12,29 POR: R$ 8,99",
+      "valor": 8.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
       "produto_padronizado": "Bebida Láctea Yoprot Protein 250ml",
       "marca": "",
       "embalagem": "250ml",
@@ -27550,7 +28292,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/840052068_18197260393391764_7126547724364697192_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzAwNzczNTY3NzI5MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Z7X6bmZ4hhMQ7kNvwFYMjLb&_nc_oc=AdoFM6uvpMFXwJdOEH0O2XxyPJPhtxbe9Uoh5jLWsXIuYOkoq3K2VdxIriSXaGgVjz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMxIsfwoCyv5hY_kv7Gdohs_x3-YWbN8DqkCOMSietJ2g&oe=6ACED9B9",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -27774,7 +28516,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -27833,6 +28575,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Leite Condensado Nestlé 395g",
+      "marca": "Nestlé",
+      "embalagem": "395g",
+      "item": "LEITE CONDENSADO NESTLÉ MOÇA LATA 395G",
+      "valor": 7.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "SUPERMERCADO PARANAENSE",
       "categoria": "Laticínios / Leites e Derivados",
       "produto_padronizado": "Leite Condensado Piracanjuba 395g",
@@ -27844,7 +28600,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -27929,6 +28685,20 @@
       "post_url": "https://www.instagram.com/p/DdtWJHgm9Ah/",
       "created_at": "2026-09-25 15:11:02",
       "updated_at": "2026-09-26 14:10:52"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Leite Fermentado Chamyto 450g",
+      "marca": "Chamyto",
+      "embalagem": "450g",
+      "item": "Leite Fermentado Chamyto 450G",
+      "valor": 6.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -28099,6 +28869,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Leite Integral Itambé 1L",
+      "marca": "Itambé",
+      "embalagem": "1L",
+      "item": "LEITE INTEGRAL ITAMBÉ 1L",
+      "valor": 5.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Mercado Talismã",
       "categoria": "Laticínios / Leites e Derivados",
       "produto_padronizado": "Leite Integral Nestlé 1L",
@@ -28180,7 +28964,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwHscf7C&_nc_oc=AdrJemZWxSnmKFf7gUMDBS1DHO4azRcuvkg-DzT2Pc1UoowOPjo8eif1a2aXM731YgM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMzTZX5laR3cn270Voi-aMO7U9h5YIpvN4YaO2VLrC-Bg&oe=6ACEF6A7",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -28250,7 +29034,7 @@
       "link": "https://scontent-cdg4-2.cdninstagram.com/v/t51.82787-15/840287470_18197260375391764_6967485564094478730_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwMzczMjk3NzUxMTUwNTY4MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JPeIUbjuRxkQ7kNvwHJP0ie&_nc_oc=Adq5b8b_1BlXHmozjhuskpiA_tDLN2H8wNVVESCL6nxDkkSLs96EKq61N50UP9mN9S4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQNprFVrnpqS5FeJvFw0cKds7eJwzhg4kwCfVZbBI34ebA&oe=6ACEF061",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -28292,7 +29076,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -28405,6 +29189,20 @@
       "post_url": "https://www.instagram.com/p/Dd31RB5FAEf/",
       "created_at": "2026-09-29 16:28:36",
       "updated_at": "2026-09-29 16:28:36"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Leite em Pó Integral Ninho Nestlé 380g",
+      "marca": "Nestlé",
+      "embalagem": "380g",
+      "item": "LEITE PÓ NINHO NESTLÉ INTEGRAL 380G",
+      "valor": 17.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -28603,6 +29401,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Manteiga c/ Sal Aviação 200g",
+      "marca": "Aviação",
+      "embalagem": "500g",
+      "item": "MANTEIGA AVIAÇÃO C/ SAL 500G DE: R$ 41,29 POR: R$ 35,99",
+      "valor": 35.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Super Compras Supermercado",
       "categoria": "Laticínios / Leites e Derivados",
       "produto_padronizado": "Margarina c/ Sal Claybom 500g",
@@ -28614,7 +29426,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwHscf7C&_nc_oc=AdrJemZWxSnmKFf7gUMDBS1DHO4azRcuvkg-DzT2Pc1UoowOPjo8eif1a2aXM731YgM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMzTZX5laR3cn270Voi-aMO7U9h5YIpvN4YaO2VLrC-Bg&oe=6ACEF6A7",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -28671,6 +29483,20 @@
       "post_url": "https://www.instagram.com/p/DeL_L4zlgWt/",
       "created_at": "2026-10-07 17:28:53",
       "updated_at": "2026-10-08 17:28:07"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Margarina c/ Sal Qualy 500g",
+      "marca": "Qualy",
+      "embalagem": "500g",
+      "item": "Margarinha Qualy Aéra com Sal 500 g",
+      "valor": 5.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -28825,6 +29651,20 @@
       "post_url": "https://www.instagram.com/p/Dd7gB6el7oJ/",
       "created_at": "2026-10-01 16:59:57",
       "updated_at": "2026-10-01 16:59:57"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Margarina c/ Sal Qualy 500g",
+      "marca": "Qualy",
+      "embalagem": "500g",
+      "item": "MARGARINA QUALY CREMOSA 500G DE: R$ 11,99 POR: R$ 8,99",
+      "valor": 8.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -29331,6 +30171,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Requeijão Cremoso 200g",
+      "marca": "",
+      "embalagem": "200g",
+      "item": "REQUEIJÃO CREMOSO DANONE TRADICIONAL OU LIGHT 200G DE: R$ 15,79 POR: R$ 9,99",
+      "valor": 9.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Laticínios / Leites e Derivados",
       "produto_padronizado": "Requeijão Cremoso Batavo 200g",
@@ -29384,7 +30238,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwHscf7C&_nc_oc=AdrJemZWxSnmKFf7gUMDBS1DHO4azRcuvkg-DzT2Pc1UoowOPjo8eif1a2aXM731YgM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMzTZX5laR3cn270Voi-aMO7U9h5YIpvN4YaO2VLrC-Bg&oe=6ACEF6A7",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -29779,6 +30633,20 @@
       "updated_at": "2026-09-25 15:11:02"
     },
     {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Limpeza / Cuidados com a Casa",
+      "produto_padronizado": "Desinfetante Pinho Sol 2L",
+      "marca": "Pinho Sol",
+      "embalagem": "500ml",
+      "item": "Desinfetante Pinho Sol, Fragrâncias 500 Ml",
+      "valor": 7.69,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Mercado Talismã",
       "categoria": "Limpeza / Cuidados com a Casa",
       "produto_padronizado": "Desinfetante Pinho Sol 2L",
@@ -30154,7 +31022,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -30728,7 +31596,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -31701,6 +32569,20 @@
       "categoria": "Limpeza / Lavanderia e Louça",
       "produto_padronizado": "Detergente Líquido Tixan Ypê 500ml",
       "marca": "Tixan Ypê",
+      "embalagem": "800g",
+      "item": "Detergente Em Pó Tixan, Fragrâncias Variadas, Caixa 800G",
+      "valor": 12.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Limpeza / Lavanderia e Louça",
+      "produto_padronizado": "Detergente Líquido Tixan Ypê 500ml",
+      "marca": "Tixan Ypê",
       "embalagem": "1.6kg",
       "item": "Detergente Po Tixan 1.6kg sch. Primavera",
       "valor": 24.99,
@@ -31751,6 +32633,20 @@
       "post_url": "https://www.instagram.com/p/DdmNw2TlLyD/",
       "created_at": "2026-09-23 15:08:54",
       "updated_at": "2026-09-23 15:08:54"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Limpeza / Lavanderia e Louça",
+      "produto_padronizado": "Detergente Líquido Tixan Ypê 500ml",
+      "marca": "Tixan Ypê",
+      "embalagem": "2.2kg",
+      "item": "Detergente Em Pó Tixan, Fragrâncias Caixa 2,2Kg",
+      "valor": 27.9,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -32245,6 +33141,20 @@
     {
       "supermercado": "Supermercado Bianchi",
       "categoria": "Limpeza / Lavanderia e Louça",
+      "produto_padronizado": "Lava Roupas Coco Coquel 1.5L",
+      "marca": "Coquel",
+      "embalagem": "1.5L",
+      "item": "LAVA ROUPAS COQUEL COCO 1,5L",
+      "valor": 23.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Limpeza / Lavanderia e Louça",
       "produto_padronizado": "Lava Roupas Coquel Coco 1.5L",
       "marca": "Coquel",
       "embalagem": "1.5L",
@@ -32366,7 +33276,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -32408,7 +33318,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -32493,6 +33403,20 @@
       "post_url": "https://www.instagram.com/p/Dd_acwDkWdf/",
       "created_at": "2026-10-02 16:12:01",
       "updated_at": "2026-10-02 16:12:01"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Limpeza / Lavanderia e Louça",
+      "produto_padronizado": "Sabão em Barra Glicerinado 5x Minuano 200g",
+      "marca": "Minuano",
+      "embalagem": "200g",
+      "item": "Sabão Barra Minuano Glicerinado, Pct Com 5 Unids 800G",
+      "valor": 13.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -32982,7 +33906,7 @@
       "link": "https://scontent-cdg4-3.cdninstagram.com/v/t51.82787-15/839670782_18197260414391764_3369454556256457916_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=NDAwMzczMzA0MDI0OTkwMTc1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ZZKnS-hYHNwQ7kNvwGTvhNM&_nc_oc=AdppBGW86fwttmEZz82kJ39mRByYE7M4l0Xt7X-ZcHlMOGJhs_PLVGCzT7wFNeSwdsU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQP3ekgzN6VvHwVkBO1EINK8Avag1K0Zqj2HW9OqBmji9g&oe=6ACEFAEB",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -33038,7 +33962,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwHscf7C&_nc_oc=AdrJemZWxSnmKFf7gUMDBS1DHO4azRcuvkg-DzT2Pc1UoowOPjo8eif1a2aXM731YgM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMzTZX5laR3cn270Voi-aMO7U9h5YIpvN4YaO2VLrC-Bg&oe=6ACEF6A7",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -33235,6 +34159,20 @@
       "post_url": "https://www.instagram.com/p/Ddt7wITlL_M/",
       "created_at": "2026-09-26 14:10:52",
       "updated_at": "2026-09-26 14:10:52"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Mercearia / Arroz",
+      "produto_padronizado": "Arroz Branco Tipo 1 São João 5kg",
+      "marca": "São João",
+      "embalagem": "5kg",
+      "item": "Arroz São João 5 kg",
+      "valor": 17.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -33573,6 +34511,20 @@
       "updated_at": "2026-09-26 14:10:52"
     },
     {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Mercearia / Biscoitos e Doces",
+      "produto_padronizado": "Achocolatado em Pó Toddy 370g",
+      "marca": "Toddy",
+      "embalagem": "370g",
+      "item": "Achocolatado Em Pó Toddy, 370 G",
+      "valor": 7.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Mercado Talismã",
       "categoria": "Mercearia / Biscoitos e Doces",
       "produto_padronizado": "Achocolatado em Pó Toddy 370g",
@@ -33878,7 +34830,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -34410,7 +35362,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwHscf7C&_nc_oc=AdrJemZWxSnmKFf7gUMDBS1DHO4azRcuvkg-DzT2Pc1UoowOPjo8eif1a2aXM731YgM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMzTZX5laR3cn270Voi-aMO7U9h5YIpvN4YaO2VLrC-Bg&oe=6ACEF6A7",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -35255,6 +36207,20 @@
     {
       "supermercado": "Supermercado Bianchi",
       "categoria": "Mercearia / Biscoitos e Doces",
+      "produto_padronizado": "Doce de Leite Frimesa 400g",
+      "marca": "Frimesa",
+      "embalagem": "400g",
+      "item": "DOCE LEITE TRADICIONAL FRIMESA 400G",
+      "valor": 8.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Mercearia / Biscoitos e Doces",
       "produto_padronizado": "Doce de Leite Frimesa Pote 400g",
       "marca": "Frimesa",
       "embalagem": "400g",
@@ -36051,6 +37017,20 @@
       "updated_at": "2026-09-30 16:22:34"
     },
     {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Mercearia / Café",
+      "produto_padronizado": "Café Tradicional Café Brasileiro 500g",
+      "marca": "Café Brasileiro",
+      "embalagem": "500g",
+      "item": "Café Moído Brasileiro Tradicional Ou Extraforte Pacote 500G",
+      "valor": 19.9,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Mercearia / Café",
       "produto_padronizado": "Café Tradicional Nascente Do Araguaia 500g",
@@ -36541,6 +37521,20 @@
       "updated_at": "2026-09-26 14:10:52"
     },
     {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Mercearia / Farináceos",
+      "produto_padronizado": "Farinha de Trigo Tipo 1 Globo 1kg",
+      "marca": "Globo",
+      "embalagem": "1kg",
+      "item": "Farinha De Trigo Globo, Pacote De 1 Kg",
+      "valor": 3.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Mercearia / Farináceos",
       "produto_padronizado": "Farinha de Trigo Tipo 1 Sol 1kg",
@@ -36623,6 +37617,20 @@
       "post_url": "https://www.instagram.com/p/Ddzxindlz64/",
       "created_at": "2026-09-28 18:21:48",
       "updated_at": "2026-09-29 16:28:36"
+    },
+    {
+      "supermercado": "Super Compras Supermercado",
+      "categoria": "Mercearia / Farináceos",
+      "produto_padronizado": "Farinha de Trigo Tipo 1 Venturelli 1kg",
+      "marca": "Venturelli",
+      "embalagem": "1kg",
+      "item": "Farinha de Trigo Venturelli 1 Kg",
+      "valor": 5.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://instagram.fktw1-1.fna.fbcdn.net/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwGgFpX9&_nc_oc=Adp1p_MCBQkBqaqdYSqG3FgEd1apgDowrFgrmW77di6SJII5pDahhbxZHDM9tUpDNAk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw1-1.fna&_nc_gid=VEcezsx-y_Ggt-ihAz92lQ&_nc_ss=7a22e&oh=00_AQPF1ZN0HtwMXy4y0oU8S284EakYkDPUZVSdoIa7sUslEw&oe=6AD04827",
+      "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -36762,7 +37770,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwHscf7C&_nc_oc=AdrJemZWxSnmKFf7gUMDBS1DHO4azRcuvkg-DzT2Pc1UoowOPjo8eif1a2aXM731YgM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMzTZX5laR3cn270Voi-aMO7U9h5YIpvN4YaO2VLrC-Bg&oe=6ACEF6A7",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -37407,6 +38415,20 @@
       "post_url": "https://www.instagram.com/p/Dd7dvKNgUfF/",
       "created_at": "2026-10-01 16:59:57",
       "updated_at": "2026-10-01 16:59:57"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Mercearia / Grãos e Conservas",
+      "produto_padronizado": "Feijão Carioca Rei 1kg",
+      "marca": "Rei",
+      "embalagem": "1kg",
+      "item": "Feijão Carioca Rei, Pacote De 1 Kg",
+      "valor": 6.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -38484,7 +39506,7 @@
       "link": "https://scontent-cdg4-1.cdninstagram.com/v/t51.82787-15/841499362_18197260432391764_2383744684617419616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwMzczMzA3Mzc3OTIyMDEzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-WMs-f33WAQ7kNvwHscf7C&_nc_oc=AdrJemZWxSnmKFf7gUMDBS1DHO4azRcuvkg-DzT2Pc1UoowOPjo8eif1a2aXM731YgM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_gid=6IdcqYBXLIJHG9hPX0VYRw&_nc_ss=7a22e&oh=00_AQMzTZX5laR3cn270Voi-aMO7U9h5YIpvN4YaO2VLrC-Bg&oe=6ACEF6A7",
       "post_url": "https://www.instagram.com/p/DeQHgvnl1GE/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -38974,7 +39996,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -39175,6 +40197,20 @@
     {
       "supermercado": "Supermercado Bianchi",
       "categoria": "Mercearia / Óleos e Azeites",
+      "produto_padronizado": "Azeite de Oliva Extra Virgem Gomes da Costa 500ml",
+      "marca": "Gomes Da Costa",
+      "embalagem": "500ml",
+      "item": "AZEITE OLIVA EXTRA VIRGEM GOMES DA COSTA 500ML",
+      "valor": 27.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Mercearia / Óleos e Azeites",
       "produto_padronizado": "Azeite de Oliva Extra Virgem La Violetera 500ml",
       "marca": "La Violetera",
       "embalagem": "500ml",
@@ -39339,6 +40375,20 @@
       "post_url": "https://www.instagram.com/p/Ddd0KLbHcLN/",
       "created_at": "2026-09-19 13:45:28",
       "updated_at": "2026-09-20 14:00:38"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Mercearia / Óleos e Azeites",
+      "produto_padronizado": "Óleo de Soja Liza 900ml",
+      "marca": "Liza",
+      "embalagem": "900ml",
+      "item": "Óleo De Soja Liza 900 Ml",
+      "valor": 6.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -39957,6 +41007,20 @@
       "updated_at": "2026-10-03 14:36:58"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Outros",
+      "produto_padronizado": "Lenha Eucalipto São Luiz Saco 12kg",
+      "marca": "São Luiz",
+      "embalagem": "12kg",
+      "item": "LENHA EUCALIPTO SÃO LUIZ SACO C/12KG",
+      "valor": 31.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg4-3.cdninstagram.com/v/t39.30808-6/842678441_1707709741359423_3930579678639430265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwNDc5MDgwNjE1NDg1NDUxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_yOg1cV2_uAQ7kNvwHB7PWI&_nc_oc=Adpj2SQvFo9sWpYalLeA3xjOb8pcRU-f97l4Dly_3UDx-rEto8bnb8rS2jtJqdjnSTzEl_R3IpjJhKlv8k0Gstjo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQMUyDWps7-MhgU2C7ebnwQf5AoI7Qk7A_i_NSE7lE9Dig&oe=6AD036B4",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Outros",
       "produto_padronizado": "Mandioca Kg",
@@ -40517,6 +41581,20 @@
       "updated_at": "2026-10-08 17:28:07"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Padaria / Congelados",
+      "produto_padronizado": "Lasanha Sabores Sadia 600g",
+      "marca": "Sadia",
+      "embalagem": "600g",
+      "item": "LASANHA SADIA SABORES 600G DE: R$ 21,99 POR: R$ 15,99",
+      "valor": 15.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
       "categoria": "Padaria / Congelados",
       "produto_padronizado": "Lasanha Sadia Perdigão 600g",
@@ -40585,6 +41663,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwJnjEHc/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Padaria / Congelados",
+      "produto_padronizado": "Mandioca Congelada Kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "MANDIOCA CONGELADA kg",
+      "valor": 5.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-cdg4-3.cdninstagram.com/v/t39.30808-6/842678441_1707709741359423_3930579678639430265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwNDc5MDgwNjE1NDg1NDUxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=_yOg1cV2_uAQ7kNvwHB7PWI&_nc_oc=Adpj2SQvFo9sWpYalLeA3xjOb8pcRU-f97l4Dly_3UDx-rEto8bnb8rS2jtJqdjnSTzEl_R3IpjJhKlv8k0Gstjo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-cdg4-3.cdninstagram.com&_nc_gid=IeRNXcJ-Sh3evLlFy88TBQ&_nc_ss=7a22e&oh=00_AQMUyDWps7-MhgU2C7ebnwQf5AoI7Qk7A_i_NSE7lE9Dig&oe=6AD036B4",
+      "post_url": "https://www.instagram.com/p/DeT4AkhnIbN/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -40858,6 +41950,20 @@
       "produto_padronizado": "Pão de Queijo Congelado Mc 1kg",
       "marca": "Mc",
       "embalagem": "1kg",
+      "item": "PÃO DE QUEIJO CONGELADO MC PCT C/ 1KG",
+      "valor": 16.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/843224986_1707711228025941_4278876898664531485_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODc2NjQxMzQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=JrJxQNkM6rYQ7kNvwGkd3pw&_nc_oc=AdruW15yN5dzElsgI9p96JCMUAxp6VEb9EKFDfS-IHnU7JfBa8awK5EZc6VPgkfJ4gBUUtj68vQ-DFBCkn3wX7Jg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQObLth-g2L0A69ib-QdBUX3wI_H_bGtOBC1xz4BM10IeA&oe=6AD031C3",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Padaria / Congelados",
+      "produto_padronizado": "Pão de Queijo Congelado Mc 1kg",
+      "marca": "Mc",
+      "embalagem": "1kg",
       "item": "PÃO QUEIJO CONGELADO MC PCT C/ 1KG",
       "valor": 17.99,
       "data_postagem": "19/09/2026",
@@ -40937,6 +42043,20 @@
       "updated_at": "2026-09-26 14:10:52"
     },
     {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Padaria / Congelados",
+      "produto_padronizado": "Pão de Queijo Cuiabá 1kg",
+      "marca": "Cuiabá",
+      "embalagem": "1kg",
+      "item": "Pão de Queijo Cuiabá pacote 1 kg",
+      "valor": 9.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Padaria / Congelados",
       "produto_padronizado": "Pão de Queijo Kg",
@@ -40990,7 +42110,7 @@
       "link": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwEVW-cn&_nc_oc=Adoxo_1e4pooWT78fBmPu8JL5ncbdukaVTPlpGZKMtV6SXNLe-YNUcilnkOJ8IW0goA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lhr6-1.cdninstagram.com&_nc_gid=HbthRHVuW7ctbF6t2lHebA&_nc_ss=7a22e&oh=00_AQPluuCy6frwm829XFYHVu1p8vAjfEWSr8t7jaaJmZhAEQ&oe=6ACEE0EB",
       "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
       "created_at": "2026-10-09 16:54:05",
-      "updated_at": "2026-10-09 16:54:05"
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -41133,6 +42253,20 @@
       "updated_at": "2026-10-09 16:54:05"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Padaria / Congelados",
+      "produto_padronizado": "Queijo Mussarela Sadia kg",
+      "marca": "Sadia",
+      "embalagem": "460g",
+      "item": "PIZZA SADIA MUSSARELA 460G DE: R$ 25,49 POR: R$ 17,99",
+      "valor": 17.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://instagram.ftls1-1.fna.fbcdn.net/v/t39.30808-6/842935652_1707711231359274_7320010320435312380_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwNDc5MTk1ODAzNjU5OTg2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3dG1GPiSbQIQ7kNvwGhJpz3&_nc_oc=AdolVByeeOIv8iMxWaE6MGOK1r079eiAzKmihevAujcNOjWBTbZD3MFkZxHqg1-iNf7eW0uq-DE8VzzHdGHo-PjX&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ftls1-1.fna&_nc_gid=NgV2zhMoenc1dpqDjO78wA&_nc_ss=7a22e&oh=00_AQMfAYA317JSmXx9o2vCYewTE2QhPNAxpCXaSCkUw4IsSg&oe=6AD01748",
+      "post_url": "https://www.instagram.com/p/DeT4RVUnL8r/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Padaria / Congelados",
       "produto_padronizado": "Salgadinho Frito Kg",
@@ -41271,6 +42405,20 @@
       "post_url": "https://www.instagram.com/p/DdmNw2TlLyD/",
       "created_at": "2026-09-23 15:08:54",
       "updated_at": "2026-09-23 15:08:54"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Padaria / Pães",
+      "produto_padronizado": "Alho Dabrasa Kg",
+      "marca": "Dabrasa",
+      "embalagem": "450g",
+      "item": "Pão De Alho Dabrasa, Sabores, Pct 450G",
+      "valor": 12.99,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/844070099_18381415555237813_8399239673896785558_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=NDAwNDI4ODQ1Mjc2NDQ1NDMxMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=nzK8S02EsHwQ7kNvwFBs76e&_nc_oc=AdrBzbRcWsdV2hqVvHieJwmBiOYMEbplPJ56_1K8VDFkKcH5vBczjPBz0fQ0LQzYwJJWvZWFmvzvFtWNWePAzhhj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQO-364cYzt795giHGf0ESbRCwhKE-Wlcx-VpMF-AcQ8eg&oe=6AD02080",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -41903,6 +43051,20 @@
       "updated_at": "2026-10-04 15:11:01"
     },
     {
+      "supermercado": "Super Compras Supermercado",
+      "categoria": "Padaria / Pães",
+      "produto_padronizado": "Torta Doces Salgadas Fatias",
+      "marca": "",
+      "embalagem": "",
+      "item": "Tortas Doces e Salgadas Fatias - Unidade",
+      "valor": 19.99,
+      "data_postagem": "10/10/2026",
+      "link": "https://scontent-man2-1.cdninstagram.com/v/t51.82787-15/844630244_18197364442391764_5546065205322049756_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwNDQ2MDQ2MDU1Njg4ODc2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=bhcaqeWzrowQ7kNvwFzTNsD&_nc_oc=Adq4BBLcfqZbqcTVrNMOuTbVif_ZsORxMynAolQXnxXPOgwsFNzIVsjIqojfR6a8BzSRxTIi3wZlRFmRxMk4UW8U&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_gid=j_S2BVVOX0cLrJCmOWUspw&_nc_ss=7a22e&oh=00_AQOM2_oFPJ0-wwag-qLAwqVHPw3qimHAjiQi2brMpNuFMg&oe=6AD0230E",
+      "post_url": "https://www.instagram.com/p/DeSs5KElyq5/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Pet Shop",
       "produto_padronizado": "Arroz Branco Tipo 1 Bob Dog 5kg",
@@ -42507,6 +43669,20 @@
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
       "categoria": "Pet Shop",
+      "produto_padronizado": "Ração para Cães Vittamax Classic 7kg",
+      "marca": "Vittamax",
+      "embalagem": "7kg",
+      "item": "Ração Para Cães Vittamax Classic, Pacote De 7 Kg",
+      "valor": 69.9,
+      "data_postagem": "09/10/2026",
+      "link": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/843397787_18381415564237813_6453683650816484243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=NDAwNDI4ODQ1MjMwMzE1MjY1Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMiJ9&_nc_ohc=hmKvNEADyfgQ7kNvwEKaeyH&_nc_oc=AdrUL5jdpd_L7r9LQYcpoWQ1bTGfNNt9ujswGP4J-Ih-L3Vz3s3AQUjlzCwkJnhEO59uGMZ9UQFe9FMbdVwkbuOV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_gid=3RMBxi6MCZzpwfOEDqoDXQ&_nc_ss=7a22e&oh=00_AQNoNE_jvO3eX-xmd-3AWe7xTdSi65Wkg1ayUyDGoHlXGw&oe=6AD03B3D",
+      "post_url": "https://www.instagram.com/p/DeSFzaGFNhV/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
+    },
+    {
+      "supermercado": "Bom Jesus Primavera do Leste 🛒",
+      "categoria": "Pet Shop",
       "produto_padronizado": "Ração para Cão Carne com Cereais Maikão 7kg",
       "marca": "Maikão",
       "embalagem": "7kg",
@@ -42643,6 +43819,20 @@
       "post_url": "https://www.instagram.com/p/Ddh0_Y4EW_u/",
       "created_at": "2026-09-21 16:18:26",
       "updated_at": "2026-09-21 16:18:26"
+    },
+    {
+      "supermercado": "SUPERMERCADO PARANAENSE",
+      "categoria": "Pet Shop",
+      "produto_padronizado": "Ração Úmida Sachê Whiskas Pedigree Whiskas / Pedigree",
+      "marca": "Whiskas / Pedigree",
+      "embalagem": "",
+      "item": "SACHES WHISKAS E PEDIGREE",
+      "valor": 2.89,
+      "data_postagem": "09/10/2026",
+      "link": "https://instagram.fbcn7-2.fna.fbcdn.net/v/t51.82787-15/842421881_17913695337496981_1703930706411448167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=NDAwMzc1MDIzNjI1MTIzNjIzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lDpW1xHK08IQ7kNvwF9fHDt&_nc_oc=AdoACW8UL8NrnFFy_h6QmmxNeDOnIgmLwx-ifdBmNzDQf4PAGAaxSGs6LZ_hwy8Qi6I&_nc_ad=z-m&_nc_cid=1022&_nc_zt=23&_nc_ht=instagram.fbcn7-2.fna&_nc_gid=B5F6lx7SixCcheJ_VIw9CA&_nc_ss=7a22e&oh=00_AQMMB4q3gRzf7R7Z1v5isb7l59cm-_RU7_PzlZnPKsaRPA&oe=6AD0326B",
+      "post_url": "https://www.instagram.com/p/DeQLaCJJCeI/",
+      "created_at": "2026-10-10 15:47:27",
+      "updated_at": "2026-10-10 15:47:27"
     },
     {
       "supermercado": "SUPERMERCADO PARANAENSE",
