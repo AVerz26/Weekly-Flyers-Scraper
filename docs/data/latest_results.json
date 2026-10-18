@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-17_13-33-38",
-  "total_itens": 4052,
+  "timestamp": "2026-10-18_13-51-30",
+  "total_itens": 4082,
   "supermercados": [
     "Bom Jesus Primavera do Leste 🛒",
     "Machadão Atacadista",
@@ -545,7 +545,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -559,7 +559,21 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Bazar / Eletro",
+      "produto_padronizado": "Churrasqueira Bafo 60cmx40cm",
+      "marca": "",
+      "embalagem": "",
+      "item": "CHURRASQUEIRA BAFO 60CMX40CM de R$ 459,90 por: R$ 399,90",
+      "valor": 399.9,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwGZhpBe&_nc_oc=Adpl0hK8aXrptkYyiqf344EW-7VQASk_G8WCDYRBOZDWd4emCCKcwP11fBvRy9-ZTAVz0Tewf7K_uqhWPGo5Vnic&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQOeuy0RJKhOU2L7xWQjkO0ZrVLZmJSKOAV5odCHGK2tKA&oe=6ADA85A8",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -587,7 +601,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -844,6 +858,20 @@
     {
       "supermercado": "Machadão Atacadista",
       "categoria": "Bazar / Eletro",
+      "produto_padronizado": "Espeto Duplo 65cmx52cm Grilazer",
+      "marca": "Grilazer",
+      "embalagem": "",
+      "item": "ESPETO GRILAZER DUPLO 65CMX52CM de R$ 15,49 por: R$ 9,90",
+      "valor": 9.9,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwGZhpBe&_nc_oc=Adpl0hK8aXrptkYyiqf344EW-7VQASk_G8WCDYRBOZDWd4emCCKcwP11fBvRy9-ZTAVz0Tewf7K_uqhWPGo5Vnic&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQOeuy0RJKhOU2L7xWQjkO0ZrVLZmJSKOAV5odCHGK2tKA&oe=6ADA85A8",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Bazar / Eletro",
       "produto_padronizado": "Espeto Duplo Grilazer 65cmx52cm",
       "marca": "Grilazer",
       "embalagem": "",
@@ -867,7 +895,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -881,7 +909,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -895,7 +923,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -909,7 +937,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -923,7 +951,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -937,7 +965,21 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Bazar / Eletro",
+      "produto_padronizado": "Espeto Simples 85cm Grilazer",
+      "marca": "Grilazer",
+      "embalagem": "",
+      "item": "ESPETO GRILAZER SIMPLES 85CM de R$ 15,49 por: R$ 10,90",
+      "valor": 10.9,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwGZhpBe&_nc_oc=Adpl0hK8aXrptkYyiqf344EW-7VQASk_G8WCDYRBOZDWd4emCCKcwP11fBvRy9-ZTAVz0Tewf7K_uqhWPGo5Vnic&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQOeuy0RJKhOU2L7xWQjkO0ZrVLZmJSKOAV5odCHGK2tKA&oe=6ADA85A8",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -1049,7 +1091,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -1063,7 +1105,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -1077,7 +1119,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -1091,7 +1133,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -1105,7 +1147,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -1119,7 +1161,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -1152,6 +1194,20 @@
     {
       "supermercado": "Machadão Atacadista",
       "categoria": "Bazar / Eletro",
+      "produto_padronizado": "Grelha Linha Prata 40x50cm Gaúcho",
+      "marca": "Gaúcho",
+      "embalagem": "",
+      "item": "GRELHA GAÚCHO LINHA PRATA 40X50CM de R$ 107,90 por: R$ 89,90",
+      "valor": 89.9,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwGZhpBe&_nc_oc=Adpl0hK8aXrptkYyiqf344EW-7VQASk_G8WCDYRBOZDWd4emCCKcwP11fBvRy9-ZTAVz0Tewf7K_uqhWPGo5Vnic&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQOeuy0RJKhOU2L7xWQjkO0ZrVLZmJSKOAV5odCHGK2tKA&oe=6ADA85A8",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Bazar / Eletro",
       "produto_padronizado": "Grelha Linha Prata Gaúcho 40x50cm",
       "marca": "Gaúcho",
       "embalagem": "",
@@ -1176,6 +1232,20 @@
       "post_url": "https://www.instagram.com/p/DdXhg0bDWSd/",
       "created_at": "2026-09-18 14:11:10",
       "updated_at": "2026-09-18 14:11:10"
+    },
+    {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Bazar / Eletro",
+      "produto_padronizado": "Grelha para Peixe 19 5cmx39cm Gaúcho",
+      "marca": "Gaúcho",
+      "embalagem": "",
+      "item": "GRELHA GAÚCHO PARA PEIXE 19,5CMX39CM de R$ 57,90 por: R$ 45,90",
+      "valor": 45.9,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwGZhpBe&_nc_oc=Adpl0hK8aXrptkYyiqf344EW-7VQASk_G8WCDYRBOZDWd4emCCKcwP11fBvRy9-ZTAVz0Tewf7K_uqhWPGo5Vnic&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQOeuy0RJKhOU2L7xWQjkO0ZrVLZmJSKOAV5odCHGK2tKA&oe=6ADA85A8",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -1777,7 +1847,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwGk0bsJ&_nc_oc=AdpakEHL4olWd8AHnK3gLztMBc0helIWl_ZwQ6L0iV9LzNj1xlUUGSpskuqvmyYuh6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQPqJpRE83c5XOhvxoxr7st0D-rL1V6kUhx_HpYBa--Wig&oe=6AD93F2A",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -1876,6 +1946,20 @@
       "post_url": "https://www.instagram.com/p/DeILZsygUEC/",
       "created_at": "2026-10-06 16:34:10",
       "updated_at": "2026-10-06 16:34:10"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Alcoólicos Diversos",
+      "produto_padronizado": "Bebida com Gin Rocks 1L",
+      "marca": "Rocks",
+      "embalagem": "1L",
+      "item": "BEBIDA GIN ROCKS 1L",
+      "valor": 26.99,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwF9Drti&_nc_oc=AdoOcZX3tV8Qg3n3KbLkrne3IcFQEuWCRjPpzNfNx6u7Wpt93sgKL48AsDNGsIlXSeTxPYNN4dDNsaRhBfGegECN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQMJPaBRJeaXpWA3IlNTBkhicbhZRRntVjSsKBEzE_cxkw&oe=6ADA90AA",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -1987,7 +2071,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -2001,7 +2085,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -2015,7 +2099,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -2029,7 +2113,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwFgTs-A&_nc_oc=AdrORpEddwr_1K2W3DydP44cEINgIBEOmFdyp5utcO0wPDdSrwsINS0uYj1zA22RBdVxkqDWMD9XtmZVMIRsNvkN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOwl9rserer0XOF_Nr7r0ineW11bZhWNuqCP1e6hgbgjA&oe=6AD93428",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -2645,7 +2729,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwGk0bsJ&_nc_oc=AdpakEHL4olWd8AHnK3gLztMBc0helIWl_ZwQ6L0iV9LzNj1xlUUGSpskuqvmyYuh6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQPqJpRE83c5XOhvxoxr7st0D-rL1V6kUhx_HpYBa--Wig&oe=6AD93F2A",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -3037,7 +3121,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -3051,7 +3135,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -3065,7 +3149,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -3079,7 +3163,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwFgTs-A&_nc_oc=AdrORpEddwr_1K2W3DydP44cEINgIBEOmFdyp5utcO0wPDdSrwsINS0uYj1zA22RBdVxkqDWMD9XtmZVMIRsNvkN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOwl9rserer0XOF_Nr7r0ineW11bZhWNuqCP1e6hgbgjA&oe=6AD93428",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -3628,6 +3712,20 @@
       "updated_at": null
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Michelob Ultra com 6x 330ml",
+      "marca": "Michelob",
+      "embalagem": "330ml",
+      "item": "CERVEJA MICHELOB ULTRA CX C/ 6X330ML DE: R$ 47,94 POR: R$ 36,99",
+      "valor": 36.99,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tCRE17tkrjsQ7kNvwHbVX_Y&_nc_oc=AdpPEq_6KfTRzxhQpdJV-42FBH3oho-hACc4B8VGC64EF1AtQoRiiwPLM3_CSCMotL3ty7vKShceE4G6h5LCFTRe&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQPV67FFYYrUXHb_L9IxHY9p_iogrL8Y6zynYbsObT5vPQ&oe=6ADA9FF3",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
       "supermercado": "Super Compras Supermercado",
       "categoria": "Bebidas / Cervejas",
       "produto_padronizado": "Cerveja Multipack 15 Lata Skol 269ml",
@@ -4092,6 +4190,20 @@
     {
       "supermercado": "Supermercado Bianchi",
       "categoria": "Bebidas / Cervejas",
+      "produto_padronizado": "Cerveja Pure Gold 8x Stella Artois 269ml",
+      "marca": "Stella Artois",
+      "embalagem": "269ml",
+      "item": "CERVEJA STELLA PURE GOLD CX C/ 8X269ML",
+      "valor": 33.99,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwF9Drti&_nc_oc=AdoOcZX3tV8Qg3n3KbLkrne3IcFQEuWCRjPpzNfNx6u7Wpt93sgKL48AsDNGsIlXSeTxPYNN4dDNsaRhBfGegECN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQMJPaBRJeaXpWA3IlNTBkhicbhZRRntVjSsKBEzE_cxkw&oe=6ADA90AA",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Cervejas",
       "produto_padronizado": "Cerveja Pure Gold Lata 8x Stella Artois 269ml",
       "marca": "Stella Artois",
       "embalagem": "269ml",
@@ -4510,6 +4622,20 @@
       "updated_at": "2026-09-29 16:28:36"
     },
     {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Bebidas / Refrigerantes",
+      "produto_padronizado": "Refrigerante Cola Pet Coca-Cola 2.5L",
+      "marca": "Coca-Cola",
+      "embalagem": "2.5L",
+      "item": "REFRIGERANTE COCA-COLA PET UND 2,5L",
+      "valor": 11.49,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwFNxR9p&_nc_oc=AdqzTHcEunsi1m0OsxfDSWuU0OvMtdmRtCn69xzOhwvQTlgxRaMrkwIUUAkbQegokahC7QUeBqfQPI9wo7Kk8WW6&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQPkihHIC9uQnII13JH25SOJowFr_blwjBA7a5DmAkqRyw&oe=6ADA876D",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Bebidas / Refrigerantes",
       "produto_padronizado": "Refrigerante Fanta 2L",
@@ -4745,7 +4871,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -4759,7 +4885,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwFgTs-A&_nc_oc=AdrORpEddwr_1K2W3DydP44cEINgIBEOmFdyp5utcO0wPDdSrwsINS0uYj1zA22RBdVxkqDWMD9XtmZVMIRsNvkN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOwl9rserer0XOF_Nr7r0ineW11bZhWNuqCP1e6hgbgjA&oe=6AD93428",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -5053,7 +5179,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -5096,6 +5222,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwrEk8B5/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Bebidas / Refrigerantes",
+      "produto_padronizado": "Refrigerante Sukita 2L",
+      "marca": "Sukita",
+      "embalagem": "2L",
+      "item": "REFRIGERANTE SUKITA 2L",
+      "valor": 6.49,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwF9Drti&_nc_oc=AdoOcZX3tV8Qg3n3KbLkrne3IcFQEuWCRjPpzNfNx6u7Wpt93sgKL48AsDNGsIlXSeTxPYNN4dDNsaRhBfGegECN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQMJPaBRJeaXpWA3IlNTBkhicbhZRRntVjSsKBEzE_cxkw&oe=6ADA90AA",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -6047,7 +6187,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -6985,7 +7125,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwGk0bsJ&_nc_oc=AdpakEHL4olWd8AHnK3gLztMBc0helIWl_ZwQ6L0iV9LzNj1xlUUGSpskuqvmyYuh6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQPqJpRE83c5XOhvxoxr7st0D-rL1V6kUhx_HpYBa--Wig&oe=6AD93F2A",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "SUPERMERCADO PARANAENSE",
@@ -7783,7 +7923,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "SUPERMERCADO PARANAENSE",
@@ -8175,7 +8315,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -8483,7 +8623,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -8497,7 +8637,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -8511,7 +8651,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwFgTs-A&_nc_oc=AdrORpEddwr_1K2W3DydP44cEINgIBEOmFdyp5utcO0wPDdSrwsINS0uYj1zA22RBdVxkqDWMD9XtmZVMIRsNvkN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOwl9rserer0XOF_Nr7r0ineW11bZhWNuqCP1e6hgbgjA&oe=6AD93428",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -8637,7 +8777,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -8651,7 +8791,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -8665,7 +8805,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -8679,7 +8819,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -8693,7 +8833,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855777061_1715327550597642_4433042333995038667_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwOTg2OTYzNDgxMTIyNDc0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wYMpMCkENX8Q7kNvwEDgvvS&_nc_oc=AdqVLIYp7wKcbgVR6INuzZ8oWv5F1SUBmVDt15PQS4uaoOwrCFIvLkL336ioVk6_9KI&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQM71gJ6ip-9WSa3JNqXl84Ifw4ntl__ECmz2GVBIUJfoQ&oe=6AD935EC",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -10121,7 +10261,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855777061_1715327550597642_4433042333995038667_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwOTg2OTYzNDgxMTIyNDc0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wYMpMCkENX8Q7kNvwEDgvvS&_nc_oc=AdqVLIYp7wKcbgVR6INuzZ8oWv5F1SUBmVDt15PQS4uaoOwrCFIvLkL336ioVk6_9KI&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQM71gJ6ip-9WSa3JNqXl84Ifw4ntl__ECmz2GVBIUJfoQ&oe=6AD935EC",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -10208,6 +10348,34 @@
       "updated_at": "2026-10-17 13:33:38"
     },
     {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Alcatra Bovina kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "PICANHA C/ ALCATRA R$ 57,99 kg",
+      "valor": 57.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/851887606_18099769223531849_7050697894245083296_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4Mjc5OTYxODk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zOwvvgOFKCQQ7kNvwG6-RU2&_nc_oc=Ado7PSldYyUWhFeEY8RHReqZueDXbUWighhrEwlbGiWozpmyuqwlY8ykTKSzGDmcy6w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQP6VTs9LQkscQQJpoOLg6K5Nx2R0NJrgKVFcD1aARwL9A&oe=6ADA90D5",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Bananinha Bovina Embalada Friboi Kg",
+      "marca": "Friboi",
+      "embalagem": "Kg",
+      "item": "BANANINHA BOVINA FRIBOI EMBALADA KG",
+      "valor": 51.9,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwES17su&_nc_oc=AdpV6v3CVB4TaXUcznpibNnQ7_5XiK8t60kKm63hYnfz-wzEK0iQ0V_GVovgH7NINOu_ZMmMrOstCxMYVPiYX_me&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQOiNTiCbfBXKW09qamUaODwdyVFznk74rIQA6cgZ_i5FA&oe=6ADAAAB1",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Carnes / Bovina",
       "produto_padronizado": "Bananinha Bovina Embalada Friboi Kg",
@@ -10219,7 +10387,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -10824,6 +10992,20 @@
       "updated_at": "2026-09-21 16:18:26"
     },
     {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Capa de Filé Bovino Kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "CAPA C. FILÉ R$ 39,99 kg",
+      "valor": 39.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/851887606_18099769223531849_7050697894245083296_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4Mjc5OTYxODk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zOwvvgOFKCQQ7kNvwG6-RU2&_nc_oc=Ado7PSldYyUWhFeEY8RHReqZueDXbUWighhrEwlbGiWozpmyuqwlY8ykTKSzGDmcy6w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQP6VTs9LQkscQQJpoOLg6K5Nx2R0NJrgKVFcD1aARwL9A&oe=6ADA90D5",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
       "supermercado": "Machadão Atacadista",
       "categoria": "Carnes / Bovina",
       "produto_padronizado": "Capa de Filé Embalada Boa Carne Kg",
@@ -11073,7 +11255,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -11087,7 +11269,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -11101,7 +11283,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -11115,7 +11297,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -11286,6 +11468,20 @@
       "updated_at": "2026-10-11 16:13:21"
     },
     {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Contrafilé Bovino kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "BISTECA DO C. FILÉ R$ 34,99 kg",
+      "valor": 34.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/851887606_18099769223531849_7050697894245083296_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4Mjc5OTYxODk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zOwvvgOFKCQQ7kNvwG6-RU2&_nc_oc=Ado7PSldYyUWhFeEY8RHReqZueDXbUWighhrEwlbGiWozpmyuqwlY8ykTKSzGDmcy6w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQP6VTs9LQkscQQJpoOLg6K5Nx2R0NJrgKVFcD1aARwL9A&oe=6ADA90D5",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
       "supermercado": "Super Compras Supermercado",
       "categoria": "Carnes / Bovina",
       "produto_padronizado": "Contrafilé Bovino kg",
@@ -11423,7 +11619,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855951068_1715327547264309_189992556890142914_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTg2OTYzMzQ2OTA2ODQ0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7Dc6bYOz7zYQ7kNvwGZJG_S&_nc_oc=AdqdzohWhfZpOuVf79M7qxJrlFLrJsRTGiIrT0EWJQNM32hl8OJb-CGf2ofyHbcDd14&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQNqWoNsd5K3GBJqK6Th4oTViIBflPVKWrz9BoaXE-grfA&oe=6AD93699",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -11857,7 +12053,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -11955,7 +12151,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -11969,7 +12165,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -12025,7 +12221,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -12292,6 +12488,20 @@
       "post_url": "https://www.instagram.com/p/DejhjlWEYF6/",
       "created_at": "2026-10-16 14:49:28",
       "updated_at": "2026-10-17 13:33:38"
+    },
+    {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Costela Bovina kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "COSTELA BOVINA R$ 22,99 kg",
+      "valor": 22.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/851887606_18099769223531849_7050697894245083296_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4Mjc5OTYxODk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zOwvvgOFKCQQ7kNvwG6-RU2&_nc_oc=Ado7PSldYyUWhFeEY8RHReqZueDXbUWighhrEwlbGiWozpmyuqwlY8ykTKSzGDmcy6w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQP6VTs9LQkscQQJpoOLg6K5Nx2R0NJrgKVFcD1aARwL9A&oe=6ADA90D5",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -12670,6 +12880,20 @@
       "post_url": "https://www.instagram.com/p/DdxXVFLEXKf/",
       "created_at": "2026-09-27 15:04:21",
       "updated_at": "2026-09-27 15:04:21"
+    },
+    {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Carnes / Bovina",
+      "produto_padronizado": "Coxão Duro Bovino kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "COXÃO DURO R$ 38,99 kg",
+      "valor": 38.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/851887606_18099769223531849_7050697894245083296_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4Mjc5OTYxODk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zOwvvgOFKCQQ7kNvwG6-RU2&_nc_oc=Ado7PSldYyUWhFeEY8RHReqZueDXbUWighhrEwlbGiWozpmyuqwlY8ykTKSzGDmcy6w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQP6VTs9LQkscQQJpoOLg6K5Nx2R0NJrgKVFcD1aARwL9A&oe=6ADA90D5",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -13481,7 +13705,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -13495,7 +13719,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -13551,7 +13775,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855951068_1715327547264309_189992556890142914_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTg2OTYzMzQ2OTA2ODQ0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7Dc6bYOz7zYQ7kNvwGZJG_S&_nc_oc=AdqdzohWhfZpOuVf79M7qxJrlFLrJsRTGiIrT0EWJQNM32hl8OJb-CGf2ofyHbcDd14&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQNqWoNsd5K3GBJqK6Th4oTViIBflPVKWrz9BoaXE-grfA&oe=6AD93699",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -14181,7 +14405,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -14195,7 +14419,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -14223,7 +14447,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -14335,7 +14559,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855951068_1715327547264309_189992556890142914_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTg2OTYzMzQ2OTA2ODQ0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7Dc6bYOz7zYQ7kNvwGZJG_S&_nc_oc=AdqdzohWhfZpOuVf79M7qxJrlFLrJsRTGiIrT0EWJQNM32hl8OJb-CGf2ofyHbcDd14&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQNqWoNsd5K3GBJqK6Th4oTViIBflPVKWrz9BoaXE-grfA&oe=6AD93699",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -15749,7 +15973,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855951068_1715327547264309_189992556890142914_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTg2OTYzMzQ2OTA2ODQ0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7Dc6bYOz7zYQ7kNvwGZJG_S&_nc_oc=AdqdzohWhfZpOuVf79M7qxJrlFLrJsRTGiIrT0EWJQNM32hl8OJb-CGf2ofyHbcDd14&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQNqWoNsd5K3GBJqK6Th4oTViIBflPVKWrz9BoaXE-grfA&oe=6AD93699",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -15819,7 +16043,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -15833,7 +16057,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -15861,7 +16085,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -15889,7 +16113,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -16746,6 +16970,20 @@
       "updated_at": "2026-10-11 16:13:21"
     },
     {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Peixes",
+      "produto_padronizado": "Filé de Peixe Tilápia Seara 600g",
+      "marca": "Seara",
+      "embalagem": "600g",
+      "item": "FILÉ DE PEIXE TILÁPIA SEARA 600G",
+      "valor": 32.99,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwF9Drti&_nc_oc=AdoOcZX3tV8Qg3n3KbLkrne3IcFQEuWCRjPpzNfNx6u7Wpt93sgKL48AsDNGsIlXSeTxPYNN4dDNsaRhBfGegECN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQMJPaBRJeaXpWA3IlNTBkhicbhZRRntVjSsKBEzE_cxkw&oe=6ADA90AA",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
       "supermercado": "SUPERMERCADO PARANAENSE",
       "categoria": "Carnes / Peixes",
       "produto_padronizado": "Filé de Tilápia Bello 400g",
@@ -16855,7 +17093,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -16869,7 +17107,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -16883,7 +17121,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -16897,7 +17135,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -17317,7 +17555,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -17429,7 +17667,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -18241,7 +18479,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855951068_1715327547264309_189992556890142914_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTg2OTYzMzQ2OTA2ODQ0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7Dc6bYOz7zYQ7kNvwGZJG_S&_nc_oc=AdqdzohWhfZpOuVf79M7qxJrlFLrJsRTGiIrT0EWJQNM32hl8OJb-CGf2ofyHbcDd14&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQNqWoNsd5K3GBJqK6Th4oTViIBflPVKWrz9BoaXE-grfA&oe=6AD93699",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "SUPERMERCADO PARANAENSE",
@@ -18311,7 +18549,21 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Hambúrguer Bovino Aves Sadia 56g",
+      "marca": "Sadia",
+      "embalagem": "56g",
+      "item": "HAMBÚRGUER BOVINO E AVES SADIA 56G",
+      "valor": 1.39,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwF9Drti&_nc_oc=AdoOcZX3tV8Qg3n3KbLkrne3IcFQEuWCRjPpzNfNx6u7Wpt93sgKL48AsDNGsIlXSeTxPYNN4dDNsaRhBfGegECN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQMJPaBRJeaXpWA3IlNTBkhicbhZRRntVjSsKBEzE_cxkw&oe=6ADA90AA",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -18955,7 +19207,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855777061_1715327550597642_4433042333995038667_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwOTg2OTYzNDgxMTIyNDc0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wYMpMCkENX8Q7kNvwEDgvvS&_nc_oc=AdqVLIYp7wKcbgVR6INuzZ8oWv5F1SUBmVDt15PQS4uaoOwrCFIvLkL336ioVk6_9KI&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQM71gJ6ip-9WSa3JNqXl84Ifw4ntl__ECmz2GVBIUJfoQ&oe=6AD935EC",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -19543,7 +19795,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -19627,7 +19879,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -19655,7 +19907,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -19669,7 +19921,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -19698,6 +19950,20 @@
       "post_url": "https://www.instagram.com/p/DeMTUgVkQfh/",
       "created_at": "2026-10-07 17:28:53",
       "updated_at": "2026-10-08 17:28:07"
+    },
+    {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Linguiça Toscana kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "LINGUIÇA SUÍNA R$ 11,99 kg",
+      "valor": 11.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/851887606_18099769223531849_7050697894245083296_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4Mjc5OTYxODk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zOwvvgOFKCQQ7kNvwG6-RU2&_nc_oc=Ado7PSldYyUWhFeEY8RHReqZueDXbUWighhrEwlbGiWozpmyuqwlY8ykTKSzGDmcy6w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQP6VTs9LQkscQQJpoOLg6K5Nx2R0NJrgKVFcD1aARwL9A&oe=6ADA90D5",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -19810,6 +20076,20 @@
       "post_url": "https://www.instagram.com/p/DeeX0XPkZRC/",
       "created_at": "2026-10-14 14:59:06",
       "updated_at": "2026-10-15 14:48:26"
+    },
+    {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Linguiça Toscana kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "LINGUIÇA FINA APIMENTADA R$ 16,99 kg",
+      "valor": 16.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/851887606_18099769223531849_7050697894245083296_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4Mjc5OTYxODk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zOwvvgOFKCQQ7kNvwG6-RU2&_nc_oc=Ado7PSldYyUWhFeEY8RHReqZueDXbUWighhrEwlbGiWozpmyuqwlY8ykTKSzGDmcy6w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQP6VTs9LQkscQQJpoOLg6K5Nx2R0NJrgKVFcD1aARwL9A&oe=6ADA90D5",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -20061,7 +20341,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -20565,7 +20845,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -20579,7 +20859,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -20593,7 +20873,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -20607,7 +20887,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -20649,7 +20929,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -20958,6 +21238,20 @@
       "post_url": "https://www.instagram.com/p/DefjABpl_nn/",
       "created_at": "2026-10-15 14:48:26",
       "updated_at": "2026-10-15 14:48:26"
+    },
+    {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Carnes / Suína e Embutidos",
+      "produto_padronizado": "Pernil Suíno kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "PERNIL SUÍNO R$ 11,99 kg",
+      "valor": 11.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw4-1.fna.fbcdn.net/v/t51.82787-15/851887606_18099769223531849_7050697894245083296_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4Mjc5OTYxODk2Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zOwvvgOFKCQQ7kNvwG6-RU2&_nc_oc=Ado7PSldYyUWhFeEY8RHReqZueDXbUWighhrEwlbGiWozpmyuqwlY8ykTKSzGDmcy6w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw4-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQP6VTs9LQkscQQJpoOLg6K5Nx2R0NJrgKVFcD1aARwL9A&oe=6ADA90D5",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado São Pedro",
@@ -21279,7 +21573,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwGk0bsJ&_nc_oc=AdpakEHL4olWd8AHnK3gLztMBc0helIWl_ZwQ6L0iV9LzNj1xlUUGSpskuqvmyYuh6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQPqJpRE83c5XOhvxoxr7st0D-rL1V6kUhx_HpYBa--Wig&oe=6AD93F2A",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -21951,7 +22245,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -22259,7 +22553,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -22343,7 +22637,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -22371,7 +22665,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -22399,7 +22693,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -25423,7 +25717,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwGk0bsJ&_nc_oc=AdpakEHL4olWd8AHnK3gLztMBc0helIWl_ZwQ6L0iV9LzNj1xlUUGSpskuqvmyYuh6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQPqJpRE83c5XOhvxoxr7st0D-rL1V6kUhx_HpYBa--Wig&oe=6AD93F2A",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -26292,6 +26586,20 @@
       "post_url": "https://www.instagram.com/p/DefnueTCfr-/",
       "created_at": "2026-10-15 14:48:26",
       "updated_at": "2026-10-15 14:48:26"
+    },
+    {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Hortifruti / Ovos",
+      "produto_padronizado": "Abacate Kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "ABACATE Kg R$ 5,49",
+      "valor": 5.49,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw1-1.fna.fbcdn.net/v/t51.82787-15/856640040_18099769214531849_7924454924505446020_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4MzIwMjM1ODM3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lH3gBQvDSAIQ7kNvwEsjFZL&_nc_oc=AdqeD2ssqcF6P2L2D02oOv7ughvs_LhWRf0HfM8co15-L4jGzrIUinmYAEs4DPptD4I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw1-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQOY6r347ro7kpthCXjKyP5w5ZahXOlIEo0ut7oRyK-65A&oe=6ADAA49F",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -28604,6 +28912,20 @@
       "updated_at": "2026-09-29 16:28:36"
     },
     {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Hortifruti / Ovos",
+      "produto_padronizado": "Batata Inglesa Kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "BATATA LAVADA Kg R$ 5,49",
+      "valor": 5.49,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw1-1.fna.fbcdn.net/v/t51.82787-15/856640040_18099769214531849_7924454924505446020_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4MzIwMjM1ODM3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lH3gBQvDSAIQ7kNvwEsjFZL&_nc_oc=AdqeD2ssqcF6P2L2D02oOv7ughvs_LhWRf0HfM8co15-L4jGzrIUinmYAEs4DPptD4I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw1-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQOY6r347ro7kpthCXjKyP5w5ZahXOlIEo0ut7oRyK-65A&oe=6ADAA49F",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
       "categoria": "Hortifruti / Ovos",
       "produto_padronizado": "Batata Inglesa Kg",
@@ -29808,6 +30130,20 @@
       "updated_at": "2026-10-06 16:34:10"
     },
     {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Hortifruti / Ovos",
+      "produto_padronizado": "Cenoura Kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "CENOURA Kg R$ 3,99",
+      "valor": 3.99,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw1-1.fna.fbcdn.net/v/t51.82787-15/856640040_18099769214531849_7924454924505446020_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4MzIwMjM1ODM3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lH3gBQvDSAIQ7kNvwEsjFZL&_nc_oc=AdqeD2ssqcF6P2L2D02oOv7ughvs_LhWRf0HfM8co15-L4jGzrIUinmYAEs4DPptD4I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw1-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQOY6r347ro7kpthCXjKyP5w5ZahXOlIEo0ut7oRyK-65A&oe=6ADAA49F",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
       "supermercado": "Supermercado Tuiuiú",
       "categoria": "Hortifruti / Ovos",
       "produto_padronizado": "Cenoura Kg",
@@ -30786,6 +31122,20 @@
       "post_url": "https://www.instagram.com/p/DebwjJikc2W/",
       "created_at": "2026-10-13 17:40:40",
       "updated_at": "2026-10-14 14:59:06"
+    },
+    {
+      "supermercado": "Mercado Talismã",
+      "categoria": "Hortifruti / Ovos",
+      "produto_padronizado": "Laranja Pera Kg",
+      "marca": "",
+      "embalagem": "Kg",
+      "item": "LARANJA PERA Kg R$ 2,49",
+      "valor": 2.49,
+      "data_postagem": "18/10/2026",
+      "link": "https://instagram.fktw1-1.fna.fbcdn.net/v/t51.82787-15/856640040_18099769214531849_7924454924505446020_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAxMDYxMzE4MzIwMjM1ODM3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=lH3gBQvDSAIQ7kNvwEsjFZL&_nc_oc=AdqeD2ssqcF6P2L2D02oOv7ughvs_LhWRf0HfM8co15-L4jGzrIUinmYAEs4DPptD4I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktw1-1.fna&_nc_gid=_lao8LP3Tmt7ozlTbxY3kw&_nc_ss=7a22e&oh=00_AQOY6r347ro7kpthCXjKyP5w5ZahXOlIEo0ut7oRyK-65A&oe=6ADAA49F",
+      "post_url": "https://www.instagram.com/p/Deoj4EnETZ1/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -33193,7 +33543,7 @@
       "link": "https://instagram.fbcn8-2.fna.fbcdn.net/v/t51.82787-15/848677232_18431616352199090_2735394710217665377_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTkxNjU1MDAwODAyMDUyNDE4NDMxNjE2MzQ5MTk5MDkw.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjcyMC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=8-6hOaLHBNUQ7kNvwHkkTFi&_nc_oc=AdoS90oXWBAZXtNvuPiW7qvyKOUb3q7UTF2WXelAFGoVrq_yl-cJVsaMivkQMOh76HM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbcn8-2.fna&_nc_gid=dJMh_wSO58atEYP4gvos5A&_nc_ss=7a20f&oh=00_AQNTAZQPuRtN4KLrkQ2jtQs8_0owBu8e77SQ1NOM5EcbwA&oe=6AD9461C",
       "post_url": "https://www.instagram.com/p/DemFdtWMB4s/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -35606,6 +35956,20 @@
     {
       "supermercado": "Machadão Atacadista",
       "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Bebida Láctea Mix de Frutas Real 510g",
+      "marca": "Real",
+      "embalagem": "510g",
+      "item": "BEBIDA LÁCTEA UND 510G",
+      "valor": 3.49,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=6ZR3UvV57T0Q7kNvwFMNy3-&_nc_oc=Adqn-0AUhMufno-OBD0-g4wt3Bm_9xxyykU2fPtrAZ5ePeYKahpQfiGXJPOeRLtXInT7DxvydwBO8Si2DW8zt9i5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQOy77F9vZx54yX4WS0m0HyfElTvW0VmKoH9bBXYIZ49UQ&oe=6ADAA1DF",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Laticínios / Leites e Derivados",
       "produto_padronizado": "Bebida Láctea Morango Coco Batavo 510g",
       "marca": "Batavo",
       "embalagem": "510g",
@@ -35713,7 +36077,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -35727,7 +36091,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -35741,7 +36105,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -35756,6 +36120,20 @@
       "post_url": "https://www.instagram.com/p/DeAqwrEk8B5/",
       "created_at": "2026-10-03 14:36:58",
       "updated_at": "2026-10-03 14:36:58"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Bebida Láctea Yopro Protein 15g",
+      "marca": "",
+      "embalagem": "15g",
+      "item": "BEBIDA LACTEA YOPRO PROTEIN DANONE 15G DE: R$ 12,29 POR: R$ 8,99",
+      "valor": 8.99,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tCRE17tkrjsQ7kNvwHbVX_Y&_nc_oc=AdpPEq_6KfTRzxhQpdJV-42FBH3oho-hACc4B8VGC64EF1AtQoRiiwPLM3_CSCMotL3ty7vKShceE4G6h5LCFTRe&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQPV67FFYYrUXHb_L9IxHY9p_iogrL8Y6zynYbsObT5vPQ&oe=6ADA9FF3",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -35909,7 +36287,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -36413,7 +36791,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -36498,6 +36876,20 @@
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
       "updated_at": "2026-10-17 13:33:38"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Iogurte Danoninho Morango Banana 70g",
+      "marca": "Danoninho",
+      "embalagem": "70g",
+      "item": "IOGURTE LANCHE MORANGO / MORANGO C/ BANANA DANONINHO 70G",
+      "valor": 3.99,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwF9Drti&_nc_oc=AdoOcZX3tV8Qg3n3KbLkrne3IcFQEuWCRjPpzNfNx6u7Wpt93sgKL48AsDNGsIlXSeTxPYNN4dDNsaRhBfGegECN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQMJPaBRJeaXpWA3IlNTBkhicbhZRRntVjSsKBEzE_cxkw&oe=6ADA90AA",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -36666,6 +37058,20 @@
       "post_url": "https://www.instagram.com/p/Dd5clbTnBtF/",
       "created_at": "2026-09-30 16:22:34",
       "updated_at": "2026-10-01 16:59:57"
+    },
+    {
+      "supermercado": "Supermercado Bianchi",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Iogurte Natural Integral Desnatado 160g",
+      "marca": "",
+      "embalagem": "160g",
+      "item": "IOGURTE NATURAL INTEGRAL/DESNATADO DANONE 160G",
+      "valor": 3.99,
+      "data_postagem": "17/10/2026",
+      "link": "https://instagram.fmid1-4.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwF9Drti&_nc_oc=AdoOcZX3tV8Qg3n3KbLkrne3IcFQEuWCRjPpzNfNx6u7Wpt93sgKL48AsDNGsIlXSeTxPYNN4dDNsaRhBfGegECN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmid1-4.fna&_nc_gid=GkuKmN4oqVYY37fumpYnRg&_nc_ss=7a22e&oh=00_AQMJPaBRJeaXpWA3IlNTBkhicbhZRRntVjSsKBEzE_cxkw&oe=6ADA90AA",
+      "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -36847,7 +37253,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "SUPERMERCADO PARANAENSE",
@@ -37211,7 +37617,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -37855,7 +38261,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -38219,7 +38625,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -38331,7 +38737,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Bom Jesus Primavera do Leste 🛒",
@@ -38359,7 +38765,21 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
+    },
+    {
+      "supermercado": "Machadão Atacadista",
+      "categoria": "Laticínios / Leites e Derivados",
+      "produto_padronizado": "Queijo Coalho Espeto Piracanjuba Kg",
+      "marca": "Piracanjuba",
+      "embalagem": "Kg",
+      "item": "QUEIJOS DE COALHO PIRACANJUBA ESPETO KG",
+      "valor": 69.9,
+      "data_postagem": "17/10/2026",
+      "link": "https://scontent-ams2-1.cdninstagram.com/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=6ZR3UvV57T0Q7kNvwFMNy3-&_nc_oc=Adqn-0AUhMufno-OBD0-g4wt3Bm_9xxyykU2fPtrAZ5ePeYKahpQfiGXJPOeRLtXInT7DxvydwBO8Si2DW8zt9i5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=LcKYz_DisCGLvLpJ2cT4qg&_nc_ss=7a22e&oh=00_AQOy77F9vZx54yX4WS0m0HyfElTvW0VmKoH9bBXYIZ49UQ&oe=6ADAA1DF",
+      "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
+      "created_at": "2026-10-18 13:51:30",
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Super Compras Supermercado",
@@ -38569,7 +38989,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -38835,7 +39255,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -38849,7 +39269,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Mercado Talismã",
@@ -39129,7 +39549,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855623928_1715332023930528_2484364150322828006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTM3ODQzNDg5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=L8l_Q9F1BEwQ7kNvwFyvfcm&_nc_oc=AdqaK2VVWbEQNJ3yizLKzdBxJ5BaNhhKGxKQXkXo1jErl8K4xP6GsUcOKQZ88E5EuUU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQOhY_8LwULaU-dofftp8Vmzy0Yr7ZcBrNM-KagHE8xh4w&oe=6AD94E73",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -42587,7 +43007,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -43203,7 +43623,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwGk0bsJ&_nc_oc=AdpakEHL4olWd8AHnK3gLztMBc0helIWl_ZwQ6L0iV9LzNj1xlUUGSpskuqvmyYuh6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQPqJpRE83c5XOhvxoxr7st0D-rL1V6kUhx_HpYBa--Wig&oe=6AD93F2A",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -46381,7 +46801,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/856074618_1715332060597191_7194026563698336188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTg3MzM5MTMxNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=QZ35wxg16-sQ7kNvwGk0bsJ&_nc_oc=AdpakEHL4olWd8AHnK3gLztMBc0helIWl_ZwQ6L0iV9LzNj1xlUUGSpskuqvmyYuh6I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQPqJpRE83c5XOhvxoxr7st0D-rL1V6kUhx_HpYBa--Wig&oe=6AD93F2A",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -51337,7 +51757,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -51351,7 +51771,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -51365,7 +51785,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -51379,7 +51799,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -51967,7 +52387,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Bianchi",
@@ -52807,7 +53227,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937381_1404679545085336_6570977144159321147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzkyMTA1MTYxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=4cxCLi-TsooQ7kNvwGnBgNo&_nc_oc=AdpXnCRrshBT_GIAyoFONI_hO5PywWhTavXpqNbtiqdLYTejngA5k_ua8ACqafzkFnfkE6OMyzlypNxe7P_xTyKr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOuI2zz4uw7HW9qdluVp1UOv0hYJlMdzlqHo52ifd8Ncw&oe=6AD953DF",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -52821,7 +53241,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855040689_1404678245085466_2485580007466116742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDgzNTM5NjcwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=zzgSh5rNniUQ7kNvwHIcpWO&_nc_oc=Adp0vHAi3G7adZdiZaZY0gIppYlJVRGUVDE3nT3dN4lm9nxwEfg_Wp3NAhcMu4tgGtq9Dh9dvyoB8VUTszhuKQHc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOeZz1M4k2XnVr8Mm0hl4Tfe445O0R5kaP8GGFlyW65Ag&oe=6AD935ED",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -52835,7 +53255,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -52849,7 +53269,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853937403_1404683745084916_7945954707731924965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzIxNjQwNDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=nml2RMtHcfcQ7kNvwFgTs-A&_nc_oc=AdrORpEddwr_1K2W3DydP44cEINgIBEOmFdyp5utcO0wPDdSrwsINS0uYj1zA22RBdVxkqDWMD9XtmZVMIRsNvkN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQOwl9rserer0XOF_Nr7r0ineW11bZhWNuqCP1e6hgbgjA&oe=6AD93428",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -53073,7 +53493,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855777061_1715327550597642_4433042333995038667_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwOTg2OTYzNDgxMTIyNDc0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wYMpMCkENX8Q7kNvwEDgvvS&_nc_oc=AdqVLIYp7wKcbgVR6INuzZ8oWv5F1SUBmVDt15PQS4uaoOwrCFIvLkL336ioVk6_9KI&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQM71gJ6ip-9WSa3JNqXl84Ifw4ntl__ECmz2GVBIUJfoQ&oe=6AD935EC",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado Tuiuiú",
@@ -53885,7 +54305,7 @@
       "link": "https://instagram.ffco2-1.fna.fbcdn.net/v/t39.30808-6/855777061_1715327550597642_4433042333995038667_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=NDAwOTg2OTYzNDgxMTIyNDc0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wYMpMCkENX8Q7kNvwEDgvvS&_nc_oc=AdqVLIYp7wKcbgVR6INuzZ8oWv5F1SUBmVDt15PQS4uaoOwrCFIvLkL336ioVk6_9KI&_nc_zt=23&_nc_ht=instagram.ffco2-1.fna&_nc_gid=Vug_CTtEYBdhvZR_nsvgLA&_nc_ss=73a8c&oh=00_AQM71gJ6ip-9WSa3JNqXl84Ifw4ntl__ECmz2GVBIUJfoQ&oe=6AD935EC",
       "post_url": "https://www.instagram.com/p/Del6zSgDGAw/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -54851,7 +55271,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/855126603_1404683801751577_378888924213375841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NDA1NTI0MjQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gS6V4AlgJK4Q7kNvwGJ6nYD&_nc_oc=Adrf5EAxyc2RwQYqfX_mhZQibSPt94x_XexXPT9ItYESeYN_ipWbN6kISVarZUDhqcgIDANtHU4C14f-LxBfyWCZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNsZG9uB65COQHn3NJJ_eLcAvJ0y29ydyBP4WsTjLo_9w&oe=6AD9505F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -54865,7 +55285,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853004064_1404679548418669_8228127979956604328_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2NzAxNjQzMjE5Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Bq8t40wf824Q7kNvwFJ3rjB&_nc_oc=AdqvZXEmroGpaB6u-nQZTZGpAqvVErOEJvBcJ_1RY333E3mNNd0Tg1gidmiYanrIHqP1j5wVNHZrxd0SZ1LSEwo7&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNVrtt1nuafiklN3wY7FFRuVsBVTGSx8y_FbUOC3_PaGw&oe=6AD95931",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -54879,7 +55299,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/853287955_1404686125084678_2070009653250149330_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2Mjk2NDczNzY0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=GimOfuBnyRQQ7kNvwHRTAtm&_nc_oc=AdptY2tVbwFQI9lZ5IU953RCe1pfHZqHfrqAEftkm710VhNIhmcK-avAMOX-vNBFl8V9J8uFE2c-r04rMSVA1zGv&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQNB5d6iYGa1KKjV8eLj1l5u6Zsq2rNmGIqHBHjBi9IeKw&oe=6AD93C3E",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -54893,7 +55313,7 @@
       "link": "https://instagram.fbhx7-1.fna.fbcdn.net/v/t39.30808-6/854274868_1404678328418791_4468397422929284257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTU0ODk2MzcyODA3OTMxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYzOC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=56JXnNK3bWoQ7kNvwEDyHBB&_nc_oc=Adp0JMA2F-e4m4SBQPKOXN0E72W7opWBOzZLpMfwEHbuaASc0W3aHHP2DLA2a9GtTPLIgQbALdoiOLomILZnaU3V&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fbhx7-1.fna&_nc_gid=syuUSgGSgN8dausHunJzqw&_nc_ss=7a22e&oh=00_AQPelfbsi7uel8AhXsBn1CPOtGlc7Rv0lK33XqP16HIBYw&oe=6AD9457F",
       "post_url": "https://www.instagram.com/p/Dekx47QDPwN/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Machadão Atacadista",
@@ -55355,7 +55775,7 @@
       "link": "https://instagram.ferf1-1.fna.fbcdn.net/v/t39.30808-6/855850377_1715332037263860_2639231892204086661_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=NDAwOTg3MjQ3NTY1NTI1NjQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTEyMi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fiIX34hUcYYQ7kNvwG40ufe&_nc_oc=AdpNbHMdXuNsVZNLZHSL-RODjMoSJfg1Cndt1CYekXBoyNHS2xK2i-zPlSkB6W3yj_c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.ferf1-1.fna&_nc_gid=lEjM2jwP5vwP2LUf2vWtTg&_nc_ss=7a22e&oh=00_AQM_WexU8SfyXVyS8XNBFTRjjixxKz7nwJtmpktz6EomMg&oe=6AD94B55",
       "post_url": "https://www.instagram.com/p/Del7ckVjCXy/",
       "created_at": "2026-10-17 13:33:38",
-      "updated_at": "2026-10-17 13:33:38"
+      "updated_at": "2026-10-18 13:51:30"
     },
     {
       "supermercado": "Supermercado São Pedro",
